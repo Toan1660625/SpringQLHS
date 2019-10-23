@@ -1,0 +1,46 @@
+body{
+	  background: #ebeeef;
+}
+.main{
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	height: 250px;
+	background-color: rgb(182, 194, 197);
+}
+.input1{
+	margin-top: 20px;
+	width: 100%;
+	height: 50px;
+	/* background-color: rgb(165, 65, 135); */
+	float: left;
+}
+
+.input1 div{
+	float: left;
+}
+h5{
+	margin-top: 10px !important;
+}
+
+.divlist{
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 200px;
+	border: black 3px solid ;
+}
+
+
+label{margin-left: 20px;}
+#datepicker{width:180px; height: 20px;margin-left:20% !important;; margin-right: 0%;float: right;}
+
+#datepicker > span:hover{cursor: pointer;}
+
+
+.page {
+	margin-top:15px;
+}
+
