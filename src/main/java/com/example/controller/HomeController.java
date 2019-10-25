@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -31,7 +32,10 @@ public class HomeController{
 	@Autowired
 	private StudentService studentService ;
 	
-	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	@Autowired
+    PasswordEncoder passwordEncoder;
+	
+	@RequestMapping(value = {"/index","/"}, method = RequestMethod.GET)
 	public String inDexGet(Model model, HttpServletRequest request) {
 
 		List<StudentInfo> listStudentInfo = studentInfoService.findAll();
@@ -55,35 +59,34 @@ public class HomeController{
         return "index";
     }	
 	
-	@RequestMapping(value = "/index", method = RequestMethod.POST)
-	public String inDexPost(Model model,HttpServletRequest request) {
-		
-		List<Student> listStudent = studentService.findAll();
-		model.addAttribute("listStudentInfo", listStudent);
-        return "index";
-    }	
+//	@RequestMapping(value = "/index", method = RequestMethod.POST)
+//	public String inDexPost(Model model,HttpServletRequest request) {
+//		
+//		List<Student> listStudent = studentService.findAll();
+//		model.addAttribute("listStudentInfo", listStudent);
+//        return "index";
+//    }	
 	
 	@RequestMapping(value = "/logout", method = RequestMethod.POST)
 	public String Logout(Model model,HttpServletRequest request) {
 
 		HttpSession session = request.getSession();
-			        if(session.getAttribute("nameUser") != null){
-			            session.removeAttribute("nameUser");
-			        	session.invalidate();
-			        	return "redirect:/login";
-			        }
-		        return "redirect:/login";
+		
+	        if(session.getAttribute("nameUser") != null){
+	            session.removeAttribute("nameUser");
+	        	session.invalidate();
+	        	return "redirect:/login";
+	        }
+		return "redirect:/login";
     }
 	
 
-	@RequestMapping(value = "/delete", method = RequestMethod.GET)
-	public String inDexDelete(Model model,HttpServletRequest request) {
+	@RequestMapping(value = "/delete/{studentId}", method = RequestMethod.GET)
+	public String inDexDelete(Model model,HttpServletRequest request,@PathVariable("studentId") int studentId) {
+
+		Student student =  studentService.findById(studentId);
 		
-	
-		int infoId =Integer.parseInt(request.getParameter("infoId"));
-		int studentId =Integer.parseInt(request.getParameter("studentId"));
-		
-		studentInfoService.deleteById(infoId);
+		studentInfoService.deleteById(student.getStudentInfo().getInfoId());
 		studentService.deleteById(studentId);
 		
 		List<StudentInfo> listStudentInfo = studentInfoService.findAll();
@@ -112,7 +115,7 @@ public class HomeController{
 	
 	
 	
-	@RequestMapping(value = "/find/{pageNumber}", method = RequestMethod.GET)
+	@RequestMapping(value = "/find/{pageNumber}", method = RequestMethod.POST)
 	public String inDexFind(Model model,HttpServletRequest request,@PathVariable("pageNumber") int pageNumber,@PathParam("findCode") String findCode) {
 		HttpSession session = request.getSession();
 //		String findName = request.getParameter("findName");
@@ -171,6 +174,12 @@ public class HomeController{
 		model.addAttribute("listStudentInfo", listStudent);
 		
         return "index";
+    }
+	
+	
+	@RequestMapping(value = "/403", method = RequestMethod.GET)
+    public String accessDenied() {
+        return "403";
     }
 
 }

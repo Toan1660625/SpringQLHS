@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <?xml version="1.0" encoding="UTF-8" ?>
 <entity-mappings xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm
                                      http://xmlns.jcp.org/xml/ns/persistence/orm_2_0.xsd" version="2.1">
 
-    <!-- JPA Named Native Queries -->
+    JPA Named Native Queries
     <named-native-query name="User.findAll" result-class="com.example.entity.User">
         <query>SELECT * FROM User</query>
     </named-native-query>
@@ -13,4 +13,4 @@
     </named-native-query>
 
 
-</entity-mappings>
+</entity-mappings> -->

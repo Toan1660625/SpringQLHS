@@ -19,7 +19,7 @@
 	<nav class="navbar navbar-dark bg-dark justify-content-between"
 		style="border-radius: 0px !important;">
 		<a style="width: 1000px;" href="/index"><image src="/images/logo.PNG" style="height: 30px;width: 20%;float: left;"> </image></a>
-		<form class="form-inline" style="float: right;" method="post" action="/logout">
+		<form class="form-inline" style="float: right;" method="POST" th:action="@{/logout}">
 			<h5 style="color: aliceblue; font-size: 15px; margin-right: 30px;" th:text= "'Welcom ' + (${session.nameUser} ?: '')" >
 
 		</h5>
@@ -27,7 +27,7 @@
 		</form>
 	</nav>
 	<div class="main">
-	<form method="GET">
+	<form method="POST" th:action="@{/find/{pageNumber}(pageNumber=0)}">
 		<div class="input1">
 			<div style="width: 28%;">Student Code:</div>
 			<div style="width: 30%;">
@@ -88,14 +88,8 @@
 				<td th:utext="${student.getStudentInfo().getAverageScore()}"></td>
 				<td>
 				<form method="GET" >
-				<input style="display: none;" type="text" name="infoId" th:value="${student.getStudentInfo().getInfoId()}"/>
-				<input style="display: none;" type="text" name="studentId" th:value="${student.getStudentId()}"/>
-					<button type="submit" class="btn btn-primary"  th:formaction="@{/edit}">Edit</button>
-					<button type="submit" class="btn btn-danger" th:formaction="@{/delete}" >Delete</button> 
-			
-					<!-- <button type="submit" class="btn btn-danger" th:formaction="@{/delete?infoId=7&studentId=2}" >Delete</button> -->	
-					<!-- <button type="submit" class="btn btn-danger" th:formaction="@{/delete/{infoId}(infoId=${StudentInfo.getInfoId()})}" >Delete</button> -->
-					<!-- <button type="submit" class="btn btn-danger" th:formaction="@{/delete/__${StudentInfo.getInfoId()}__}" >Delete</button> -->
+				<button type="submit" class="btn btn-primary"  th:formaction="@{/edit/{infoId}(infoId=${student.getStudentInfo().getInfoId()})}" >Edit</button>	
+				<button type="submit" class="btn btn-danger"  th:formaction="@{/delete/{studentId}(studentId=${student.getStudentId()})}" >Delete</button>
 				</form>
 				</td>
 			</tr>
@@ -105,7 +99,7 @@
 	</from>
 	</div>
 	
-	<form method="GET" >
+	<form method="POST" th:action="@{/find/{pageNumber}}">
 	<div class="container page">
 		<div class="row">
 		  <div class="col-sm-4" style="text-align: right;">  </div>

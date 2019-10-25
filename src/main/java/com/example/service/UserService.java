@@ -24,7 +24,6 @@ import com.example.repository.UserReponsitory;
 @Service
 public class UserService {
 	
-	private EntityManager entityManager;
 	 @Autowired
 	 UserReponsitory userReponsitory;
 

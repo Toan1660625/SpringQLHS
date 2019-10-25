@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -28,10 +29,9 @@ public class EditController {
 	@Autowired
 	private StudentService studentService ;
 	
-	@RequestMapping(value = "/edit", method = RequestMethod.GET)
-	public String inDexEditGet(Model model,HttpServletRequest request) {
+	@RequestMapping(value = "/edit/{infoId}", method = RequestMethod.GET)
+	public String inDexEditGet(Model model,HttpServletRequest request,@PathVariable("infoId") int infoId) {
 		
-		int infoId =Integer.parseInt(request.getParameter("infoId"));
 		StudentInfo studentInfo = studentInfoService.findById(infoId);
 		
 		model.addAttribute("studentInfo", studentInfo);
@@ -40,13 +40,10 @@ public class EditController {
 	
 	@RequestMapping(value = "/edit", method = RequestMethod.POST)
 	public String inDexEditPost(Model model,HttpServletRequest request) {
-		
-	
-		int infoId =Integer.parseInt(request.getParameter("infoId"));
+
 		int studentId =Integer.parseInt(request.getParameter("studentId"));
-		
-		StudentInfo studentInfo = studentInfoService.findById(infoId);
 		Student student = studentService.findById(studentId);
+		StudentInfo studentInfo = studentInfoService.findById(student.getStudentInfo().getInfoId());
 
 		SimpleDateFormat formatter = new SimpleDateFormat("MM-dd-yyyy");
 

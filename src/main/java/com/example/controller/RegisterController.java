@@ -30,7 +30,7 @@ public class RegisterController {
 		User checkUser = userService.getUserByEmail(request.getParameter("userName"));
 		if(checkUser == null){			 
 			if(request.getParameter("pass").equals(request.getParameter("passConfirm"))) {
-				User addUser = new User(request.getParameter("userName"),request.getParameter("pass"));
+				User addUser = new User(request.getParameter("userName"),request.getParameter("pass"),"ROLE_MEMBER");
 				userService .save(addUser);
 				
 				String messString = "Đăng ký thành công";

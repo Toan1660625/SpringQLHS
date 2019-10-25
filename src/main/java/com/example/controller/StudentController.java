@@ -44,7 +44,6 @@ public class StudentController {
 
 			Student addStudent = new Student();
 			addStudent.setStudentId(Integer.parseInt(request.getParameter("studentId")));
-			System.out.println("kkkkkkkk: "+ Integer.parseInt(request.getParameter("studentId")));
 			addStudent.setStudentName(request.getParameter("studentName"));
 			addStudent.setStudentCode(request.getParameter("studentCode"));
 			studentService.save(addStudent);

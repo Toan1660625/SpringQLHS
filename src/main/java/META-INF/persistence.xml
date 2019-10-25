@@ -6,7 +6,6 @@
               
     <persistence-unit name="mnf" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
-    <mapping resource="com/example/entity/User.xml" />
     <class>com.example.entity.User</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>

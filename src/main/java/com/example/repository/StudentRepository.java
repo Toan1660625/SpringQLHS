@@ -30,6 +30,5 @@ public interface StudentRepository extends JpaRepository<Student, Integer>{
 	@Query(value = "SELECT * FROM student",nativeQuery = true)  
 	List<Student> findAllStudent(Pageable pageable);
 	
-	@Query(name ="HQL_GET_USER_NAME", nativeQuery = true)
 	Optional<Student> findByStudentCode(String studentCode); // findBy.. + Ten Cot la truy van ra cot do
 }
