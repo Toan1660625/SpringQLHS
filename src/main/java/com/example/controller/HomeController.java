@@ -3,6 +3,7 @@ package com.example.controller;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.websocket.server.PathParam;
 
@@ -10,7 +11,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,6 +26,13 @@ import com.example.entity.StudentInfo;
 import com.example.service.StudentInfoService;
 import com.example.service.StudentService;
 import com.example.service.UserService;
+
+/*
+ * Copyright (C) 2019 by GMO Runsystem Company
+ * Create HomeController class
+ * @version 1.0
+ * @author ToanLM
+ */
 
 @Controller
 public class HomeController{
@@ -59,17 +70,13 @@ public class HomeController{
         return "index";
     }	
 	
-//	@RequestMapping(value = "/index", method = RequestMethod.POST)
-//	public String inDexPost(Model model,HttpServletRequest request) {
-//		
-//		List<Student> listStudent = studentService.findAll();
-//		model.addAttribute("listStudentInfo", listStudent);
-//        return "index";
-//    }	
-	
-	@RequestMapping(value = "/logout", method = RequestMethod.POST)
-	public String Logout(Model model,HttpServletRequest request) {
-
+	@RequestMapping(value = "/logout", method = RequestMethod.GET)
+	public String Logout(Model model,HttpServletRequest request, HttpServletResponse response) {
+		
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		    if (auth != null) {
+		        new SecurityContextLogoutHandler().logout(request, response, auth);
+		    }
 		HttpSession session = request.getSession();
 		
 	        if(session.getAttribute("nameUser") != null){

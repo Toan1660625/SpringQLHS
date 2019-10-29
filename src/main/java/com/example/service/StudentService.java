@@ -12,6 +12,14 @@ import org.springframework.stereotype.Service;
 import com.example.entity.Student;
 import com.example.repository.StudentRepository;
 
+
+/*
+ * Copyright (C) 2019 by GMO Runsystem Company
+ * Create  StudentService class
+ * @version 1.0
+ * @author ToanLM
+ */
+
 @Service
 public class StudentService {
 	

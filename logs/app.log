@@ -1,0 +1,39 @@
+2019-10-29 11:33:31,392 INFO c.e.b.Application [restartedMain] Starting Application on LMToan with PID 23396 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+2019-10-29 11:33:31,396 DEBUG c.e.b.Application [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-29 11:33:31,396 INFO c.e.b.Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-10-29 11:33:34,816 INFO c.e.b.Application [restartedMain] Started Application in 3.687 seconds (JVM running for 4.92)
+2019-10-29 11:33:47,314 DEBUG c.e.c.RegisterController [http-nio-80-exec-1] ===== aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa =====
+2019-10-29 11:34:13,799 DEBUG c.e.c.RegisterController [http-nio-80-exec-5] ===== aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa =====
+2019-10-29 11:34:15,327 DEBUG c.e.c.RegisterController [http-nio-80-exec-3] ===== aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa =====
+[INFO ] 2019-10-29 11:39:14.338 [restartedMain] Application - Starting Application on LMToan with PID 22184 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-29 11:39:14.342 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-29 11:39:14.343 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-29 11:39:17.696 [restartedMain] Application - Started Application in 3.61 seconds (JVM running for 4.885)
+[DEBUG] 2019-10-29 11:39:48.781 [http-nio-80-exec-1] RegisterController - Hello from Log4j 2 - num : {}
+[DEBUG] 2019-10-29 11:39:48.782 [http-nio-80-exec-1] RegisterController - Hello from Log4j 33 - num : {}
+[INFO ] 2019-10-29 11:43:12.089 [restartedMain] Application - Starting Application on LMToan with PID 22184 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-29 11:43:12.089 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-29 11:43:12.089 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-29 11:43:12.810 [restartedMain] Application - Started Application in 0.763 seconds (JVM running for 239.999)
+[DEBUG] 2019-10-29 11:43:23.647 [http-nio-80-exec-2] RegisterController - Hello from Log4j 2 - num : {}
+[DEBUG] 2019-10-29 11:43:23.647 [http-nio-80-exec-2] RegisterController - Hello from Log4j 33 - num : {}
+[INFO ] 2019-10-29 11:44:01.531 [restartedMain] Application - Starting Application on LMToan with PID 22184 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-29 11:44:01.531 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-29 11:44:01.531 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-29 11:44:02.493 [restartedMain] Application - Started Application in 1.02 seconds (JVM running for 289.682)
+[DEBUG] 2019-10-29 11:44:06.187 [http-nio-80-exec-1] RegisterController - Hello from Log4j 2 - num : {}
+[DEBUG] 2019-10-29 11:44:06.187 [http-nio-80-exec-1] RegisterController - Hello from Log4j 33 - num : {}
+[INFO ] 2019-10-29 11:45:04.530 [restartedMain] Application - Starting Application on LMToan with PID 22184 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-29 11:45:04.530 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-29 11:45:04.530 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-29 11:45:05.460 [restartedMain] Application - Started Application in 1.017 seconds (JVM running for 352.65)
+[INFO ] 2019-10-29 11:45:33.720 [restartedMain] Application - Starting Application on LMToan with PID 22184 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-29 11:45:33.720 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-29 11:45:33.721 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-29 11:45:34.375 [restartedMain] Application - Started Application in 0.69 seconds (JVM running for 381.564)
+[DEBUG] 2019-10-29 11:45:38.652 [http-nio-80-exec-1] RegisterController - Hello from Log4j 2 - num : {}
+[DEBUG] 2019-10-29 11:45:38.652 [http-nio-80-exec-1] RegisterController - Hello from Log4j 33 - num : {}
+[INFO ] 2019-10-29 13:32:23.090 [restartedMain] Application - Starting Application on LMToan with PID 6316 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-29 13:32:23.096 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-29 13:32:23.097 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-29 13:32:27.195 [restartedMain] Application - Started Application in 4.387 seconds (JVM running for 5.968)

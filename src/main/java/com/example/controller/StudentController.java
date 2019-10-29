@@ -18,6 +18,13 @@ import com.example.entity.Student;
 import com.example.service.StudentInfoService;
 import com.example.service.StudentService;
 
+/*
+ * Copyright (C) 2019 by GMO Runsystem Company
+ * Create StudentController  class
+ * @version 1.0
+ * @author ToanLM
+ */
+
 @Controller
 public class StudentController {
 

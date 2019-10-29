@@ -20,6 +20,13 @@ import com.example.service.StudentInfoService;
 import com.example.service.StudentService;
 import com.example.service.UserService;
 
+/*
+ * Copyright (C) 2019 by GMO Runsystem Company
+ * Create EditController class
+ * @version 1.0
+ * @author ToanLM
+ */
+
 @Controller
 public class EditController {
 	

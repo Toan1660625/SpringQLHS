@@ -16,6 +16,13 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+/*
+ * Copyright (C) 2019 by GMO Runsystem Company
+ * Create StudentInfo class
+ * @version 1.0
+ * @author ToanLM
+ */
+
 @Entity
 @Table(name = "studentInfo")
 public class StudentInfo implements java.io.Serializable{

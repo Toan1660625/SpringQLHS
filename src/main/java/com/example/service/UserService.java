@@ -19,17 +19,24 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.entity.User;
-import com.example.repository.UserReponsitory;
+import com.example.repository.UserRepository;
+
+/*
+ * Copyright (C) 2019 by GMO Runsystem Company
+ * Create  UserService class
+ * @version 1.0
+ * @author ToanLM
+ */
 
 @Service
 public class UserService {
 	
 	 @Autowired
-	 UserReponsitory userReponsitory;
+	 UserRepository userRepository;
 
 	    public List<User> findAll()
 	    {
-	        List<User> userList = userReponsitory.findAll();
+	        List<User> userList = userRepository.findAll();
 	         
 	        if(userList.size() > 0) {
 	            return userList;
@@ -40,7 +47,7 @@ public class UserService {
 	     
 	    public User getUserById(Integer id) 
 	    {
-	        Optional<User> user = userReponsitory.findById(id);	         
+	        Optional<User> user = userRepository.findById(id);	         
 	        return user.get();
 
 	    }
@@ -48,7 +55,7 @@ public class UserService {
 	    
 	    public User getUserByEmail(String email) 
 	    {
-	    	Optional<User> user = userReponsitory.findByUserName(email);	   
+	    	Optional<User> user = userRepository.findByUserNameNew(email);	   
 	    	if(user.isPresent()) {
 	    		return user.get();
 	        } else {
@@ -56,6 +63,18 @@ public class UserService {
 	        }
 
 	    }
+	    
+	    public  User findByUserName(String email)
+	    {
+	    	User user = userRepository.findByUserName(email);	   
+	    	if(user != null) {
+	    		return user;
+	        } else {
+	        	return null;
+	        }
+	    }
+	    
+	    
 	    
 	    
 	    public User getUserByEmailHQL(String email) 
@@ -92,7 +111,7 @@ public class UserService {
 	    public void save(User entity) 
 	    {
 	    	try {
-				userReponsitory.save(entity);
+				userRepository.save(entity);
 			} catch (Exception e) {
 				System.out.println("Lỗi Save User ");
 			}
@@ -100,7 +119,7 @@ public class UserService {
 	    
 	    public User createOrUpdateUser(User entity)
 	    {
-	        Optional<User> user = userReponsitory.findById(entity.getUserId());
+	        Optional<User> user = userRepository.findById(entity.getUserId());
 	         
 	        if(user.isPresent())
 	        {
@@ -109,19 +128,19 @@ public class UserService {
 	            newEntity.setUserName(entity.getUserName());
 	            newEntity.setPassword(entity.getPassword());
 	 
-	            newEntity = userReponsitory.save(newEntity);
+	            newEntity = userRepository.save(newEntity);
 	             
 	            return newEntity;
 	        } else {
-	            entity = userReponsitory.save(entity);
+	            entity = userRepository.save(entity);
 	            return entity;
 	        }
 	    }
 	     
 	    public void deleteEmployeeById(Integer id) 
 	    {
-	        Optional<User> user = userReponsitory.findById(id);
-	        userReponsitory.deleteById(id);
+	        Optional<User> user = userRepository.findById(id);
+	        userRepository.deleteById(id);
 
 	    }
 }

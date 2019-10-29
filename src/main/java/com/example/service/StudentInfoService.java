@@ -12,6 +12,13 @@ import com.example.entity.StudentInfo;
 import com.example.entity.User;
 import com.example.repository.StudentInfoRepository;
 
+/*
+ * Copyright (C) 2019 by GMO Runsystem Company
+ * Create  StudentInfoService class
+ * @version 1.0
+ * @author ToanLM
+ */
+
 @Service
 public class StudentInfoService {
 
