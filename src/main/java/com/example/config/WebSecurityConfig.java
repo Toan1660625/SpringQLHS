@@ -24,22 +24,20 @@ import com.example.service.UserDetailsServiceImpl;
 
 @Configuration
 @EnableWebSecurity
-public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
-	
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 //	
 //	    @Autowired
 //	    private DataSource dataSource;
-	
-		@Autowired
-	    private UserDetailsServiceImpl userDetailsService;
-		
-		
-	    @Bean
-	    public PasswordEncoder passwordEncoder() {
-	        return new BCryptPasswordEncoder();
-	    }
-	    
+
+	@Autowired
+	private UserDetailsServiceImpl userDetailsService;
+
+	@Bean
+	public PasswordEncoder passwordEncoder() {
+		return new BCryptPasswordEncoder();
+	}
+
 //		@Bean
 //		public DaoAuthenticationProvider authenticationProvider() {
 //			DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
@@ -47,53 +45,34 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 //			authProvider.setPasswordEncoder(passwordEncoder());
 //			return authProvider;
 //		}
-	    
-	    @Autowired
-	    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-	        auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
-	    }
-	    
-//	    @Override
-//	    protected void configure(final AuthenticationManagerBuilder auth) throws Exception {
-//	        auth.userDetailsService(userDetailsService)
-//	                .passwordEncoder(passwordEncoder())
-//	                .and()
-//	                .authenticationProvider(authenticationProvider())
-//	                .jdbcAuthentication()
-//	                .dataSource(dataSource);
-//	    }
-	    
-	    
-	    @Override
-	    protected void configure(HttpSecurity http) throws Exception {
-	    	System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk22222222");
-			System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk222222222");
-	        http
-	            .authorizeRequests()
-	                .antMatchers("/register","/login","/loginSuccess","/","/index").permitAll()
-	                .antMatchers("/delete/{studentId}","/edit/{infoId}","/add").hasRole("ADMIN")
-//	                .anyRequest().authenticated()
-	                .and()
-	            .formLogin()
-	                .loginPage("/login")
-	                .usernameParameter("userName")
-	                .passwordParameter("password")
-//	    			.loginProcessingUrl("/index").permitAll()
-	                .defaultSuccessUrl("/index").permitAll()   // Sẽ chạy sang GET
-	                .failureUrl("/login?error")
-	                .and()
-	             .logout()
-//	             	.invalidateHttpSession(true)
-//	             	.clearAuthentication(true)
-	                .logoutSuccessUrl("/logout").permitAll()  
-//	                .deleteCookies("JSESSIONID")
-                    .permitAll() 
-                    .and()
-                 .exceptionHandling()
-                    .accessDeniedPage("/403");
-	        
-	      
-       
-	    }
+
+	@Autowired
+	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+		auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
+	}
+
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+//		http.csrf().disable();			 //Chuẩn hóa bảo mật html name="${_csrf.parameterName}"
+		http
+			.authorizeRequests()
+				.antMatchers("/register", "/login", "/loginSuccess", "/", "/index","/api/search").permitAll()
+				.antMatchers("/delete/{studentId}", "/edit/{infoId}", "/add").hasRole("ADMIN")
+		//	    .anyRequest().authenticated()
+				.and()
+			.formLogin().loginPage("/login").usernameParameter("userName").passwordParameter("password")
+		//	    .loginProcessingUrl("/index").permitAll()
+				.defaultSuccessUrl("/loginSuccess").permitAll() // Sẽ chạy sang GET
+				.failureUrl("/loginSuccess")
+				.and()
+			.logout()
+		//	    .invalidateHttpSession(true)
+		//	    .clearAuthentication(true)
+				.logoutSuccessUrl("/logout").permitAll()
+		//	    .deleteCookies("JSESSIONID")
+				.permitAll().and()
+			.exceptionHandling().accessDeniedPage("/403");
+
+	}
 
 }

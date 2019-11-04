@@ -9,10 +9,10 @@ import javax.validation.constraints.NotEmpty;
  * @author ToanLM
  */
 public class RegisterForm {
-	
+
 	@NotEmpty(message = "User Name must be not null!")
 	private String userName;
-	
+
 	@NotEmpty(message = "Password must be not null!")
 	private String password;
 

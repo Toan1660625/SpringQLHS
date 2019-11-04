@@ -1,8 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-<!-- <meta charset="UTF-8" /> -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="UTF-8" />
 <title>Welcome</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -27,22 +26,22 @@
 		</form>
 	</nav>
 	<div class="main">
-		<form id="search-form" method="post" th:action="@{/api/search}">
+		<form method="POST" th:action=@{/find/{pageNumber}(pageNumber=0)}>
 			<div class="input1">
-				<div style="width: 28%;">Student Name:</div>
+				<div style="width: 28%;">Student Code:</div>
 				<div style="width: 30%;">
-					<input type="text"  id="studentName" name="studentName">
+					<input type="text"  name="findCode">
 				</div>
 				<div style="width: 30%;">
-					<button  type="submit" id="btn-search" style="margin-left: 20px;" >Search</button>
+					<button  style="margin-left: 20px;" th:formaction="@{/find/{pageNumber}(pageNumber=0)}" >Search</button>
 				</div>
 			</div>
 		</form>	
 
-		<!-- <div class="input1">
-			<div style="width: 28%;">Student Code:</div>
+		<div class="input1">
+			<div style="width: 28%;">Student Name:</div>
 			<div style="width: 30%;">
-				<input type="text" name="findCode" disabled>
+				<input type="text" name="findName" disabled>
 			</div>
 		</div>
 		<div class="input1">
@@ -58,17 +57,11 @@
 			<div style="width: 30%; margin-left: 18px;">
 				<button><a th:href="@{/add}" >Add Student</a></button>
 			</div>
-		</div> -->
+		</div>
 
 	</div>
 
-
-	<div id="feedback">
-	
-	</div>
-
-<!-- 	Danh sách học sinh khi đăng nhập -->
-	<div class="divlist" id="listJava">
+	<div class="divlist">
 	<from>
 	<table class="table">
 		<thead class="thead-dark">
@@ -104,7 +97,7 @@
 	</from>
 	</div>
 	
-	<form method="GET" id="pageJava">
+	<form method="GET" >
 	<div class="container page">
 		<div class="row">
 		  <div class="col-sm-4" style="text-align: right;"> </div>
@@ -118,24 +111,20 @@
 	</form>
 	
 	<!-- partial -->
-	    
-<!-- 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js'></script>
-	<script type="text/javascript" th:src="@{/js/date.js}"></script> -->
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" th:src="@{/js/table.js}"></script>
-
-
-<!-- 	<script>
+	<script th:src="@{/js/date.js}"></script>
+    <script th:src="@{/js/table.js}"></script>
+	<script>
             $(function () {
                    $("#datepicker").datepicker({ 
                          autoclose: true, 
                          todayHighlight: true
                    }).datepicker('update', new Date());
                    });
-         </script> -->
+         </script>
 </body>
 
 </html>

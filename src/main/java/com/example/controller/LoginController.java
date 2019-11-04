@@ -1,18 +1,21 @@
 package com.example.controller;
 
-
 import java.util.HashSet;
 import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,62 +34,47 @@ import com.example.service.UserService;
 
 @Controller
 public class LoginController {
-	
+
 	@Autowired
-	private UserService userService ;
+	private UserService userService;
 
-	@RequestMapping(value = "/login",method = RequestMethod.GET)
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String logIn(Model model) {
-        return "login";
-    }
-	
-	
-	@RequestMapping(value = "/login",method = RequestMethod.POST)
-	public String logInPost(Model model,HttpServletRequest request,HttpSession session) {
-		
-//		PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-//		String hashedPassword = passwordEncoder.encode(request.getParameter("password"));
+		return "login";
+	}
 
-//		User checkUser = userService.findByUserName(request.getParameter("userName"));
-//
-//		if(checkUser != null){
-//			if(checkUser.getPassword().equals(hashedPassword)) {	
-//						session.setAttribute("nameUser", checkUser.getUserName()); 
-//				return "redirect:/index";
-//			}else {
-//				String messString = "Tài khoản hoặc mật khẩu chưa đúng";
-//				 model.addAttribute("messString", messString);
-//				 return "login";  		
-//			}
-//
-//		}else {
-//			 String messString = "Tài khoản chưa tồn tại";
-//			 model.addAttribute("messString", messString);
-//			 return "login";  		
-//		}
-		User checkUser = userService.findByUserName(request.getParameter("username"));
-		session.setAttribute("nameUser", checkUser.getUserName()); 
-		return "redirect:/index";
-       
-    }
-	
-	
-	
-	@RequestMapping(value = "/loginSuccess",method = RequestMethod.GET)
-	public String logInPost2(Model model,HttpServletRequest request,HttpSession session) {
-		User checkUser = userService.findByUserName(request.getParameter("username"));
-		session.setAttribute("nameUser", checkUser.getUserName()); 
-		return "redirect:/register";
-       
-    }
-	
-	@RequestMapping(value = "/loginSuccess",method = RequestMethod.POST)
-	public String logInPost3(Model model,HttpServletRequest request,HttpSession session) {
-				User checkUser = userService.findByUserName(request.getParameter("username"));
-				session.setAttribute("nameUser", checkUser.getUserName()); 
-				return "redirect:/index";
- 
-    }
-	
-	
+	@RequestMapping(value = "/loginSuccess", method = RequestMethod.GET)
+	public String logInPost2(Model model, HttpServletRequest request, HttpSession session) {
+
+		String currentUserName = SecurityContextHolder.getContext().getAuthentication().getName();
+
+		User checkUser = userService.findByUserName(currentUserName);
+		
+		if (checkUser != null) {
+			session.setAttribute("userName", currentUserName);
+			return "redirect:/index";
+		} else {
+			String messString = "Tài Khoản hoặc Mật Khẩu không đúng!!";
+			model.addAttribute("messString", messString);
+			return "login";
+		}
+
+	}
+
+	@RequestMapping(value = "/logout", method = RequestMethod.GET)
+	public String Logout(Model model, HttpServletRequest request, HttpServletResponse response) {
+
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		if (auth != null) {
+			new SecurityContextLogoutHandler().logout(request, response, auth);
+		}
+		HttpSession session = request.getSession();
+
+		if (session.getAttribute("nameUser") != null) {
+			session.removeAttribute("nameUser");
+			session.invalidate();
+		}
+		return "redirect:/login";
+	}
+
 }

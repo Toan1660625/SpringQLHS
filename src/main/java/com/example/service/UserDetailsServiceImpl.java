@@ -27,22 +27,23 @@ import com.example.repository.UserRepository;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
-	
+
 	@Autowired
-	    private WebApplicationContext applicationContext;
-	
+	private WebApplicationContext applicationContext;
+
 	@Autowired
 	private UserRepository userRepository;
 
 	public UserDetailsServiceImpl() {
 		super();
 	}
-	
-	@PostConstruct
-    public void completeSetup() {
-        userRepository = applicationContext.getBean(UserRepository.class);
-    }
 
+	@PostConstruct
+	public void completeSetup() {
+		userRepository = applicationContext.getBean(UserRepository.class);
+	}
+	
+	// Hàm lưu vai trò user
 	@Override
 	@Transactional(readOnly = true)
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -54,9 +55,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 		Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
 		String role = user.getRole();
 		grantedAuthorities.add(new SimpleGrantedAuthority(role));
-		System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
-		System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
-		System.out.println(user.getUserName() + user.getPassword() + grantedAuthorities );
+		System.out.println(user.getUserName() + user.getPassword() + grantedAuthorities);
 		return new org.springframework.security.core.userdetails.User(user.getUserName(), user.getPassword(),
 				grantedAuthorities);
 	}

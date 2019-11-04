@@ -1,6 +1,5 @@
 package com.example.controller;
 
-
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
@@ -19,7 +18,6 @@ import com.example.entity.User;
 import com.example.form.RegisterForm;
 import com.example.service.UserService;
 
-
 /*
  * Copyright (C) 2019 by GMO Runsystem Company
  * Create RegisterController  class
@@ -29,60 +27,61 @@ import com.example.service.UserService;
 
 @Controller
 public class RegisterController {
-	
+
 	private static final Logger logger = LogManager.getLogger(RegisterController.class);
-	
+
 	@Autowired
-	private UserService userService ;
-	
-	
-	@RequestMapping(value = "/register",method = RequestMethod.GET)
+	private UserService userService;
+
+	@RequestMapping(value = "/register", method = RequestMethod.GET)
 	public String register(Model model) {
-		
-		if (logger.isDebugEnabled()) {
-            logger.debug("Hello from Log4j 2 - num : {}");
-        }
-        logger.debug("Hello from Log4j 33 - num : {}");
-        
-        
-        return "register";
-    }
-	
-	@RequestMapping(value = "/register",method = RequestMethod.POST)
-	public String registerPost(@Valid RegisterForm registerForm,Model model,HttpServletRequest request,BindingResult result) {
+		return "register";
+	}
+
+	@RequestMapping(value = "/register", method = RequestMethod.POST)
+	public String registerPost(@Valid RegisterForm registerForm, BindingResult result, Model model,
+			HttpServletRequest request) {
 
 		String userName = registerForm.getUserName();
 		String password = registerForm.getPassword();
 		String passwordConfirm = registerForm.getPasswordConfirm();
-		
+
 		User checkUser = userService.getUserByEmail(userName);
-		if(checkUser == null){			 
-			if(password.equals(passwordConfirm)) {
-				
+		if (checkUser == null) {
+			if (password.equals(passwordConfirm)) {
+
 				PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 				String hashedPassword = passwordEncoder.encode(password);
-				
-				User addUser = new User(userName,hashedPassword,"ROLE_MEMBER");
-				userService .save(addUser);
 
+				User addUser = new User(userName, hashedPassword, "ROLE_MEMBER");
 				
-				String messString = "Đăng ký thành công";
-				String color = "blue";
-				 model.addAttribute("color", color);
-				 model.addAttribute("messString", messString);
-				 
-				 return "register";
-			}else {
-				String messString = "Mật khẩu không trùng nhau";
-				 model.addAttribute("messString", messString);
-				
-				 return "register";  		
-			}
+				try {
+					userService.save(addUser);
+				} catch (Exception e) {
+					return "500";
+				} 
 			
-		}else {
-			 String messString = "Tài khoản đã tồn tại";
-			 model.addAttribute("messString", messString);
-			 return "register";  		
+
+				String messString = "Đăng ký thành công";
+				logger.debug("======Đăng ký thành công======");
+				String color = "blue";
+				model.addAttribute("color", color);
+				model.addAttribute("messString", messString);
+
+				return "register";
+			} else {
+				String messString = "Mật khẩu không trùng nhau";
+				logger.debug("======Mật khẩu không trùng nhau======");
+				model.addAttribute("messString", messString);
+
+				return "register";
+			}
+
+		} else {
+			String messString = "Tài khoản đã tồn tại";
+			logger.debug("======Tài khoản đã tồn tại======");
+			model.addAttribute("messString", messString);
+			return "register";
 		}
-    }
+	}
 }

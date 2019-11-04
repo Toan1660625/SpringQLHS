@@ -9,10 +9,13 @@ import javax.validation.constraints.NotEmpty;
  * @author ToanLM
  */
 public class LoginForm {
-	
+
 	@NotEmpty(message = "User Name must be not null!")
 	private String userName;
-	
+
+	@NotEmpty(message = "Password must be not null!")
+	private String password;
+
 	public String getUserName() {
 		return userName;
 	}
@@ -28,8 +31,5 @@ public class LoginForm {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	@NotEmpty(message = "Password must be not null!")
-	private String password;
 
 }

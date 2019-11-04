@@ -6,6 +6,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.entity.Student;
 import com.example.entity.StudentInfo;
@@ -22,46 +23,49 @@ import com.example.repository.StudentInfoRepository;
 @Service
 public class StudentInfoService {
 
-    @Autowired
-    StudentInfoRepository studentInfoReponsitory;
+	@Autowired
+	StudentInfoRepository studentInfoReponsitory;
 
-    public List<StudentInfo> findAll() {
-        List<StudentInfo> studentInfoList = studentInfoReponsitory.findAll();
+	public List<StudentInfo> findAll() {
+		List<StudentInfo> studentInfoList = studentInfoReponsitory.findAll();
 
-        if (studentInfoList.size() > 0) {
-            return studentInfoList;
-        } else {
-            return new ArrayList<StudentInfo>();
-        }
-    }
+		if (studentInfoList.size() > 0) {
+			return studentInfoList;
+		} else {
+			return new ArrayList<StudentInfo>();
+		}
+	}
 
-    public StudentInfo findById(Integer id) {
-        Optional<StudentInfo> studentInfo = studentInfoReponsitory.findById(id);
-        if (studentInfo.isPresent()) {
-            return studentInfo.get();
-        } else {
-            return null;
-        }
-    }
+	public StudentInfo findById(Integer id) {
+		Optional<StudentInfo> studentInfo = studentInfoReponsitory.findById(id);
+		if (studentInfo.isPresent()) {
+			return studentInfo.get();
+		} else {
+			return null;
+		}
+	}
 
-    public void save(StudentInfo entity) {
-        try {
-            studentInfoReponsitory.save(entity);
-        } catch (Exception e) {
-            System.out.println("Lỗi save studentInfo");
-        }
-    }
+	 //Không nên trong try/catch vì có lỗi sẽ chạy zo Exception e và hàm Transactional sẽ không bắt được lỗi để Rollback(không có lỗi)
+	@Transactional(rollbackFor = {Exception.class})
+	public void save(StudentInfo entity) {
+//		try {
+//			studentInfoReponsitory.save(entity);
+//			int a = 10/0;
+//		} catch (Exception e) {
+//			System.out.println("Lỗi save studentInfo");
+//		}
+		studentInfoReponsitory.save(entity);
+		
+	}
 
-    public void deleteById(Integer id) {
-        Optional<StudentInfo> studentInfo = studentInfoReponsitory.findById(id);
-        studentInfoReponsitory.deleteById(id);
-        if (studentInfo.isPresent()) {
-            studentInfo.get();
-        } else {
-            System.out.println("Học sinh chưa có để  xóa");
-            ;
-        }
-
-    }
+	@Transactional(rollbackFor = {Exception.class})
+	public void deleteById(Integer id) {
+		Optional<StudentInfo> studentInfo = studentInfoReponsitory.findById(id);
+		if (studentInfo.isPresent()) {
+			studentInfoReponsitory.deleteById(id);
+		} else {
+			System.out.println("Học sinh chưa có để  xóa");
+		}
+	}
 
 }

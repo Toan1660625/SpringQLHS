@@ -1,5 +1,6 @@
 package com.example.repository;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Optional;
 
@@ -7,9 +8,11 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import com.example.entity.Student;
+import com.example.entity.StudentInfo;
 
 /*
  * Copyright (C) 2019 by GMO Runsystem Company
@@ -19,7 +22,10 @@ import com.example.entity.Student;
  */
 
 @Repository
-public interface StudentRepository extends JpaRepository<Student, Integer>{
+public interface StudentRepository extends CrudRepository<Student,Serializable>{    
+	 // Chỗ Serializable là chỗ các khóa chính trong các hàm được truyền vào kiểu param gì
+	
+	List<Student> findAll();
 	
 	@Query(value = "SELECT * FROM student WHERE student.student_code LIKE %?1%",nativeQuery = true)
 	List<Student> findByStudentCodeLike(String studentCode,Pageable pageable);
@@ -27,7 +33,6 @@ public interface StudentRepository extends JpaRepository<Student, Integer>{
 	@Query(value = "SELECT * FROM student WHERE student.student_name LIKE %?1%",nativeQuery = true)
 	List<Student> findByStudentName(String studentName,Pageable pageable);
 	
-
 	@Query(value = "SELECT * FROM student WHERE student.student_code LIKE %?1%",nativeQuery = true)
 	List<Student> findByStudentCodeLike(String studentCode);
 	

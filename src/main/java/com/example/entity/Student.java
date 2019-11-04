@@ -19,6 +19,8 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.NamedQueries;
 import org.hibernate.annotations.NamedQuery;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 /*
  * Copyright (C) 2019 by GMO Runsystem Company
  * Create  Student class
@@ -28,21 +30,22 @@ import org.hibernate.annotations.NamedQuery;
 
 @Entity
 @Table(name = "student")
-public class Student implements java.io.Serializable{
+public class Student implements java.io.Serializable {
 
 	@Id
 	@Column(name = "studentId", nullable = false)
 	private int studentId;
 
-	@Column(name = "studentName", length = 15)
+	@Column(name = "studentName", length = 20)
 	private String studentName;
 
 	@Column(name = "studentCode", length = 10)
 	private String studentCode;
-	
-	@OneToOne(mappedBy = "student", fetch = FetchType.EAGER)   //mappedBy sẽ trỏ đến student bên studentInfo
+
+	@OneToOne(mappedBy = "student") // mappedBy sẽ trỏ đến student bên studentInfo
 	private StudentInfo studentInfo;
-	
+
+	@JsonManagedReference
 	public StudentInfo getStudentInfo() {
 		return studentInfo;
 	}
@@ -50,8 +53,7 @@ public class Student implements java.io.Serializable{
 	public void setStudentInfo(StudentInfo studentInfo) {
 		this.studentInfo = studentInfo;
 	}
-    
-    
+
 	public Student() {
 	}
 
@@ -67,7 +69,6 @@ public class Student implements java.io.Serializable{
 	public void setStudentId(int studentId) {
 		this.studentId = studentId;
 	}
-
 
 	public String getStudentCode() {
 		return this.studentCode;

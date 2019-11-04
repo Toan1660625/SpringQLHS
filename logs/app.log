@@ -1,39 +1,1101 @@
-2019-10-29 11:33:31,392 INFO c.e.b.Application [restartedMain] Starting Application on LMToan with PID 23396 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
-2019-10-29 11:33:31,396 DEBUG c.e.b.Application [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2019-10-29 11:33:31,396 INFO c.e.b.Application [restartedMain] No active profile set, falling back to default profiles: default
-2019-10-29 11:33:34,816 INFO c.e.b.Application [restartedMain] Started Application in 3.687 seconds (JVM running for 4.92)
-2019-10-29 11:33:47,314 DEBUG c.e.c.RegisterController [http-nio-80-exec-1] ===== aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa =====
-2019-10-29 11:34:13,799 DEBUG c.e.c.RegisterController [http-nio-80-exec-5] ===== aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa =====
-2019-10-29 11:34:15,327 DEBUG c.e.c.RegisterController [http-nio-80-exec-3] ===== aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa =====
-[INFO ] 2019-10-29 11:39:14.338 [restartedMain] Application - Starting Application on LMToan with PID 22184 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
-[DEBUG] 2019-10-29 11:39:14.342 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-[INFO ] 2019-10-29 11:39:14.343 [restartedMain] Application - No active profile set, falling back to default profiles: default
-[INFO ] 2019-10-29 11:39:17.696 [restartedMain] Application - Started Application in 3.61 seconds (JVM running for 4.885)
-[DEBUG] 2019-10-29 11:39:48.781 [http-nio-80-exec-1] RegisterController - Hello from Log4j 2 - num : {}
-[DEBUG] 2019-10-29 11:39:48.782 [http-nio-80-exec-1] RegisterController - Hello from Log4j 33 - num : {}
-[INFO ] 2019-10-29 11:43:12.089 [restartedMain] Application - Starting Application on LMToan with PID 22184 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
-[DEBUG] 2019-10-29 11:43:12.089 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-[INFO ] 2019-10-29 11:43:12.089 [restartedMain] Application - No active profile set, falling back to default profiles: default
-[INFO ] 2019-10-29 11:43:12.810 [restartedMain] Application - Started Application in 0.763 seconds (JVM running for 239.999)
-[DEBUG] 2019-10-29 11:43:23.647 [http-nio-80-exec-2] RegisterController - Hello from Log4j 2 - num : {}
-[DEBUG] 2019-10-29 11:43:23.647 [http-nio-80-exec-2] RegisterController - Hello from Log4j 33 - num : {}
-[INFO ] 2019-10-29 11:44:01.531 [restartedMain] Application - Starting Application on LMToan with PID 22184 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
-[DEBUG] 2019-10-29 11:44:01.531 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-[INFO ] 2019-10-29 11:44:01.531 [restartedMain] Application - No active profile set, falling back to default profiles: default
-[INFO ] 2019-10-29 11:44:02.493 [restartedMain] Application - Started Application in 1.02 seconds (JVM running for 289.682)
-[DEBUG] 2019-10-29 11:44:06.187 [http-nio-80-exec-1] RegisterController - Hello from Log4j 2 - num : {}
-[DEBUG] 2019-10-29 11:44:06.187 [http-nio-80-exec-1] RegisterController - Hello from Log4j 33 - num : {}
-[INFO ] 2019-10-29 11:45:04.530 [restartedMain] Application - Starting Application on LMToan with PID 22184 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
-[DEBUG] 2019-10-29 11:45:04.530 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-[INFO ] 2019-10-29 11:45:04.530 [restartedMain] Application - No active profile set, falling back to default profiles: default
-[INFO ] 2019-10-29 11:45:05.460 [restartedMain] Application - Started Application in 1.017 seconds (JVM running for 352.65)
-[INFO ] 2019-10-29 11:45:33.720 [restartedMain] Application - Starting Application on LMToan with PID 22184 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
-[DEBUG] 2019-10-29 11:45:33.720 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-[INFO ] 2019-10-29 11:45:33.721 [restartedMain] Application - No active profile set, falling back to default profiles: default
-[INFO ] 2019-10-29 11:45:34.375 [restartedMain] Application - Started Application in 0.69 seconds (JVM running for 381.564)
-[DEBUG] 2019-10-29 11:45:38.652 [http-nio-80-exec-1] RegisterController - Hello from Log4j 2 - num : {}
-[DEBUG] 2019-10-29 11:45:38.652 [http-nio-80-exec-1] RegisterController - Hello from Log4j 33 - num : {}
-[INFO ] 2019-10-29 13:32:23.090 [restartedMain] Application - Starting Application on LMToan with PID 6316 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
-[DEBUG] 2019-10-29 13:32:23.096 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-[INFO ] 2019-10-29 13:32:23.097 [restartedMain] Application - No active profile set, falling back to default profiles: default
-[INFO ] 2019-10-29 13:32:27.195 [restartedMain] Application - Started Application in 4.387 seconds (JVM running for 5.968)
+[INFO ] 2019-10-31 08:49:18.320 [restartedMain] Application - Starting Application on LMToan with PID 16588 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 08:49:18.325 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 08:49:18.326 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 08:49:22.430 [restartedMain] Application - Started Application in 4.579 seconds (JVM running for 6.03)
+[DEBUG] 2019-10-31 08:49:57.648 [http-nio-80-exec-8] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[INFO ] 2019-10-31 09:04:20.593 [restartedMain] Application - Starting Application on LMToan with PID 16588 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 09:04:20.594 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 09:04:20.594 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 09:04:21.308 [restartedMain] Application - Started Application in 0.757 seconds (JVM running for 904.908)
+[INFO ] 2019-10-31 09:27:51.163 [restartedMain] Application - Starting Application on LMToan with PID 12452 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 09:27:51.168 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 09:27:51.169 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 09:30:40.209 [restartedMain] Application - Starting Application on LMToan with PID 13884 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 09:30:40.213 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 09:30:40.214 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 09:31:28.573 [restartedMain] Application - Starting Application on LMToan with PID 23144 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 09:31:28.577 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 09:31:28.578 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 09:31:31.740 [restartedMain] Application - Started Application in 3.412 seconds (JVM running for 4.669)
+[DEBUG] 2019-10-31 09:32:01.918 [http-nio-80-exec-4] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-10-31 09:37:57.830 [restartedMain] Application - Starting Application on LMToan with PID 23144 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 09:37:57.830 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 09:37:57.831 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 09:37:58.575 [restartedMain] Application - Started Application in 0.787 seconds (JVM running for 391.505)
+[DEBUG] 2019-10-31 09:38:20.812 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-10-31 10:27:45.222 [restartedMain] Application - Starting Application on LMToan with PID 6048 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 10:27:45.227 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 10:27:45.227 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 10:30:47.560 [restartedMain] Application - Starting Application on LMToan with PID 4432 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 10:30:47.565 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 10:30:47.567 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 11:22:40.369 [restartedMain] Application - Starting Application on LMToan with PID 11640 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 11:22:40.375 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 11:22:40.376 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 11:24:28.748 [restartedMain] Application - Starting Application on LMToan with PID 7848 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 11:24:28.752 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 11:24:28.753 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 11:27:29.793 [restartedMain] Application - Starting Application on LMToan with PID 10244 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 11:27:29.797 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 11:27:29.798 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 11:30:47.816 [restartedMain] Application - Starting Application on LMToan with PID 14980 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 11:30:47.820 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 11:30:47.821 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 11:32:55.759 [restartedMain] Application - Starting Application on LMToan with PID 11032 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 11:32:55.763 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 11:32:55.764 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 11:32:59.046 [restartedMain] Application - Started Application in 3.528 seconds (JVM running for 4.821)
+[INFO ] 2019-10-31 11:35:54.596 [restartedMain] Application - Starting Application on LMToan with PID 11032 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 11:35:54.596 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 11:35:54.596 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 11:35:55.308 [restartedMain] Application - Started Application in 0.754 seconds (JVM running for 181.084)
+[INFO ] 2019-10-31 11:54:35.211 [restartedMain] Application - Starting Application on LMToan with PID 11268 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 11:54:35.215 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 11:54:35.215 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 11:54:38.389 [restartedMain] Application - Started Application in 3.422 seconds (JVM running for 4.643)
+[INFO ] 2019-10-31 12:00:57.987 [restartedMain] Application - Starting Application on LMToan with PID 2120 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 12:00:57.992 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 12:00:57.993 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 12:01:01.189 [restartedMain] Application - Started Application in 3.444 seconds (JVM running for 4.718)
+[INFO ] 2019-10-31 12:01:27.920 [restartedMain] Application - Starting Application on LMToan with PID 11596 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 12:01:27.924 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 12:01:27.924 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 12:01:30.988 [restartedMain] Application - Started Application in 3.307 seconds (JVM running for 4.53)
+[INFO ] 2019-10-31 13:57:49.219 [restartedMain] Application - Starting Application on LMToan with PID 12916 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 13:57:49.223 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 13:57:49.224 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 13:57:52.366 [restartedMain] Application - Started Application in 3.395 seconds (JVM running for 4.783)
+[INFO ] 2019-10-31 13:58:16.699 [restartedMain] Application - Starting Application on LMToan with PID 2676 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 13:58:16.703 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 13:58:16.704 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 13:58:19.858 [restartedMain] Application - Started Application in 3.408 seconds (JVM running for 4.635)
+[INFO ] 2019-10-31 13:59:07.274 [restartedMain] Application - Starting Application on LMToan with PID 17304 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 13:59:07.278 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 13:59:07.278 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 13:59:10.392 [restartedMain] Application - Started Application in 3.356 seconds (JVM running for 4.584)
+[INFO ] 2019-10-31 13:59:36.961 [restartedMain] Application - Starting Application on LMToan with PID 7720 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 13:59:36.965 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 13:59:36.966 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 13:59:48.488 [restartedMain] Application - Starting Application on LMToan with PID 9096 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 13:59:48.493 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 13:59:48.493 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 13:59:51.907 [restartedMain] Application - Started Application in 3.656 seconds (JVM running for 5.015)
+[INFO ] 2019-10-31 14:03:36.000 [restartedMain] Application - Starting Application on LMToan with PID 16484 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 14:03:36.006 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 14:03:36.007 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 14:03:39.216 [restartedMain] Application - Started Application in 3.458 seconds (JVM running for 4.732)
+[DEBUG] 2019-10-31 14:03:56.115 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:04:02.009 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:04:07.284 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:04:15.095 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:04:23.744 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:04:24.091 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:04:26.974 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:06:01.899 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:06:02.108 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:06:52.196 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:06:55.830 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-10-31 14:15:01.966 [restartedMain] Application - Starting Application on LMToan with PID 16128 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 14:15:01.971 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 14:15:01.972 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 14:15:05.218 [restartedMain] Application - Started Application in 3.519 seconds (JVM running for 5.038)
+[DEBUG] 2019-10-31 14:15:16.819 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:15:31.510 [http-nio-80-exec-10] EditController - ======Sữa học sinh thành công======:STU0620
+[DEBUG] 2019-10-31 14:15:32.631 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:15:35.466 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com đã xóa 1 học sinh =====
+[DEBUG] 2019-10-31 14:16:04.670 [http-nio-80-exec-4] HomeController - ===== toan7@gmail.com vừa tìm kiếm =====
+[DEBUG] 2019-10-31 14:16:13.041 [http-nio-80-exec-4] StudentController - ===== Lỗi thêm stdeunt null =====
+[DEBUG] 2019-10-31 14:16:16.987 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:16:23.869 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vừa tìm kiếm =====
+[DEBUG] 2019-10-31 14:16:43.486 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:16:50.481 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vừa tìm kiếm =====
+[DEBUG] 2019-10-31 14:16:54.403 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vừa tìm kiếm =====
+[DEBUG] 2019-10-31 14:16:58.222 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vừa tìm kiếm =====
+[INFO ] 2019-10-31 14:18:21.703 [restartedMain] Application - Starting Application on LMToan with PID 16128 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 14:18:21.703 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 14:18:21.703 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 14:18:22.445 [restartedMain] Application - Started Application in 0.786 seconds (JVM running for 202.266)
+[DEBUG] 2019-10-31 14:31:47.887 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:33:23.477 [http-nio-80-exec-10] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:33:24.929 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:33:26.270 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:33:27.359 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:33:28.177 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:33:28.912 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:33:30.008 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:33:30.610 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:34:13.568 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:34:56.470 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:34:57.990 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:34:58.896 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:35:32.911 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:35:34.202 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:36:13.520 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:36:15.678 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:36:36.980 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:36:37.910 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:36:39.238 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:37:52.871 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:37:53.944 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:37:54.970 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:39:05.383 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:39:09.714 [http-nio-80-exec-10] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:39:11.710 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:39:34.085 [http-nio-80-exec-10] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:39:34.335 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:39:35.918 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:40:05.281 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:40:07.231 [http-nio-80-exec-10] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:40:21.142 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:40:23.263 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:40:28.529 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:42:39.944 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:43:44.008 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 14:45:15.823 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-10-31 14:52:51.730 [restartedMain] Application - Starting Application on LMToan with PID 16128 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 14:52:51.731 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 14:52:51.731 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 14:52:52.454 [restartedMain] Application - Started Application in 0.774 seconds (JVM running for 2272.274)
+[INFO ] 2019-10-31 15:54:05.848 [restartedMain] Application - Starting Application on LMToan with PID 17056 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 15:54:05.852 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 15:54:05.853 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 15:54:09.081 [restartedMain] Application - Started Application in 3.478 seconds (JVM running for 4.78)
+[DEBUG] 2019-10-31 15:54:20.106 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:54:21.769 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:54:28.935 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:54:31.216 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:54:32.320 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:54:33.258 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:54:34.489 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:54:35.353 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:54:35.900 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:54:36.439 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:54:37.053 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:54:37.858 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:54:38.849 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:54:39.594 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:55:15.796 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:55:19.511 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:55:19.830 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:55:21.249 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:55:22.152 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:56:16.720 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:56:17.106 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:56:21.359 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:56:22.225 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 15:56:27.184 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:16:19.197 [http-nio-80-exec-4] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-10-31 17:16:37.545 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:16:49.741 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:18:44.457 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:19:12.676 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-10-31 17:19:32.407 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 17:19:32.411 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 17:19:32.411 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 17:19:35.572 [restartedMain] Application - Started Application in 3.409 seconds (JVM running for 4.655)
+[DEBUG] 2019-10-31 17:22:12.387 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:29:46.852 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:32:43.358 [http-nio-80-exec-10] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-10-31 17:33:51.122 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 17:33:51.123 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 17:33:51.123 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 17:33:51.823 [restartedMain] Application - Started Application in 0.744 seconds (JVM running for 860.906)
+[DEBUG] 2019-10-31 17:33:58.201 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:38:25.334 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:40:26.236 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:40:29.234 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:40:32.872 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:40:36.569 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:41:47.005 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:42:49.104 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:43:11.840 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-10-31 17:44:35.248 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 17:44:35.248 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 17:44:35.248 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 17:44:35.951 [restartedMain] Application - Started Application in 0.745 seconds (JVM running for 1505.035)
+[DEBUG] 2019-10-31 17:45:45.361 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-10-31 17:47:32.552 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 17:47:32.552 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 17:47:32.552 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 17:47:33.227 [restartedMain] Application - Started Application in 0.713 seconds (JVM running for 1682.31)
+[INFO ] 2019-10-31 17:50:32.397 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 17:50:32.397 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 17:50:32.397 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 17:50:33.049 [restartedMain] Application - Started Application in 0.693 seconds (JVM running for 1862.132)
+[INFO ] 2019-10-31 17:52:51.198 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 17:52:51.198 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 17:52:51.198 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 17:52:51.824 [restartedMain] Application - Started Application in 0.662 seconds (JVM running for 2000.907)
+[INFO ] 2019-10-31 17:53:07.989 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 17:53:07.989 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 17:53:07.989 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 17:53:08.614 [restartedMain] Application - Started Application in 0.66 seconds (JVM running for 2017.697)
+[DEBUG] 2019-10-31 17:53:18.307 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:53:20.063 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:56:15.783 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:56:20.430 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:56:35.434 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:57:58.651 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 17:58:01.808 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-10-31 18:00:35.180 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 18:00:35.181 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 18:00:35.181 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 18:00:35.776 [restartedMain] Application - Started Application in 0.628 seconds (JVM running for 2464.86)
+[INFO ] 2019-10-31 18:01:34.752 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 18:01:34.753 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 18:01:34.753 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 18:01:35.338 [restartedMain] Application - Started Application in 0.619 seconds (JVM running for 2524.422)
+[INFO ] 2019-10-31 18:02:18.820 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 18:02:18.820 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 18:02:18.820 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 18:02:19.395 [restartedMain] Application - Started Application in 0.607 seconds (JVM running for 2568.478)
+[INFO ] 2019-10-31 18:03:21.666 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 18:03:21.666 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 18:03:21.666 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 18:03:22.252 [restartedMain] Application - Started Application in 0.621 seconds (JVM running for 2631.336)
+[INFO ] 2019-10-31 18:06:14.262 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 18:06:14.262 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 18:06:14.262 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 18:06:14.851 [restartedMain] Application - Started Application in 0.623 seconds (JVM running for 2803.934)
+[DEBUG] 2019-10-31 18:06:20.908 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-10-31 18:07:09.646 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 18:07:09.646 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 18:07:09.646 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 18:07:10.248 [restartedMain] Application - Started Application in 0.636 seconds (JVM running for 2859.331)
+[DEBUG] 2019-10-31 18:07:27.869 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:07:29.746 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:07:30.369 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-10-31 18:08:52.236 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 18:08:52.236 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 18:08:52.236 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 18:08:52.807 [restartedMain] Application - Started Application in 0.603 seconds (JVM running for 2961.89)
+[INFO ] 2019-10-31 18:09:33.298 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 18:09:33.298 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 18:09:33.298 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 18:09:33.940 [restartedMain] Application - Started Application in 0.682 seconds (JVM running for 3003.023)
+[DEBUG] 2019-10-31 18:09:37.206 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:09:43.310 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:10:35.879 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:10:36.637 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:10:36.829 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:10:36.932 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:10:37.011 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:10:37.104 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:10:37.365 [http-nio-80-exec-4] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:10:55.815 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:11:01.221 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-10-31 18:14:07.978 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 18:14:07.978 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 18:14:07.978 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 18:14:08.632 [restartedMain] Application - Started Application in 0.689 seconds (JVM running for 3277.715)
+[INFO ] 2019-10-31 18:15:12.658 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 18:15:12.658 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 18:15:12.658 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 18:15:13.223 [restartedMain] Application - Started Application in 0.596 seconds (JVM running for 3342.306)
+[DEBUG] 2019-10-31 18:15:17.696 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:15:19.069 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:15:22.655 [http-nio-80-exec-2] SearchAjaxController - ===== Have error when search with Ajax= ====com.example.form.SearchForm@21616978
+[DEBUG] 2019-10-31 18:16:07.350 [http-nio-80-exec-4] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:16:12.208 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:16:18.131 [http-nio-80-exec-7] SearchAjaxController - ===== Have error when search with Ajax= ====com.example.form.SearchForm@297b724a
+[INFO ] 2019-10-31 18:17:09.310 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 18:17:09.310 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 18:17:09.310 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 18:17:09.913 [restartedMain] Application - Started Application in 0.636 seconds (JVM running for 3458.996)
+[DEBUG] 2019-10-31 18:17:17.670 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:17:19.096 [http-nio-80-exec-6] SearchAjaxController - ===== Have error when search with Ajax= ====Le Minh Toan
+[INFO ] 2019-10-31 18:17:38.314 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 18:17:38.314 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 18:17:38.314 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 18:17:38.960 [restartedMain] Application - Started Application in 0.678 seconds (JVM running for 3488.043)
+[DEBUG] 2019-10-31 18:17:40.612 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-10-31 18:17:42.429 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-10-31 18:18:18.631 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 18:18:18.631 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 18:18:18.631 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 18:18:19.259 [restartedMain] Application - Started Application in 0.661 seconds (JVM running for 3528.343)
+[INFO ] 2019-10-31 18:19:34.711 [restartedMain] Application - Starting Application on LMToan with PID 5180 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-10-31 18:19:34.712 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-10-31 18:19:34.712 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-31 18:19:35.311 [restartedMain] Application - Started Application in 0.636 seconds (JVM running for 3604.395)
+[INFO ] 2019-11-01 00:18:33.110 [restartedMain] Application - Starting Application on LMToan with PID 5856 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 00:18:33.116 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 00:18:33.116 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 00:18:37.258 [restartedMain] Application - Started Application in 4.459 seconds (JVM running for 5.957)
+[DEBUG] 2019-11-01 00:18:55.939 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 00:19:11.699 [http-nio-80-exec-4] SearchAjaxController - ===== Have error when search with Ajax= ====Le Minh Toan
+[DEBUG] 2019-11-01 00:19:11.719 [http-nio-80-exec-4] SearchAjaxController - ===== Find student: Le Minh Toan success. =====
+[DEBUG] 2019-11-01 00:19:45.313 [http-nio-80-exec-1] EditController - ======Sữa học sinh thành công======:STU020
+[DEBUG] 2019-11-01 00:19:46.451 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 00:19:51.384 [http-nio-80-exec-6] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 00:19:51.388 [http-nio-80-exec-6] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 00:20:22.243 [restartedMain] Application - Starting Application on LMToan with PID 5856 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 00:20:22.243 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 00:20:22.243 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 00:20:22.978 [restartedMain] Application - Started Application in 0.777 seconds (JVM running for 111.678)
+[INFO ] 2019-11-01 00:22:00.598 [restartedMain] Application - Starting Application on LMToan with PID 5856 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 00:22:00.598 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 00:22:00.599 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 00:22:01.287 [restartedMain] Application - Started Application in 0.727 seconds (JVM running for 209.986)
+[DEBUG] 2019-11-01 00:22:19.839 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 00:22:22.560 [http-nio-80-exec-1] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 00:22:22.565 [http-nio-80-exec-1] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 00:22:58.751 [restartedMain] Application - Starting Application on LMToan with PID 5856 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 00:22:58.751 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 00:22:58.751 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 00:22:59.450 [restartedMain] Application - Started Application in 0.735 seconds (JVM running for 268.149)
+[INFO ] 2019-11-01 00:32:57.425 [restartedMain] Application - Starting Application on LMToan with PID 4560 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 00:32:57.429 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 00:32:57.430 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 00:33:00.641 [restartedMain] Application - Started Application in 3.456 seconds (JVM running for 4.828)
+[DEBUG] 2019-11-01 00:33:08.229 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 00:33:11.278 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 00:33:11.512 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-01 00:33:36.725 [restartedMain] Application - Starting Application on LMToan with PID 4560 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 00:33:36.726 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 00:33:36.726 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 00:33:37.464 [restartedMain] Application - Started Application in 0.781 seconds (JVM running for 41.651)
+[DEBUG] 2019-11-01 00:33:52.241 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 00:33:54.594 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 00:34:05.685 [http-nio-80-exec-2] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 00:34:05.706 [http-nio-80-exec-2] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 00:34:55.219 [restartedMain] Application - Starting Application on LMToan with PID 4560 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 00:34:55.220 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 00:34:55.220 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 00:34:55.921 [restartedMain] Application - Started Application in 0.741 seconds (JVM running for 120.108)
+[DEBUG] 2019-11-01 00:35:02.534 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 00:35:05.194 [http-nio-80-exec-6] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 00:35:05.198 [http-nio-80-exec-6] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 00:51:30.210 [restartedMain] Application - Starting Application on LMToan with PID 4560 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 00:51:30.210 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 00:51:30.211 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 00:51:30.916 [restartedMain] Application - Started Application in 0.745 seconds (JVM running for 1115.104)
+[DEBUG] 2019-11-01 00:51:37.050 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 00:51:38.668 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 00:51:42.481 [http-nio-80-exec-2] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 00:51:42.489 [http-nio-80-exec-2] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 00:56:54.796 [restartedMain] Application - Starting Application on LMToan with PID 4560 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 00:56:54.796 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 00:56:54.796 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 00:56:55.422 [restartedMain] Application - Started Application in 0.664 seconds (JVM running for 1439.61)
+[INFO ] 2019-11-01 01:00:07.417 [restartedMain] Application - Starting Application on LMToan with PID 4560 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 01:00:07.417 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 01:00:07.418 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 01:00:08.049 [restartedMain] Application - Started Application in 0.668 seconds (JVM running for 1632.236)
+[DEBUG] 2019-11-01 01:00:19.450 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 01:00:20.991 [http-nio-80-exec-6] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 01:00:21.002 [http-nio-80-exec-6] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 01:06:10.712 [restartedMain] Application - Starting Application on LMToan with PID 4560 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 01:06:10.712 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 01:06:10.713 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 01:06:11.368 [restartedMain] Application - Started Application in 0.691 seconds (JVM running for 1995.556)
+[INFO ] 2019-11-01 01:06:57.230 [restartedMain] Application - Starting Application on LMToan with PID 4560 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 01:06:57.231 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 01:06:57.231 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 01:06:57.870 [restartedMain] Application - Started Application in 0.673 seconds (JVM running for 2042.058)
+[DEBUG] 2019-11-01 01:07:04.133 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 01:07:05.683 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-01 01:09:29.160 [restartedMain] Application - Starting Application on LMToan with PID 4560 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 01:09:29.160 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 01:09:29.160 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 01:09:29.809 [restartedMain] Application - Started Application in 0.682 seconds (JVM running for 2193.997)
+[DEBUG] 2019-11-01 01:09:41.140 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 01:12:13.992 [http-nio-80-exec-10] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 01:12:13.998 [http-nio-80-exec-10] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 01:18:59.416 [restartedMain] Application - Starting Application on LMToan with PID 4560 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 01:18:59.416 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 01:18:59.416 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 01:19:00.008 [restartedMain] Application - Started Application in 0.625 seconds (JVM running for 2764.196)
+[INFO ] 2019-11-01 01:19:42.834 [restartedMain] Application - Starting Application on LMToan with PID 4560 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 01:19:42.835 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 01:19:42.835 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 01:19:43.490 [restartedMain] Application - Started Application in 0.693 seconds (JVM running for 2807.677)
+[DEBUG] 2019-11-01 01:20:07.670 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 01:20:09.573 [http-nio-80-exec-6] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 01:20:09.580 [http-nio-80-exec-6] SearchAjaxController - ===== Find student: 6 success. =====
+[DEBUG] 2019-11-01 01:20:11.196 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-01 01:20:58.483 [restartedMain] Application - Starting Application on LMToan with PID 3760 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 01:20:58.487 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 01:20:58.487 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 01:21:01.841 [restartedMain] Application - Started Application in 3.607 seconds (JVM running for 4.886)
+[DEBUG] 2019-11-01 01:21:12.512 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 01:21:22.791 [http-nio-80-exec-10] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 01:21:22.801 [http-nio-80-exec-10] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 01:21:43.591 [restartedMain] Application - Starting Application on LMToan with PID 3760 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 01:21:43.592 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 01:21:43.592 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 01:21:44.407 [restartedMain] Application - Started Application in 0.858 seconds (JVM running for 47.451)
+[INFO ] 2019-11-01 01:21:58.644 [restartedMain] Application - Starting Application on LMToan with PID 3760 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 01:21:58.644 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 01:21:58.644 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 01:21:59.343 [restartedMain] Application - Started Application in 0.739 seconds (JVM running for 62.388)
+[DEBUG] 2019-11-01 01:22:15.295 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 01:22:18.405 [http-nio-80-exec-10] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 01:22:18.409 [http-nio-80-exec-10] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 01:22:42.117 [restartedMain] Application - Starting Application on LMToan with PID 3760 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 01:22:42.117 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 01:22:42.118 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 01:22:42.732 [restartedMain] Application - Started Application in 0.652 seconds (JVM running for 105.776)
+[DEBUG] 2019-11-01 01:22:49.187 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 01:22:50.711 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 01:22:51.379 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 01:22:51.551 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 01:22:51.723 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 01:22:51.818 [http-nio-80-exec-10] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 01:22:55.127 [http-nio-80-exec-5] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 01:22:55.132 [http-nio-80-exec-5] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 01:24:36.724 [restartedMain] Application - Starting Application on LMToan with PID 3760 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 01:24:36.724 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 01:24:36.724 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 01:24:37.404 [restartedMain] Application - Started Application in 0.716 seconds (JVM running for 220.448)
+[DEBUG] 2019-11-01 01:26:06.004 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 01:29:19.531 [http-nio-80-exec-10] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 01:29:19.538 [http-nio-80-exec-10] SearchAjaxController - ===== Find student: 6 success. =====
+[DEBUG] 2019-11-01 01:29:20.963 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-01 01:30:44.863 [restartedMain] Application - Starting Application on LMToan with PID 3760 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 01:30:44.863 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 01:30:44.864 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 01:30:45.753 [restartedMain] Application - Started Application in 0.929 seconds (JVM running for 588.797)
+[INFO ] 2019-11-01 09:02:46.618 [restartedMain] Application - Starting Application on LMToan with PID 3108 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 09:02:46.627 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 09:02:46.627 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 09:02:50.101 [restartedMain] Application - Started Application in 3.88 seconds (JVM running for 5.289)
+[DEBUG] 2019-11-01 09:03:04.981 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:03:11.711 [http-nio-80-exec-9] SearchAjaxController - ===== Have error when search with Ajax= ====66
+[DEBUG] 2019-11-01 09:03:11.724 [http-nio-80-exec-9] SearchAjaxController - ===== Find student: 66 success. =====
+[INFO ] 2019-11-01 09:05:53.113 [restartedMain] Application - Starting Application on LMToan with PID 3108 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 09:05:53.113 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 09:05:53.113 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 09:05:53.934 [restartedMain] Application - Started Application in 0.867 seconds (JVM running for 189.122)
+[DEBUG] 2019-11-01 09:05:56.262 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:05:58.225 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:06:01.431 [http-nio-80-exec-2] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 09:06:01.439 [http-nio-80-exec-2] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 09:07:45.631 [restartedMain] Application - Starting Application on LMToan with PID 3108 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 09:07:45.631 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 09:07:45.632 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 09:07:46.358 [restartedMain] Application - Started Application in 0.768 seconds (JVM running for 301.546)
+[DEBUG] 2019-11-01 09:08:22.869 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:08:26.174 [http-nio-80-exec-6] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 09:08:26.180 [http-nio-80-exec-6] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 09:11:02.106 [restartedMain] Application - Starting Application on LMToan with PID 3108 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 09:11:02.106 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 09:11:02.107 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 09:11:02.844 [restartedMain] Application - Started Application in 0.775 seconds (JVM running for 498.032)
+[DEBUG] 2019-11-01 09:12:23.869 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:12:25.311 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:12:31.227 [http-nio-80-exec-10] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 09:12:31.234 [http-nio-80-exec-10] SearchAjaxController - ===== Find student: 6 success. =====
+[DEBUG] 2019-11-01 09:12:52.297 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:14:12.987 [http-nio-80-exec-10] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:14:13.585 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:14:13.771 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:14:34.785 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:17:26.541 [http-nio-80-exec-10] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:18:47.693 [http-nio-80-exec-10] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:18:55.951 [http-nio-80-exec-6] SearchAjaxController - ===== Have error when search with Ajax= ====6
+[DEBUG] 2019-11-01 09:18:55.956 [http-nio-80-exec-6] SearchAjaxController - ===== Find student: 6 success. =====
+[DEBUG] 2019-11-01 09:28:33.420 [http-nio-80-exec-10] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:29:17.599 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:30:35.954 [http-nio-80-exec-4] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:31:08.006 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:33:38.466 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:33:51.644 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:36:26.558 [http-nio-80-exec-4] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:39:50.507 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-01 09:41:08.520 [restartedMain] Application - Starting Application on LMToan with PID 3108 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 09:41:08.521 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 09:41:08.521 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 09:41:09.243 [restartedMain] Application - Started Application in 0.773 seconds (JVM running for 2304.431)
+[DEBUG] 2019-11-01 09:41:16.438 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:41:19.240 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:41:23.395 [http-nio-80-exec-4] SearchAjaxController - ===== Have error when search with Ajax= ====null
+[DEBUG] 2019-11-01 09:41:23.395 [http-nio-80-exec-4] SearchAjaxController - ===== Have error when search with Ajax= ====
+[DEBUG] 2019-11-01 09:41:33.152 [http-nio-80-exec-5] SearchAjaxController - ===== Have error when search with Ajax= ====null
+[DEBUG] 2019-11-01 09:41:33.152 [http-nio-80-exec-5] SearchAjaxController - ===== Have error when search with Ajax= ====
+[DEBUG] 2019-11-01 09:42:33.213 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:42:43.770 [http-nio-80-exec-2] SearchAjaxController - ===== Have error when search with Ajax= ====null
+[DEBUG] 2019-11-01 09:42:43.770 [http-nio-80-exec-2] SearchAjaxController - ===== Have error when search with Ajax= ====
+[DEBUG] 2019-11-01 09:42:45.457 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:44:12.040 [http-nio-80-exec-8] SearchAjaxController - ===== Have error when search with Ajax= ====null
+[DEBUG] 2019-11-01 09:44:12.040 [http-nio-80-exec-8] SearchAjaxController - ===== Have error when search with Ajax= ====
+[INFO ] 2019-11-01 09:45:27.095 [restartedMain] Application - Starting Application on LMToan with PID 3108 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 09:45:27.095 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 09:45:27.095 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 09:45:27.758 [restartedMain] Application - Started Application in 0.698 seconds (JVM running for 2562.946)
+[DEBUG] 2019-11-01 09:45:33.814 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-01 09:47:47.472 [restartedMain] Application - Starting Application on LMToan with PID 3108 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 09:47:47.472 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 09:47:47.472 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 09:47:48.089 [restartedMain] Application - Started Application in 0.652 seconds (JVM running for 2703.278)
+[DEBUG] 2019-11-01 09:48:22.587 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-01 09:53:32.665 [restartedMain] Application - Starting Application on LMToan with PID 3108 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 09:53:32.665 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 09:53:32.666 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 09:53:33.321 [restartedMain] Application - Started Application in 0.69 seconds (JVM running for 3048.509)
+[INFO ] 2019-11-01 09:53:38.270 [restartedMain] Application - Starting Application on LMToan with PID 3108 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 09:53:38.271 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 09:53:38.271 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 09:53:38.886 [restartedMain] Application - Started Application in 0.649 seconds (JVM running for 3054.075)
+[DEBUG] 2019-11-01 09:53:40.468 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-01 09:54:26.547 [restartedMain] Application - Starting Application on LMToan with PID 3108 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 09:54:26.547 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 09:54:26.548 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 09:54:27.150 [restartedMain] Application - Started Application in 0.637 seconds (JVM running for 3102.337)
+[INFO ] 2019-11-01 09:55:18.095 [restartedMain] Application - Starting Application on LMToan with PID 12192 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 09:55:18.100 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 09:55:18.101 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 09:55:39.033 [restartedMain] Application - Started Application in 21.218 seconds (JVM running for 22.735)
+[DEBUG] 2019-11-01 09:55:45.300 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:56:30.317 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-01 09:56:58.116 [http-nio-80-exec-7] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-01 09:56:58.137 [http-nio-80-exec-7] SearchAjaxController - ===== Find student: 6 success. =====
+[DEBUG] 2019-11-01 09:58:27.811 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-01 09:59:25.654 [restartedMain] Application - Starting Application on LMToan with PID 15564 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 09:59:25.660 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 09:59:25.661 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 09:59:31.853 [restartedMain] Application - Started Application in 6.48 seconds (JVM running for 7.968)
+[DEBUG] 2019-11-01 09:59:35.654 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 10:00:13.841 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-01 10:05:15.673 [restartedMain] Application - Starting Application on LMToan with PID 10836 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 10:05:15.680 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 10:05:15.680 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 10:05:20.961 [restartedMain] Application - Started Application in 5.573 seconds (JVM running for 7.058)
+[DEBUG] 2019-11-01 10:05:27.180 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 10:06:32.484 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 10:06:55.115 [http-nio-80-exec-6] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-01 10:06:55.133 [http-nio-80-exec-6] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 10:08:13.547 [restartedMain] Application - Starting Application on LMToan with PID 10836 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 10:08:13.547 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 10:08:13.547 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 10:08:16.113 [restartedMain] Application - Started Application in 2.621 seconds (JVM running for 182.211)
+[DEBUG] 2019-11-01 10:09:18.872 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 10:09:54.316 [http-nio-80-exec-9] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-01 10:09:54.325 [http-nio-80-exec-9] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 10:11:05.257 [restartedMain] Application - Starting Application on LMToan with PID 11688 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 10:11:05.263 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 10:11:05.264 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 10:11:10.798 [restartedMain] Application - Started Application in 5.823 seconds (JVM running for 7.327)
+[DEBUG] 2019-11-01 10:11:13.204 [http-nio-80-exec-3] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 10:11:56.500 [http-nio-80-exec-7] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 10:12:08.564 [http-nio-80-exec-5] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-01 10:12:08.579 [http-nio-80-exec-5] SearchAjaxController - ===== Find student: 6 success. =====
+[DEBUG] 2019-11-01 10:12:37.809 [http-nio-80-exec-6] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 10:14:33.726 [http-nio-80-exec-7] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 10:14:34.130 [http-nio-80-exec-2] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-01 10:15:20.147 [restartedMain] Application - Starting Application on LMToan with PID 11688 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 10:15:20.147 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 10:15:20.147 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 10:15:22.681 [restartedMain] Application - Started Application in 2.591 seconds (JVM running for 259.21)
+[DEBUG] 2019-11-01 10:16:42.300 [http-nio-80-exec-2] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 10:17:20.270 [http-nio-80-exec-7] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-01 10:26:09.469 [restartedMain] Application - Starting Application on LMToan with PID 11688 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 10:26:09.469 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 10:26:09.470 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 10:26:14.015 [restartedMain] Application - Started Application in 4.596 seconds (JVM running for 910.544)
+[DEBUG] 2019-11-01 10:26:19.753 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-01 10:32:59.276 [restartedMain] Application - Starting Application on LMToan with PID 11688 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 10:32:59.276 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 10:32:59.277 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 10:33:01.651 [restartedMain] Application - Started Application in 2.427 seconds (JVM running for 1318.18)
+[INFO ] 2019-11-01 10:36:12.515 [restartedMain] Application - Starting Application on LMToan with PID 11136 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 10:36:12.522 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 10:36:12.523 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 10:36:18.005 [restartedMain] Application - Started Application in 5.771 seconds (JVM running for 7.26)
+[DEBUG] 2019-11-01 10:36:24.638 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 10:36:25.906 [http-nio-80-exec-5] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 10:37:54.095 [http-nio-80-exec-6] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-01 10:39:19.658 [restartedMain] Application - Starting Application on LMToan with PID 16396 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 10:39:19.664 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 10:39:19.665 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 10:39:23.593 [restartedMain] Application - Started Application in 4.222 seconds (JVM running for 5.712)
+[DEBUG] 2019-11-01 10:39:28.022 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-01 10:40:03.485 [restartedMain] Application - Starting Application on LMToan with PID 1536 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 10:40:03.492 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 10:40:03.493 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 10:40:07.366 [restartedMain] Application - Started Application in 4.184 seconds (JVM running for 5.661)
+[DEBUG] 2019-11-01 10:40:11.570 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-01 10:42:09.742 [restartedMain] Application - Starting Application on LMToan with PID 1536 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 10:42:09.742 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 10:42:09.742 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 10:42:10.712 [restartedMain] Application - Started Application in 1.025 seconds (JVM running for 129.006)
+[DEBUG] 2019-11-01 10:44:33.331 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 10:44:34.518 [http-nio-80-exec-6] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-01 10:45:11.474 [restartedMain] Application - Starting Application on LMToan with PID 17976 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 10:45:11.480 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 10:45:11.481 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 10:45:15.320 [restartedMain] Application - Started Application in 4.129 seconds (JVM running for 5.629)
+[DEBUG] 2019-11-01 10:45:21.855 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 10:48:23.424 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 10:48:35.604 [http-nio-80-exec-6] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-01 10:48:35.621 [http-nio-80-exec-6] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 10:50:58.393 [restartedMain] Application - Starting Application on LMToan with PID 17976 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 10:50:58.393 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 10:50:58.393 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 10:50:59.354 [restartedMain] Application - Started Application in 1.018 seconds (JVM running for 349.662)
+[INFO ] 2019-11-01 11:00:27.425 [restartedMain] Application - Starting Application on LMToan with PID 8612 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 11:00:27.431 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 11:00:27.432 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 11:00:31.260 [restartedMain] Application - Started Application in 4.127 seconds (JVM running for 5.603)
+[DEBUG] 2019-11-01 11:00:39.149 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-01 11:01:36.509 [restartedMain] Application - Starting Application on LMToan with PID 9640 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 11:01:36.515 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 11:01:36.516 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 11:01:40.388 [restartedMain] Application - Started Application in 4.16 seconds (JVM running for 5.617)
+[DEBUG] 2019-11-01 11:01:54.192 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:02:37.778 [http-nio-80-exec-7] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:07:20.720 [http-nio-80-exec-7] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:07:24.348 [http-nio-80-exec-4] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:08:58.667 [http-nio-80-exec-4] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-01 11:10:53.910 [restartedMain] Application - Starting Application on LMToan with PID 9640 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 11:10:53.910 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 11:10:53.910 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 11:10:54.822 [restartedMain] Application - Started Application in 0.966 seconds (JVM running for 560.051)
+[DEBUG] 2019-11-01 11:11:03.230 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:11:15.726 [http-nio-80-exec-6] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-01 11:11:15.744 [http-nio-80-exec-6] SearchAjaxController - ===== Find student: n success. =====
+[INFO ] 2019-11-01 11:14:02.378 [restartedMain] Application - Starting Application on LMToan with PID 9640 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 11:14:02.378 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 11:14:02.379 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 11:14:03.221 [restartedMain] Application - Started Application in 0.89 seconds (JVM running for 748.449)
+[INFO ] 2019-11-01 11:14:12.723 [restartedMain] Application - Starting Application on LMToan with PID 8768 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 11:14:12.729 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 11:14:12.730 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 11:14:16.671 [restartedMain] Application - Started Application in 4.23 seconds (JVM running for 5.668)
+[DEBUG] 2019-11-01 11:14:21.176 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:14:39.012 [http-nio-80-exec-6] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-01 11:14:39.032 [http-nio-80-exec-6] SearchAjaxController - ===== Find student: n success. =====
+[INFO ] 2019-11-01 11:15:08.594 [restartedMain] Application - Starting Application on LMToan with PID 8768 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 11:15:08.594 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 11:15:08.594 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 11:15:09.517 [restartedMain] Application - Started Application in 0.975 seconds (JVM running for 58.515)
+[DEBUG] 2019-11-01 11:15:13.002 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:15:17.408 [http-nio-80-exec-7] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-01 11:21:44.035 [restartedMain] Application - Starting Application on LMToan with PID 8768 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 11:21:44.035 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 11:21:44.035 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 11:21:44.949 [restartedMain] Application - Started Application in 0.971 seconds (JVM running for 453.948)
+[DEBUG] 2019-11-01 11:21:54.345 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:22:04.405 [http-nio-80-exec-9] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-01 11:22:04.415 [http-nio-80-exec-9] SearchAjaxController - ===== Find student: n success. =====
+[INFO ] 2019-11-01 11:25:17.022 [restartedMain] Application - Starting Application on LMToan with PID 8768 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 11:25:17.022 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 11:25:17.022 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 11:25:17.869 [restartedMain] Application - Started Application in 0.902 seconds (JVM running for 666.867)
+[INFO ] 2019-11-01 11:25:37.942 [restartedMain] Application - Starting Application on LMToan with PID 8768 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 11:25:37.942 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 11:25:37.942 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 11:25:38.875 [restartedMain] Application - Started Application in 1.001 seconds (JVM running for 687.873)
+[DEBUG] 2019-11-01 11:25:43.653 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:25:50.245 [http-nio-80-exec-6] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-01 11:25:50.252 [http-nio-80-exec-6] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 11:26:13.507 [restartedMain] Application - Starting Application on LMToan with PID 8768 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 11:26:13.507 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 11:26:13.507 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 11:26:14.351 [restartedMain] Application - Started Application in 0.897 seconds (JVM running for 723.349)
+[DEBUG] 2019-11-01 11:30:54.599 [http-nio-80-exec-3] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:35:09.286 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:37:40.706 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:39:22.539 [http-nio-80-exec-9] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:39:23.672 [http-nio-80-exec-5] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:39:59.406 [http-nio-80-exec-3] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:41:46.586 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:44:15.118 [http-nio-80-exec-10] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 11:54:43.642 [http-nio-80-exec-8] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 12:04:09.208 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 12:05:40.490 [http-nio-80-exec-10] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 12:07:12.850 [http-nio-80-exec-8] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-01 12:08:13.001 [restartedMain] Application - Starting Application on LMToan with PID 8768 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 12:08:13.002 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 12:08:13.002 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 12:08:15.537 [restartedMain] Application - Started Application in 2.599 seconds (JVM running for 3244.534)
+[DEBUG] 2019-11-01 12:08:27.960 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 12:08:31.742 [http-nio-80-exec-5] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-01 12:08:31.742 [http-nio-80-exec-5] SearchAjaxController - ===== Have error when search with Ajax= ====
+[DEBUG] 2019-11-01 12:11:14.378 [http-nio-80-exec-8] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 12:11:15.282 [http-nio-80-exec-3] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 12:11:22.110 [http-nio-80-exec-6] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-01 12:11:22.117 [http-nio-80-exec-6] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-01 12:23:49.932 [restartedMain] Application - Starting Application on LMToan with PID 8768 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 12:23:49.932 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 12:23:49.932 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 12:23:50.813 [restartedMain] Application - Started Application in 0.935 seconds (JVM running for 4179.811)
+[DEBUG] 2019-11-01 12:23:59.083 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 12:24:01.633 [http-nio-80-exec-4] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-01 12:32:00.548 [restartedMain] Application - Starting Application on LMToan with PID 8768 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 12:32:00.549 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 12:32:00.549 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 12:32:01.493 [restartedMain] Application - Started Application in 0.997 seconds (JVM running for 4670.491)
+[DEBUG] 2019-11-01 12:32:02.724 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 12:32:06.968 [http-nio-80-exec-6] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-01 12:33:04.447 [restartedMain] Application - Starting Application on LMToan with PID 8768 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 12:33:04.447 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 12:33:04.448 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 12:33:05.313 [restartedMain] Application - Started Application in 0.916 seconds (JVM running for 4734.31)
+[INFO ] 2019-11-01 12:33:16.483 [restartedMain] Application - Starting Application on LMToan with PID 8768 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 12:33:16.484 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 12:33:16.484 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 12:33:17.382 [restartedMain] Application - Started Application in 0.949 seconds (JVM running for 4746.38)
+[DEBUG] 2019-11-01 12:34:10.041 [http-nio-80-exec-2] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 12:36:40.641 [http-nio-80-exec-10] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-01 12:36:43.397 [http-nio-80-exec-4] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-01 12:38:01.039 [restartedMain] Application - Starting Application on LMToan with PID 8768 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 12:38:01.039 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 12:38:01.039 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 12:38:01.888 [restartedMain] Application - Started Application in 0.903 seconds (JVM running for 5030.885)
+[INFO ] 2019-11-01 12:38:40.515 [restartedMain] Application - Starting Application on LMToan with PID 8768 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 12:38:40.515 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 12:38:40.515 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 12:38:41.322 [restartedMain] Application - Started Application in 0.852 seconds (JVM running for 5070.32)
+[INFO ] 2019-11-01 12:38:54.812 [restartedMain] Application - Starting Application on LMToan with PID 5900 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 12:38:54.819 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 12:38:54.820 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 12:46:18.232 [restartedMain] Application - Starting Application on LMToan with PID 18592 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-01 12:46:18.237 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-01 12:46:18.238 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-01 12:46:21.391 [restartedMain] Application - Started Application in 3.408 seconds (JVM running for 4.661)
+[DEBUG] 2019-11-01 12:46:24.541 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-03 23:36:40.747 [restartedMain] Application - Starting Application on LMToan with PID 13160 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-03 23:36:40.753 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-03 23:36:40.754 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-03 23:59:30.218 [restartedMain] Application - Starting Application on LMToan with PID 6464 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-03 23:59:30.224 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-03 23:59:30.224 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:02:33.634 [restartedMain] Application - Starting Application on LMToan with PID 6776 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:02:33.639 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:02:33.640 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:06:09.555 [restartedMain] Application - Starting Application on LMToan with PID 4880 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:06:09.561 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:06:09.562 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:11:48.020 [restartedMain] Application - Starting Application on LMToan with PID 12780 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:11:48.025 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:11:48.025 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:12:18.037 [restartedMain] Application - Starting Application on LMToan with PID 2408 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:12:18.041 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:12:18.042 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:20:42.850 [main] ApplicationTests - Starting ApplicationTests on LMToan with PID 18260 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:20:42.860 [main] ApplicationTests - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:20:42.861 [main] ApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:26:06.209 [restartedMain] Application - Starting Application on LMToan with PID 1820 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:26:06.213 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:26:06.214 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:26:09.514 [restartedMain] Application - Started Application in 3.562 seconds (JVM running for 4.987)
+[DEBUG] 2019-11-04 00:26:31.067 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 00:27:35.819 [restartedMain] Application - Starting Application on LMToan with PID 5376 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:27:35.825 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:27:35.825 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:28:45.187 [restartedMain] Application - Starting Application on LMToan with PID 4120 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:28:45.191 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:28:45.192 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:28:48.649 [restartedMain] Application - Started Application in 3.722 seconds (JVM running for 5.079)
+[INFO ] 2019-11-04 00:29:50.586 [restartedMain] Application - Starting Application on LMToan with PID 4120 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:29:50.586 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:29:50.586 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:29:51.763 [restartedMain] Application - Started Application in 1.22 seconds (JVM running for 68.193)
+[INFO ] 2019-11-04 00:29:52.952 [restartedMain] Application - Starting Application on LMToan with PID 15932 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:29:52.956 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:29:52.957 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:30:04.789 [restartedMain] Application - Starting Application on LMToan with PID 4120 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:30:04.789 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:30:04.789 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:30:05.644 [restartedMain] Application - Started Application in 0.896 seconds (JVM running for 82.074)
+[INFO ] 2019-11-04 00:31:23.067 [restartedMain] Application - Starting Application on LMToan with PID 11940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:31:23.072 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:31:23.072 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:31:58.450 [restartedMain] Application - Starting Application on LMToan with PID 12384 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:31:58.455 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:31:58.456 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:32:25.559 [restartedMain] Application - Starting Application on LMToan with PID 4872 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:32:25.563 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:32:25.564 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:32:28.955 [restartedMain] Application - Started Application in 3.649 seconds (JVM running for 4.974)
+[INFO ] 2019-11-04 00:33:48.797 [restartedMain] Application - Starting Application on LMToan with PID 4872 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:33:48.797 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:33:48.797 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:33:49.631 [restartedMain] Application - Started Application in 0.877 seconds (JVM running for 85.65)
+[DEBUG] 2019-11-04 00:34:04.394 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 00:34:21.151 [restartedMain] Application - Starting Application on LMToan with PID 4872 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:34:21.152 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:34:21.152 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:34:23.496 [restartedMain] Application - Starting Application on LMToan with PID 4872 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:34:23.496 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:34:23.496 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:34:24.325 [restartedMain] Application - Started Application in 0.873 seconds (JVM running for 120.343)
+[INFO ] 2019-11-04 00:35:10.822 [restartedMain] Application - Starting Application on LMToan with PID 4048 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:35:10.828 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:35:10.829 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:35:14.359 [restartedMain] Application - Started Application in 3.823 seconds (JVM running for 5.212)
+[INFO ] 2019-11-04 00:36:07.209 [restartedMain] Application - Starting Application on LMToan with PID 19352 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:36:07.213 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:36:07.214 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:36:10.492 [restartedMain] Application - Started Application in 3.542 seconds (JVM running for 4.833)
+[DEBUG] 2019-11-04 00:36:22.197 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 00:36:46.774 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 00:39:26.336 [restartedMain] Application - Starting Application on LMToan with PID 19352 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:39:26.336 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:39:26.337 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:39:27.112 [restartedMain] Application - Started Application in 0.823 seconds (JVM running for 201.453)
+[DEBUG] 2019-11-04 00:39:42.750 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 00:39:47.274 [http-nio-80-exec-5] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-04 00:39:47.282 [http-nio-80-exec-5] SearchAjaxController - ===== Find student: 6 success. =====
+[DEBUG] 2019-11-04 00:40:51.364 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 00:42:00.652 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 00:43:26.312 [restartedMain] Application - Starting Application on LMToan with PID 19352 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:43:26.312 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:43:26.312 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:43:27.023 [restartedMain] Application - Started Application in 0.75 seconds (JVM running for 441.364)
+[DEBUG] 2019-11-04 00:43:32.166 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 00:44:31.741 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 00:45:54.385 [restartedMain] Application - Starting Application on LMToan with PID 19352 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:45:54.385 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:45:54.385 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:45:55.047 [restartedMain] Application - Started Application in 0.699 seconds (JVM running for 589.388)
+[INFO ] 2019-11-04 00:50:06.136 [restartedMain] Application - Starting Application on LMToan with PID 19352 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 00:50:06.136 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 00:50:06.137 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 00:50:06.805 [restartedMain] Application - Started Application in 0.706 seconds (JVM running for 841.146)
+[DEBUG] 2019-11-04 00:50:17.087 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 00:50:22.739 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 00:50:53.260 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 00:51:07.532 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 08:52:03.125 [restartedMain] Application - Starting Application on LMToan with PID 19580 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 08:52:03.132 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 08:52:03.133 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 08:52:07.393 [restartedMain] Application - Started Application in 4.581 seconds (JVM running for 6.375)
+[DEBUG] 2019-11-04 08:53:20.305 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 08:56:16.980 [restartedMain] Application - Starting Application on LMToan with PID 19580 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 08:56:16.980 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 08:56:16.980 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 08:56:17.857 [restartedMain] Application - Started Application in 0.922 seconds (JVM running for 256.839)
+[DEBUG] 2019-11-04 08:56:24.442 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 08:58:19.000 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 09:00:17.060 [restartedMain] Application - Starting Application on LMToan with PID 19580 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:00:17.060 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:00:17.060 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:00:17.781 [restartedMain] Application - Started Application in 0.765 seconds (JVM running for 496.763)
+[DEBUG] 2019-11-04 09:00:20.105 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 09:01:24.794 [restartedMain] Application - Starting Application on LMToan with PID 19580 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:01:24.794 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:01:24.795 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:01:25.436 [restartedMain] Application - Started Application in 0.68 seconds (JVM running for 564.418)
+[INFO ] 2019-11-04 09:03:15.696 [restartedMain] Application - Starting Application on LMToan with PID 19580 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:03:15.697 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:03:15.697 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:03:16.367 [restartedMain] Application - Started Application in 0.709 seconds (JVM running for 675.348)
+[INFO ] 2019-11-04 09:06:53.386 [restartedMain] Application - Starting Application on LMToan with PID 19580 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:06:53.386 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:06:53.387 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:06:54.143 [restartedMain] Application - Started Application in 0.797 seconds (JVM running for 893.126)
+[DEBUG] 2019-11-04 09:07:02.268 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 09:08:17.055 [restartedMain] Application - Starting Application on LMToan with PID 19580 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:08:17.055 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:08:17.055 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:08:17.703 [restartedMain] Application - Started Application in 0.684 seconds (JVM running for 976.685)
+[DEBUG] 2019-11-04 09:08:21.824 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:11:24.641 [http-nio-80-exec-10] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 09:14:05.638 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:14:05.644 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:14:05.644 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:14:09.868 [restartedMain] Application - Started Application in 4.523 seconds (JVM running for 6.222)
+[DEBUG] 2019-11-04 09:14:10.118 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:14:38.472 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:16:44.053 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:18:56.140 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 09:21:30.958 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:21:30.958 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:21:30.958 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:21:31.918 [restartedMain] Application - Started Application in 1.029 seconds (JVM running for 448.271)
+[DEBUG] 2019-11-04 09:21:36.504 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:21:45.083 [http-nio-80-exec-5] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-04 09:21:45.083 [http-nio-80-exec-5] SearchAjaxController - ===== Have error when search with Ajax= ====null
+[INFO ] 2019-11-04 09:22:54.123 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:22:54.123 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:22:54.124 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:22:55.064 [restartedMain] Application - Started Application in 0.996 seconds (JVM running for 531.417)
+[DEBUG] 2019-11-04 09:22:58.262 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:23:06.178 [http-nio-80-exec-5] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-04 09:23:06.178 [http-nio-80-exec-5] SearchAjaxController - ===== Have error when search with Ajax= ====null
+[DEBUG] 2019-11-04 09:23:09.385 [http-nio-80-exec-6] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-04 09:23:09.386 [http-nio-80-exec-6] SearchAjaxController - ===== Have error when search with Ajax= ====null
+[DEBUG] 2019-11-04 09:27:47.539 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:27:49.239 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:28:04.801 [http-nio-80-exec-5] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-04 09:28:04.801 [http-nio-80-exec-5] SearchAjaxController - ===== Have error when search with Ajax= ====null
+[INFO ] 2019-11-04 09:29:21.800 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:29:21.800 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:29:21.800 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:29:22.690 [restartedMain] Application - Started Application in 0.944 seconds (JVM running for 919.043)
+[INFO ] 2019-11-04 09:29:31.916 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:29:31.916 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:29:31.916 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:29:32.859 [restartedMain] Application - Started Application in 1.003 seconds (JVM running for 929.213)
+[DEBUG] 2019-11-04 09:29:37.931 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:29:41.946 [http-nio-80-exec-2] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-04 09:29:41.946 [http-nio-80-exec-2] SearchAjaxController - ===== Have error when search with Ajax= ====null
+[INFO ] 2019-11-04 09:34:04.889 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:34:04.889 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:34:04.889 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:34:05.853 [restartedMain] Application - Started Application in 1.019 seconds (JVM running for 1202.206)
+[DEBUG] 2019-11-04 09:34:44.378 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:34:55.844 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:35:00.132 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 09:35:25.306 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:35:25.306 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:35:25.307 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:35:26.183 [restartedMain] Application - Started Application in 0.963 seconds (JVM running for 1282.537)
+[DEBUG] 2019-11-04 09:35:28.307 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:35:34.049 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:35:46.846 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 09:44:26.629 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:44:26.629 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:44:26.629 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:44:27.502 [restartedMain] Application - Started Application in 0.931 seconds (JVM running for 1823.855)
+[DEBUG] 2019-11-04 09:44:33.632 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 09:46:42.288 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:46:42.288 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:46:42.289 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:46:43.125 [restartedMain] Application - Started Application in 0.889 seconds (JVM running for 1959.478)
+[DEBUG] 2019-11-04 09:46:47.635 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 09:48:36.045 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:48:36.046 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:48:36.046 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:48:37.687 [restartedMain] Application - Started Application in 1.7 seconds (JVM running for 2074.04)
+[INFO ] 2019-11-04 09:49:07.699 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:49:07.700 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:49:07.700 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:49:08.528 [restartedMain] Application - Started Application in 0.882 seconds (JVM running for 2104.881)
+[DEBUG] 2019-11-04 09:49:24.201 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 09:49:34.479 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:49:34.479 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:49:34.480 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:49:35.352 [restartedMain] Application - Started Application in 0.924 seconds (JVM running for 2131.705)
+[DEBUG] 2019-11-04 09:49:35.396 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:49:49.408 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:49:57.346 [http-nio-80-exec-10] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-04 09:49:57.347 [http-nio-80-exec-10] SearchAjaxController - ===== Have error when search with Ajax= ====null
+[DEBUG] 2019-11-04 09:51:02.876 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:51:10.106 [http-nio-80-exec-7] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-04 09:51:10.122 [http-nio-80-exec-7] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-04 09:52:09.597 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:52:09.597 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:52:09.598 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:52:10.498 [restartedMain] Application - Started Application in 1.005 seconds (JVM running for 2286.852)
+[DEBUG] 2019-11-04 09:52:33.148 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 09:53:07.467 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:53:07.467 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:53:07.467 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:53:08.334 [restartedMain] Application - Started Application in 0.918 seconds (JVM running for 2344.688)
+[DEBUG] 2019-11-04 09:53:10.701 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:55:12.338 [http-nio-80-exec-5] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-04 09:55:12.339 [http-nio-80-exec-5] SearchAjaxController - ===== Have error when search with Ajax= ====null
+[DEBUG] 2019-11-04 09:55:20.490 [http-nio-80-exec-9] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-04 09:55:20.490 [http-nio-80-exec-9] SearchAjaxController - ===== Have error when search with Ajax= ====null
+[DEBUG] 2019-11-04 09:55:24.866 [http-nio-80-exec-8] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-04 09:55:24.866 [http-nio-80-exec-8] SearchAjaxController - ===== Have error when search with Ajax= ====null
+[INFO ] 2019-11-04 09:55:39.591 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 09:55:39.591 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 09:55:39.592 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 09:55:40.433 [restartedMain] Application - Started Application in 0.904 seconds (JVM running for 2496.787)
+[DEBUG] 2019-11-04 09:55:46.229 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:55:47.480 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 09:57:01.248 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 10:05:42.874 [restartedMain] Application - Starting Application on LMToan with PID 13940 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 10:05:42.874 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 10:05:42.874 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 10:05:43.829 [restartedMain] Application - Started Application in 1.003 seconds (JVM running for 3100.183)
+[INFO ] 2019-11-04 10:05:48.512 [restartedMain] Application - Starting Application on LMToan with PID 19668 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 10:05:48.517 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 10:05:48.518 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 10:05:52.508 [restartedMain] Application - Started Application in 4.287 seconds (JVM running for 5.962)
+[DEBUG] 2019-11-04 10:06:03.129 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-04 10:06:57.304 [http-nio-80-exec-5] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-04 10:07:19.183 [http-nio-80-exec-10] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-04 10:07:55.201 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 10:12:13.201 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 10:15:31.418 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 10:22:30.559 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 10:24:53.828 [restartedMain] Application - Starting Application on LMToan with PID 13272 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 10:24:53.834 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 10:24:53.835 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 10:24:57.862 [restartedMain] Application - Started Application in 4.338 seconds (JVM running for 5.847)
+[DEBUG] 2019-11-04 10:25:01.334 [http-nio-80-exec-2] HomeController - ===== null vào trang chủ =====
+[INFO ] 2019-11-04 10:25:46.907 [restartedMain] Application - Starting Application on LMToan with PID 13272 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 10:25:46.907 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 10:25:46.908 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 10:25:47.936 [restartedMain] Application - Started Application in 1.086 seconds (JVM running for 55.92)
+[DEBUG] 2019-11-04 10:25:47.993 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-04 10:25:53.668 [http-nio-80-exec-5] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-04 10:25:53.669 [http-nio-80-exec-5] SearchAjaxController - ===== Have error when search with Ajax= ====null
+[INFO ] 2019-11-04 10:26:13.706 [restartedMain] Application - Starting Application on LMToan with PID 13272 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 10:26:13.706 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 10:26:13.707 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 10:26:14.606 [restartedMain] Application - Started Application in 0.955 seconds (JVM running for 82.591)
+[DEBUG] 2019-11-04 10:26:39.795 [http-nio-80-exec-1] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-04 10:27:11.463 [http-nio-80-exec-6] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-04 10:33:12.749 [http-nio-80-exec-4] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-04 10:33:34.541 [http-nio-80-exec-7] HomeController - ===== null vào trang chủ =====
+[DEBUG] 2019-11-04 10:34:30.595 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 10:36:37.862 [restartedMain] Application - Starting Application on LMToan with PID 13272 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 10:36:37.862 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 10:36:37.862 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 10:36:38.709 [restartedMain] Application - Started Application in 0.9 seconds (JVM running for 706.694)
+[INFO ] 2019-11-04 10:38:59.517 [restartedMain] Application - Starting Application on LMToan with PID 13272 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 10:38:59.517 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 10:38:59.517 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 10:39:00.426 [restartedMain] Application - Started Application in 0.956 seconds (JVM running for 848.411)
+[DEBUG] 2019-11-04 10:39:08.554 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 10:40:02.386 [restartedMain] Application - Starting Application on LMToan with PID 13272 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 10:40:02.386 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 10:40:02.387 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 10:40:03.205 [restartedMain] Application - Started Application in 0.865 seconds (JVM running for 911.189)
+[DEBUG] 2019-11-04 10:40:08.484 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 10:41:31.691 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 10:50:03.214 [http-nio-80-exec-6] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 10:51:00.066 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 10:51:47.502 [restartedMain] Application - Starting Application on LMToan with PID 13272 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 10:51:47.503 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 10:51:47.503 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 10:51:48.346 [restartedMain] Application - Started Application in 0.896 seconds (JVM running for 1616.331)
+[DEBUG] 2019-11-04 10:52:10.444 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 10:58:04.979 [restartedMain] Application - Starting Application on LMToan with PID 13272 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 10:58:04.979 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 10:58:04.979 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 10:58:05.835 [restartedMain] Application - Started Application in 0.901 seconds (JVM running for 1993.82)
+[DEBUG] 2019-11-04 10:58:19.335 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 10:58:25.204 [http-nio-80-exec-4] SearchAjaxController - =====  Ajax Search ====
+[INFO ] 2019-11-04 10:58:43.509 [restartedMain] Application - Starting Application on LMToan with PID 13272 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 10:58:43.510 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 10:58:43.510 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 10:58:45.011 [restartedMain] Application - Started Application in 1.547 seconds (JVM running for 2032.995)
+[DEBUG] 2019-11-04 10:58:46.223 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-04 10:58:50.196 [http-nio-80-exec-5] SearchAjaxController - =====  Ajax Search ====
+[DEBUG] 2019-11-04 10:58:50.208 [http-nio-80-exec-5] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-04 11:05:38.643 [restartedMain] Application - Starting Application on LMToan with PID 13272 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 11:05:38.643 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 11:05:38.644 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 11:05:39.510 [restartedMain] Application - Started Application in 0.916 seconds (JVM running for 2447.495)
+[DEBUG] 2019-11-04 11:06:09.637 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 11:06:46.599 [restartedMain] Application - Starting Application on LMToan with PID 13272 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 11:06:46.599 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 11:06:46.599 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 11:06:47.480 [restartedMain] Application - Started Application in 0.935 seconds (JVM running for 2515.465)
+[DEBUG] 2019-11-04 11:06:49.231 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 11:09:57.507 [restartedMain] Application - Starting Application on LMToan with PID 13272 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 11:09:57.507 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 11:09:57.508 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 11:09:58.311 [restartedMain] Application - Started Application in 0.856 seconds (JVM running for 2706.296)
+[DEBUG] 2019-11-04 11:10:20.098 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 11:14:12.665 [restartedMain] Application - Starting Application on LMToan with PID 13272 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 11:14:12.665 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 11:14:12.665 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 11:14:13.492 [restartedMain] Application - Started Application in 0.874 seconds (JVM running for 2961.477)
+[DEBUG] 2019-11-04 11:14:16.766 [http-nio-80-exec-1] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-04 11:19:06.433 [restartedMain] Application - Starting Application on LMToan with PID 13272 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 11:19:06.433 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 11:19:06.433 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 11:19:07.295 [restartedMain] Application - Started Application in 0.919 seconds (JVM running for 3255.279)
+[INFO ] 2019-11-04 11:45:30.388 [restartedMain] Application - Starting Application on LMToan with PID 21996 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-04 11:45:30.393 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-04 11:45:30.394 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-04 11:45:33.632 [restartedMain] Application - Started Application in 3.495 seconds (JVM running for 4.762)
+[DEBUG] 2019-11-04 11:45:43.793 [http-nio-80-exec-8] HomeController - ===== toan7@gmail.com vào trang chủ =====

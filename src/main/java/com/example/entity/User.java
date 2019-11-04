@@ -1,7 +1,6 @@
 package com.example.entity;
 // Generated Oct 14, 2019 10:49:53 AM by Hibernate Tools 5.1.10.Final
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -23,21 +22,20 @@ import org.hibernate.annotations.NamedQuery;
 
 @Entity
 @Table(name = "user")
-public class User implements java.io.Serializable{
+public class User implements java.io.Serializable {
 
 	private int userId;
 	private String userName;
 	private String password;
 	private String role;
 
-
 	public User() {
 		this.userId = 0;
 		this.userName = null;
 		this.password = null;
 	}
-	
-	public User( String userName, String password, String role) {
+
+	public User(String userName, String password, String role) {
 		super();
 		this.userId = 0;
 		this.userName = userName;
@@ -45,9 +43,8 @@ public class User implements java.io.Serializable{
 		this.role = role;
 	}
 
-
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "userId")
 	public int getUserId() {
 		return this.userId;
@@ -65,7 +62,7 @@ public class User implements java.io.Serializable{
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	
+
 	@Column(name = "password", length = 15)
 	public String getPassword() {
 		return this.password;

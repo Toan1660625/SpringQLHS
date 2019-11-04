@@ -1,6 +1,10 @@
 package com.example.repository;
 
+import java.io.Serializable;
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import com.example.entity.StudentInfo;
@@ -13,6 +17,7 @@ import com.example.entity.StudentInfo;
  */
 
 @Repository
-public interface StudentInfoRepository extends JpaRepository<StudentInfo, Integer>{
+public interface StudentInfoRepository extends CrudRepository<StudentInfo, Serializable>{
 
+	List<StudentInfo> findAll();
 }
