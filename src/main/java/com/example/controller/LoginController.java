@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
 import org.springframework.security.core.Authentication;
@@ -35,6 +37,8 @@ import com.example.service.UserService;
 @Controller
 public class LoginController {
 
+	private static final Logger logger = LogManager.getLogger(HomeController.class);
+	
 	@Autowired
 	private UserService userService;
 
@@ -61,20 +65,25 @@ public class LoginController {
 
 	}
 
-	@RequestMapping(value = "/logout", method = RequestMethod.GET)
-	public String Logout(Model model, HttpServletRequest request, HttpServletResponse response) {
+// Security tự động xử lý logout	
+	
+//	@RequestMapping(value = "/logout", method = RequestMethod.GET)
+//	public String Logout(Model model, HttpServletRequest request, HttpServletResponse response) {
 
-		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-		if (auth != null) {
-			new SecurityContextLogoutHandler().logout(request, response, auth);
-		}
-		HttpSession session = request.getSession();
-
-		if (session.getAttribute("nameUser") != null) {
-			session.removeAttribute("nameUser");
-			session.invalidate();
-		}
-		return "redirect:/login";
-	}
+//		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+//		if (auth != null) {
+//			new SecurityContextLogoutHandler().logout(request, response, auth);
+//		}
+//		HttpSession session = request.getSession();
+//
+//		if (session.getAttribute("nameUser") != null) {
+//			session.removeAttribute("nameUser");
+//			session.invalidate();
+//		}
+//		if (logger.isDebugEnabled()) {
+//			logger.debug( "===== "+session.getAttribute("userName")+" đã logout =====");
+//		}
+//		return "login";
+//	}
 
 }

@@ -17,63 +17,46 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.Errors;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.entity.DataSearchAjax;
 import com.example.entity.Student;
 import com.example.form.SearchForm;
-import com.example.service.StudentInfoService;
 import com.example.service.StudentService;
-
-//@Controller
 
 @RestController
 public class SearchAjaxController {
 
 	private static final Logger logger = LogManager.getLogger(SearchAjaxController.class);
 
-	@Autowired
 	private StudentService studentService;
-
-	StudentInfoService studentInfoService;
 
 	@Autowired
 	public void setStudentService(StudentService studentService) {
 		this.studentService = studentService;
 	}
-	// Page Search bằng ajax
-//	@PostMapping("/api/search")
-//	public String searchAjax(@Valid SearchForm search, Errors errors,HttpSession http) {
-	
-	
-//	@PostMapping(path = "/api/search",consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE, 
-//	        produces = {MediaType.APPLICATION_ATOM_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
-	
-	@GetMapping("/api/search")
-	public ResponseEntity<?> searchAjax(@Valid SearchForm search, Errors errors, HttpSession http) {
-		
+
+	@PostMapping(path = "/api/search")
+	public ResponseEntity<?> getSearchResultViaAjax(@Valid @RequestBody SearchForm search, BindingResult errors,
+			HttpSession http) {
+
 		DataSearchAjax data = new DataSearchAjax();
-		if (logger.isDebugEnabled()) {
-			logger.debug("=====  Ajax Search ====");
-		}
-	
 		if (errors.hasErrors()) {
 			if (logger.isDebugEnabled()) {
-				logger.debug("===== Have error when search with Ajax= ===="+ search.getStudentName() );
+				logger.debug("===== Have error when search with Ajax= ===="+ search.getStudentName());
 			}
 			data.setMessage(
 					errors.getAllErrors().stream().map(x -> x.getDefaultMessage()).collect(Collectors.joining(",")));
 			return  ResponseEntity.badRequest().body(data);
 
 		}
-		Pageable pageable = PageRequest.of(0, 10);
+		Pageable pageable = PageRequest.of(0, 3);
 		List<Student> listStudent = studentService.findByStudentName(search.getStudentName(), pageable);
 		if (listStudent.isEmpty()) {
 			if (logger.isDebugEnabled()) {
@@ -85,7 +68,7 @@ public class SearchAjaxController {
 				logger.debug("===== Find student: " + search.getStudentName() + " success. =====");
 			}
 			http.setAttribute("search", search.getStudentName());
-			
+
 			List<Student> listStudentName = studentService.findByStudentName(search.getStudentName());
 			int totalPage = studentService.pageNumber(listStudentName.size());
 
@@ -94,18 +77,32 @@ public class SearchAjaxController {
 			data.setTotalPage(totalPage);
 			data.setTotalStudent(listStudentName.size());
 		}
-		data.setData(listStudent);
-		
-		System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" + data.getMessage());
-		System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" + data.getTotalPage());
-		System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" + data.getTotalStudent());
-		for( Student e : data.getData() )
-		{
-			System.out.println("oooooooooooooooooooooooooooo" + e.getStudentName());
-		}	
-		return  ResponseEntity.ok(data);
+		data.setResult(listStudent);
+		return ResponseEntity.ok(data);
 
 	}
 
+	@GetMapping("/api/search/page/{page}")
+	public ResponseEntity<?> getSearchAjax(@PathVariable("page") int page, HttpSession http) {
+		DataSearchAjax result = new DataSearchAjax();
+		String search = (String) http.getAttribute("search");
+
+		List<Student> listStudentName = studentService.findByStudentName(search);
+		int totalPage = studentService.pageNumber(listStudentName.size());
+
+		Pageable pageable = PageRequest.of(page, 3);
+
+		List<Student> student = studentService.findByStudentName(search, pageable);
+		if (student.isEmpty()) {
+			result.setMessage("Student not found!");
+		} else {
+			result.setMessage("success");
+			result.setTotalPage(totalPage);
+			result.setTotalStudent(student.size());
+		}
+		result.setResult(student);
+
+		return ResponseEntity.ok(result);
+	}
 
 }

@@ -1,128 +1,171 @@
-$(document).ready(function () {
-    $("#search-form").submit(function (event) {
-        event.preventDefault();
-    	$("#listJava").css("display", "none");
-     	$("#pageJava").css("display", "none");
-//    	alert("Hello! I am an alert box!!");
-//    	ajax_find_submit();
-    
-//     	var  search = { "studentName": "6"};
-     	
-/*     	var search = JSON.stringify({
-     	    studentName: $("#studentName").val()
-     	});
-     	*/
-     	
-        var search = {}
-        search["studentName"] = $("#studentName").val();
-     	$("#btn-search").prop("disabled", true);
-     	
-//        var studentName = $("#studentName").val();
-     	
-     	
-	    $.ajax({
-				   type: "GET",
-			       url: "/api/search",
-			       contentType: "application/json; charset=utf-8",
-			       data: JSON.stringify({search}),
-			       dataType: 'json',
-			       cache: false,
-			       timeout: 600000,
-				   success: function (result) {
-			 	        console.log('AJAX success: ' + result);
-				        var tbhtml = "<div>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" + result.totalPage+ "</div>";
-				        $('#feedback').html(tbhtml);
-				        $("#btn-search").prop("disabled", false);
-				    },
-				    error: function (e) {
-//				    	  console.log('AJAX ERRORRRRRRRRRRRRR: ');
-				        console.log('AJAX error:' + e);
-//				        $("#btn-search").prop("disabled", false);
-				    }
-		});
+$(document).ready(function() {
+	$("#search-form").submit(function(event) {
+		event.preventDefault();
+		$("#pageJava").css("display", "none");
+		$("#dataList").empty();
+		ajax_find_submit();
 
-     	
-     	
-    });
+	});
 
 });
 
+var totalPage;
+var page = 0;
+var url = "/api/search/page/" + page;
 
-function ajax_find_submit(){
+$("#btn-pre").on("click", function() {
+	if (page >= 1) {
+		page--;
+		fire_ajax_next();
+	}
+});
+
+$("#btn-next").on("click", function() {
+	totalPage = document.getElementById("totalPage").value;
+	if (page < totalPage - 1) {
+		page++;
+
+		fire_ajax_next();
+	}
+});
+
+function ajax_find_submit() {
+
 	var search = {}
-    search["studentName"] = $("#studentName").val();
-	
-	 $.ajax({
-	        type: "POST",
-	        contentType: "application/json",
-	        url: "/api/search",
-	        data: JSON.stringify(search),
-	        dataType: 'json',
-	        cache: false,
-	        timeout: 600000,
-	        success: function (result) {
+	search["studentName"] = $("#studentName").val();
+	$("#btn-search").prop("disabled", true);
+	console.log(search);
+	$
+			.ajax({
+				type : "POST",
+				url : "/api/search",
+				contentType : "application/json",
+				data : JSON.stringify(search),
+				dataType : 'json',
+				cache : false,
+				timeout : 600000,
+				success : function(data) {
+					var tbhtml = "";
 
-	            var tbhtml = "<div class='alert alert-warning alert-dismissible fade show col-sm-8 offset-md-2'>";
-	            tbhtml += "<strong>Warning!"+"kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" + result.totalPage+" </strong>"+obj.getMessage;
-	            tbhtml += '</div>';
+					for (var i = 0; i < data.result.length; i++) {
+						var j = i + 1;
+						tbhtml += "<tr>" + "<td>"
+								+ j
+								+ "</td>"
+								+ "<td>"
+								+ data.result[i].studentCode
+								+ "</td>"
+								+ "<td>"
+								+ data.result[i].studentName
+								+ "</td>"
+								+ "<td>"
+								+ data.result[i].studentInfo.dateOfBirth
+								+ "</td>"
+								+ "<td>"
+								+ data.result[i].studentInfo.address
+								+ "</td>"
+								+ "<td>"
+								+ data.result[i].studentInfo.averageScore
+								+ "</td>"
+								+ "<td>"
+								+ "<form method='GET'>"
+								+ "<button type='submit' class='btn btn-primary'  formaction='/edit/"
+								+ data.result[i].studentInfo.infoId
+								+ "' >Edit</button>"
+								+ "<button type='submit' class='btn btn-danger'  formaction='/delete/"
+								+ data.result[i].studentInfo.infoId
+								+ "' >Delete</button>" + "</form></td>"
+								+ "</tr>";
+					}
 
-	        	$('#feedback').html(tbhtml);
-//	        	var tbhtml  = '<h4 class="text-center">Search reuslt</h4>'
-//			        		 + "<p class='text-center'>There are "+result.totalStudent+" students, divided into "+result.totalPage+" pages</p>"
-//			        		 + "<table class='table table-striped table-bordered text-center'>"
-//			        		 + "<tr>"  
-//			    			 + "<th>No</th>"  
-//							 + "<th>Name</th>"  
-//							 + "<th>Code</th>"
-//							 + "<th>Address</th>"
-//							 + "<th>Birthday</th>"  
-//							 + "<th>Score</th>"  
-//							 + "<th>Edit</th>" 
-//							 + "</tr>";  
-//		            for(var i = 0; i < result.data.length; i++) {
-//		            	var j = i + 1 ;
-//		            	tbhtml += "<tr>"
-//		                 + "<td>"+j+"</td>"
-//		                 + "<td>"+result.data[i].studentName+"</td>"
-//		                 + "<td>"+result.data[i].studentCode+"</td>"
-//		                 + "<td>"+result.data[i].studentInfo.address+"</td>"
-//		                 + "<td>"+result.data[i].studentInfo.getDateOfBirthToString+"</td>"
-//		                 + "<td>"+result.data[i].studentInfo.averageSore+"</td>"
-//		                 + "<td>"
-//		                 + "<form action='/deleteStudent/id/"+data.result[i].studentInfo.infoId+"' onsubmit='return submitForm(this);'>"
-//		                 + "<a href='/infoStudent/id/"+data.result[i].studentId+"' class='btn btn-primary'>Edit</a>&nbsp"
-//	                	 + "<button class='btn btn-danger' >Delete</button></form></td>"
-//		                 + "</tr>";
-//		            }
-//		            tbhtml += "<input type='hidden' id='totalPage' value="+result.totalPage+">";
-//		            var json = "<h4>Ajax Response</h4><pre>"
-//		                + JSON.stringify(result, null, 4) + "</pre>";
-//		            
-//		            if(result.data.length > 0){
-//		            	$('#feedback').html(tbhtml);
-//		            	document.getElementById("pagination").style.display = 'block';
-//		            }else{
-//		            	var error = "<div class='alert alert-warning alert-dismissible fade show col-sm-8 offset-md-2'>";
-//		            	error += "<strong>Warning!</strong> "+result.getMessage+"</div>";
-//		            	$('#feedback').html(error);
-//		            }
-//	            
-//	            console.log("SUCCESS : ", result);
-//	            $("#btn-search").prop("disabled", false);
+					tbhtml += "<input type='hidden' id='totalPage' value="
+							+ data.totalPage + ">";
+					if (data.result.length > 0) {
+						$('#dataList').html(tbhtml);
+						$("#pagination").css("display", "block");
+					} else {
+						alert("Warning! không tìm thấy học sinh "
+								+ data.message);
+					}
 
-	        },
-	        error: function (e) {
-//	        	var obj = JSON.parse(e.responseText);
-//	            var json = "<h4>Search reuslt warning</h4><pre>"
-//	                + obj.getMessage + "</pre>";
-	            var error = "<div class='alert alert-warning alert-dismissible fade show col-sm-8 offset-md-2'>";
-	        	error += "<strong>Warning! </strong>"+obj.getMessage;
-	        	error += '</div>';
-	        	$('#feedback').html(error);
+					console.log("SUCCESS : ", data);
+					$("#btn-search").prop("disabled", false);
+				},
+				error : function(e) {
+					alert("Warning!Tìm kiếm null");
+					console.log("AJAX ERRORRRRRRRRRRRRR: ");
+					console.log("AJAX error:' + e");
+					$("#btn-search").prop("disabled", false);
+				}
+			});
 
-	            console.log("ERROR : ", e);
-//	            $("#btn-search").prop("disabled", false);
-//
-	        }
-	    });
+}
+
+function fire_ajax_next() {
+
+	$
+			.ajax({
+				type : "GET",
+				contentType : "application/json",
+				url : "/api/search/page/" + page,
+				data : "",
+				dataType : 'json',
+				cache : false,
+				timeout : 600000,
+				success : function(data) {
+					var tbhtml = "";
+
+					for (var i = 0; i < data.result.length; i++) {
+						var j = i + 1;
+						tbhtml += "<tr>" + "<td>"
+								+ j
+								+ "</td>"
+								+ "<td>"
+								+ data.result[i].studentCode
+								+ "</td>"
+								+ "<td>"
+								+ data.result[i].studentName
+								+ "</td>"
+								+ "<td>"
+								+ data.result[i].studentInfo.dateOfBirth
+								+ "</td>"
+								+ "<td>"
+								+ data.result[i].studentInfo.address
+								+ "</td>"
+								+ "<td>"
+								+ data.result[i].studentInfo.averageScore
+								+ "</td>"
+								+ "<td>"
+								+ "<form method='GET'>"
+								+ "<button type='submit' class='btn btn-primary'  formaction='/edit/"
+								+ data.result[i].studentInfo.infoId
+								+ "' >Edit</button>"
+								+ "<button type='submit' class='btn btn-danger'  formaction='/delete/"
+								+ data.result[i].studentInfo.infoId
+								+ "' >Delete</button>" + "</form></td>"
+								+ "</tr>";
+					}
+					tbhtml += "<input type='hidden' id='totalPage' value="
+							+ totalPage + ">";
+					if (data.result.length > 0) {
+						$('#dataList').html(tbhtml);
+						$("#pagination").css("display", "block");
+					} else {
+						alert("Warning! không tìm thấy học sinh "
+								+ data.message);
+					}
+
+					console.log("SUCCESS : ", data);
+					$("#btn-search").prop("disabled", false);
+
+				},
+				error : function(e) {
+					document.getElementById("pagination").style.display = 'none';
+					console.log("AJAX ERRORRRRRRRRRRRRR: ");
+					console.log("AJAX error:' + e");
+					$("#btn-search").prop("disabled", false);
+
+				}
+			});
+
 }

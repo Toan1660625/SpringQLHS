@@ -1,7 +1,6 @@
 package com.example.form;
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
 
 /*
  * Copyright (C) 2019 by GMO Runsystem Company
@@ -11,8 +10,8 @@ import javax.validation.constraints.NotEmpty;
  */
 
 public class SearchForm {
-	
-	@NotEmpty(message = "Student name must be not null for search!")
+
+	@NotBlank(message = "Student name must be not null for search!")
 	private String studentName;
 
 	public String getStudentName() {

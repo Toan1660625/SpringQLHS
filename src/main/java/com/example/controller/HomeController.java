@@ -42,9 +42,6 @@ public class HomeController {
 	@Autowired
 	private StudentService studentService;
 
-	@Autowired
-	PasswordEncoder passwordEncoder;
-
 	@RequestMapping(value = { "/index", "/" }, method = RequestMethod.GET)
 	public String inDexGet(Model model, HttpServletRequest request,HttpSession session) {
 		
@@ -52,23 +49,19 @@ public class HomeController {
 			logger.debug( "===== "+session.getAttribute("userName")+" vào trang chủ =====");
 		}
 		
-		List<StudentInfo> listStudentInfo = studentInfoService.findAll();
-		int sizeList = studentService.pageNumber(listStudentInfo.size()); // Số page của tổng danh sách
+		List<Student> listStudentHQL = studentService.findAllHQL();
+		int sizeList = studentService.pageNumber(listStudentHQL.size()); // Số page của tổng danh sách
 		model.addAttribute("sizeList", sizeList);
 		
 		Pageable pageable = PageRequest.of(0, 3);
 		List<Student> listStudent = studentService.findAllStudent(pageable);
 		model.addAttribute("listStudentInfo", listStudent);
-		
+
 		return "index";
 	}
 
 	@RequestMapping(value = "/delete/{infoId}", method = RequestMethod.GET)
 	public String inDexDelete(Model model, HttpServletRequest request, @PathVariable("infoId") int infoId,HttpSession session) {
-
-		
-		String currentUserName = SecurityContextHolder.getContext().getAuthentication().getName();
-		model.addAttribute("currentUserName", currentUserName);
 		
 		try {
 			studentInfoService.deleteById(infoId);
@@ -96,9 +89,6 @@ public class HomeController {
 	public String inDexFind(Model model, HttpServletRequest request, @PathVariable("pageNumber") int pageNumber,
 			@PathParam("findCode") String findCode,HttpSession session) {
 		
-		String currentUserName = SecurityContextHolder.getContext().getAuthentication().getName();
-		model.addAttribute("currentUserName", currentUserName);
-		
 		if (pageNumber == 0) {
 			session.setAttribute("findCode", findCode);
 			pageNumber = pageNumber + 1;
@@ -124,9 +114,6 @@ public class HomeController {
 	@RequestMapping(value = "/page/{pageNumber}", method = RequestMethod.GET)
 	public String inDexPage(Model model, HttpServletRequest request, @PathVariable("pageNumber") int pageNumber) {
 
-		String currentUserName = SecurityContextHolder.getContext().getAuthentication().getName();
-		model.addAttribute("currentUserName", currentUserName);
-		
 		List<StudentInfo> listStudentAll = studentInfoService.findAll();
 		int sizeList = studentService.pageNumber(listStudentAll.size());
 		model.addAttribute("sizeList", sizeList);
@@ -139,8 +126,13 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/403", method = RequestMethod.GET)
-	public String accessDenied() {
+	public String error403() {
 		return "403";
+	}
+	
+	@RequestMapping(value = "/500", method = RequestMethod.GET)
+	public String error500() {
+		return "500";
 	}
 
 }

@@ -18,28 +18,33 @@
 <body>
 	<nav class="navbar navbar-dark bg-dark justify-content-between"
 		style="border-radius: 0px !important;">
-		<a style="width: 1000px;" th:href="@{/index}"><image th:src="@{/images/logo.PNG}" style="height: 30px;width: 20%;float: left;"> </image></a>
-		<form class="form-inline" style="float: right;" method="GET" th:action="@{/logout}">
-			<h5 style="color: aliceblue; font-size: 15px; margin-right: 30px;" th:text= "'Welcom ' + (${session.userName} ?: '')" >
-
-		</h5>
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit" >LogOut</button>
+		<a style="width: 1000px;" th:href="@{/index}"><image
+				th:src="@{/images/logo.PNG}"
+				style="height: 30px;width: 20%;float: left;"> </image></a>
+		<form class="form-inline" style="float: right;" method="GET"
+			th:action="@{/logout}">
+			<h5 style="color: aliceblue; font-size: 15px; margin-right: 30px;"
+				th:text="'Welcom ' + (${session.userName} ?: '')"></h5>
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">LogOut</button>
 		</form>
+
+		<!-- 		<a href="<c:url value="/logout" />">Logout</a> -->
 	</nav>
 	<div class="main">
 		<form id="search-form" method="post" th:action="@{/api/search}">
 			<div class="input1">
 				<div style="width: 28%;">Student Name:</div>
 				<div style="width: 30%;">
-					<input type="text"  id="studentName" name="studentName">
+					<input type="text" id="studentName"> <input type="hidden"
+						name="${_csrf.parameterName}" value="${_csrf.token}" />
 				</div>
 				<div style="width: 30%;">
-					<button  type="submit" id="btn-search" style="margin-left: 20px;" >Search</button>
+					<button type="submit" id="btn-search" style="margin-left: 20px;">Search</button>
 				</div>
 			</div>
-		</form>	
+		</form>
 
-		<!-- <div class="input1">
+		<div class="input1">
 			<div style="width: 28%;">Student Code:</div>
 			<div style="width: 30%;">
 				<input type="text" name="findCode" disabled>
@@ -56,86 +61,100 @@
 				</div>
 			</div>
 			<div style="width: 30%; margin-left: 18px;">
-				<button><a th:href="@{/add}" >Add Student</a></button>
+				<button>
+					<a th:href="@{/add}">Add Student</a>
+				</button>
 			</div>
-		</div> -->
-
-	</div>
-
-
-	<div id="feedback">
-	
-	</div>
-
-<!-- 	Danh sách học sinh khi đăng nhập -->
-	<div class="divlist" id="listJava">
-	<from>
-	<table class="table">
-		<thead class="thead-dark">
-			<tr>
-				<th scope="col">No</th>
-				<th scope="col">Code</th>
-				<th scope="col">Name</th>
-				<th scope="col">Birthday</th>
-				<th scope="col">Address</th>
-				<th scope="col">Score</th>
-				<th scope="col">Edit</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr th:each="student, state : ${listStudentInfo}">
-				<td th:utext="${state.count}"></td>
-				<td th:utext="${student.getStudentCode()}"></td>
-				<td th:utext="${student.getStudentName()}"></td>
-				<td th:utext="${student.getStudentInfo().getDateOfBirth()}"></td>
-				<td th:utext="${student.getStudentInfo().getAddress()}"></td>
-				<td th:utext="${student.getStudentInfo().getAverageScore()}"></td>
-				<td>
-				<form method="GET" >	
-					<button type="submit" class="btn btn-primary"  th:formaction="@{/edit/{infoId}(infoId=${student.getStudentInfo().getInfoId()})}" >Edit</button>	
-					<button type="submit" class="btn btn-danger"  th:formaction="@{/delete/{infoId}(infoId=${student.getStudentInfo().getInfoId()})}" >Delete</button>
-					<!-- <button type="submit" class="btn btn-danger" th:formaction="@{/delete/__${student.getStudentInfo().getInfoId()}__?__student.getStudentId()__}" >Delete</button> -->
-				</form>
-				</td>
-			</tr>
-
-		</tbody>
-	</table>
-	</from>
-	</div>
-	
-	<form method="GET" id="pageJava">
-	<div class="container page">
-		<div class="row">
-		  <div class="col-sm-4" style="text-align: right;"> </div>
-		  <div class="col-sm-4" style="text-align: center;" >
-		  	 <button  th:each="i: ${#numbers.sequence(1, sizeList)}" th:text= ${i}  th:formaction="@{/page/{pageNumber}(pageNumber=${i})}">  </button>
-		  </div>
-		  <div class="col-sm-4" style="text-align: lefft;"> </div>
-		  
 		</div>
+
 	</div>
+
+	<!-- 	Danh sách học sinh khi đăng nhập -->
+	<div class="divlist" id="listJava">
+		<from>
+		<table class="table">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">No</th>
+					<th scope="col">Code</th>
+					<th scope="col">Name</th>
+					<th scope="col">Birthday</th>
+					<th scope="col">Address</th>
+					<th scope="col">Score</th>
+					<th scope="col">Edit</th>
+				</tr>
+			</thead>
+			<tbody id="dataList">
+				<tr th:each="student, state : ${listStudentInfo}">
+					<td th:utext="${state.count}"></td>
+					<td th:utext="${student.getStudentCode()}"></td>
+					<td th:utext="${student.getStudentName()}"></td>
+					<td th:utext="${student.getStudentInfo().getDateOfBirth()}"></td>
+					<td th:utext="${student.getStudentInfo().getAddress()}"></td>
+					<td th:utext="${student.getStudentInfo().getAverageScore()}"></td>
+					<td>
+						<form method="GET">
+							<button type="submit" class="btn btn-primary"
+								th:formaction="@{/edit/{infoId}(infoId=${student.getStudentInfo().getInfoId()})}">Edit</button>
+							<button type="submit" class="btn btn-danger"
+								th:formaction="@{/delete/{infoId}(infoId=${student.getStudentInfo().getInfoId()})}">Delete</button>
+							<!-- <button type="submit" class="btn btn-danger" th:formaction="@{/delete/__${student.getStudentInfo().getInfoId()}__?__student.getStudentId()__}" >Delete</button> -->
+						</form>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+		</from>
+	</div>
+
+
+	<form method="GET" id="pageJava">
+		<div class="container page">
+			<div class="row">
+				<div class="col-sm-4" style="text-align: right;"></div>
+				<div class="col-sm-4" style="text-align: center;">
+					<button th:each="i: ${#numbers.sequence(1, sizeList)}" th:text=${i}
+						th:formaction="@{/page/{pageNumber}(pageNumber=${i})}"></button>
+				</div>
+				<div class="col-sm-4" style="text-align: lefft;"></div>
+
+			</div>
+		</div>
 	</form>
-	
+
+	<div class="text-center container page" id="pagination"
+		style="display: none">
+		<button type="button" id="btn-pre" style="width: 90px;"
+			class="btn btn-primary">Previous</button>
+		<button type="button" id="btn-next" style="width: 90px;"
+			class="btn btn-primary">Next</button>
+	</div>
+
+
 	<!-- partial -->
-	    
-<!-- 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js'></script>
-	<script type="text/javascript" th:src="@{/js/date.js}"></script> -->
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" th:src="@{/js/table.js}"></script>
+
+	<script
+		src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script
+		src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+	<script
+		src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js'></script>
+	<script type="text/javascript" th:src="@{/js/date.js}"></script>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" th:src="@{/js/table.js}"></script>
 
 
-<!-- 	<script>
-            $(function () {
-                   $("#datepicker").datepicker({ 
-                         autoclose: true, 
-                         todayHighlight: true
-                   }).datepicker('update', new Date());
-                   });
-         </script> -->
+	<script>
+		$(function() {
+			$("#datepicker").datepicker({
+				autoclose : true,
+				todayHighlight : true
+			}).datepicker('update', new Date());
+		});
+	</script>
 </body>
 
 </html>

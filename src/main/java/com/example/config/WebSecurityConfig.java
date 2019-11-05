@@ -53,8 +53,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-//		http.csrf().disable();			 //Chuẩn hóa bảo mật html name="${_csrf.parameterName}"
-		http
+		
+		http.csrf().disable()   						//Chuẩn hóa bảo mật html name="${_csrf.parameterName}"
 			.authorizeRequests()
 				.antMatchers("/register", "/login", "/loginSuccess", "/", "/index","/api/search").permitAll()
 				.antMatchers("/delete/{studentId}", "/edit/{infoId}", "/add").hasRole("ADMIN")
@@ -65,13 +65,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.defaultSuccessUrl("/loginSuccess").permitAll() // Sẽ chạy sang GET
 				.failureUrl("/loginSuccess")
 				.and()
-			.logout()
-		//	    .invalidateHttpSession(true)
-		//	    .clearAuthentication(true)
-				.logoutSuccessUrl("/logout").permitAll()
-		//	    .deleteCookies("JSESSIONID")
-				.permitAll().and()
+//			.logout()
+//			    .invalidateHttpSession(true)
+//			    .clearAuthentication(true)
+//				.logoutSuccessUrl("/logout").permitAll()
+//			    .deleteCookies("JSESSIONID")
+//				.permitAll().and()
 			.exceptionHandling().accessDeniedPage("/403");
+
+	
+	
 
 	}
 

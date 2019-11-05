@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
 <body>
-<h1> 403! Bạn không có quyền truy cập vào trang này, quay về <a th:href="@{/index}">trang chủ</a></h1>
+
+	<a th:href="@{/index}"> <image style="height: 500px;width: 100%; "
+			th:src="@{/images/403.PNG}"> </image></a>
 
 </body>
 </html>

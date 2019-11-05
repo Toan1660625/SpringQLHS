@@ -9,6 +9,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import com.example.entity.Student;
@@ -42,5 +43,12 @@ public interface StudentRepository extends CrudRepository<Student,Serializable>{
 	@Query(value = "SELECT * FROM student",nativeQuery = true)  
 	List<Student> findAllStudent(Pageable pageable);
 	
-	Optional<Student> findByStudentCode(String studentCode); // findBy.. + Ten Cot la truy van ra cot do
+	Optional<Student> findByStudentCode(String studentCode); 				// findBy.. + Ten Cot la truy van ra cot do
+	
+	
+	@Query(name = "HQL_GET_ALL_STUDENT_BY_NAME", nativeQuery = true) 		 // findByStudentNameHQL("%6%"); Để % khi query
+	List<Student> findByStudentNameHQL(@Param("name") String studentName);
+	
+	@Query(name = "HQL_GET_ALL_STUDENT", nativeQuery = true)
+	List<Student> findAllHQL();
 }

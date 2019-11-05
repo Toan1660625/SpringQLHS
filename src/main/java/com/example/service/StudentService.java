@@ -100,6 +100,30 @@ public class StudentService {
 
 	}
 
+	
+	public List<Student> findByStudentNameHQL(String studentName) {
+		List<Student> studentList = studentReponsitory.findByStudentNameHQL(studentName);
+		if (studentList.size() > 0) {
+			return studentList;
+		} else {
+			return new ArrayList<Student>();
+		}
+
+	}
+	
+	
+	public List<Student> findAllHQL() {
+		List<Student> studentList = studentReponsitory.findAllHQL();
+
+		if (studentList.size() > 0) {
+			return studentList;
+		} else {
+			return new ArrayList<Student>();
+		}
+
+	}
+	
+	
 	@Transactional(rollbackFor = {Exception.class})
 	public void save(Student entity) {
 		try {

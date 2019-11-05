@@ -18,12 +18,6 @@
 		<mapping class="com.example.entity.User" />
 		<mapping class="com.example.entity.Student" />
 		<mapping class="com.example.entity.StudentInfo" />
-		
-<!-- 	<mapping resource="com/example/entity/StudentInfo.hbm.xml" />
-		<mapping resource="com/example/entity/Student.hbm.xml" />
-		<mapping resource="com/example/entity/User.hbm.xml" />
-		<mapping resource="com/example/entity/User.xml" /> -->
-
 
 	</session-factory>
 </hibernate-configuration>
