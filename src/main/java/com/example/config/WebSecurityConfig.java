@@ -26,26 +26,16 @@ import com.example.service.UserDetailsServiceImpl;
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-//	
-//	    @Autowired
-//	    private DataSource dataSource;
-
 	@Autowired
 	private UserDetailsServiceImpl userDetailsService;
 
+	//
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
 
-//		@Bean
-//		public DaoAuthenticationProvider authenticationProvider() {
-//			DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
-//			authProvider.setUserDetailsService(userDetailsService);
-//			authProvider.setPasswordEncoder(passwordEncoder());
-//			return authProvider;
-//		}
-
+	
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
 		auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
@@ -53,28 +43,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		
-		http.csrf().disable()   						//Chuẩn hóa bảo mật html name="${_csrf.parameterName}"
-			.authorizeRequests()
-				.antMatchers("/register", "/login", "/loginSuccess", "/", "/index","/api/search").permitAll()
-				.antMatchers("/delete/{studentId}", "/edit/{infoId}", "/add").hasRole("ADMIN")
-		//	    .anyRequest().authenticated()
-				.and()
-			.formLogin().loginPage("/login").usernameParameter("userName").passwordParameter("password")
-		//	    .loginProcessingUrl("/index").permitAll()
-				.defaultSuccessUrl("/loginSuccess").permitAll() // Sẽ chạy sang GET
-				.failureUrl("/loginSuccess")
-				.and()
-//			.logout()
-//			    .invalidateHttpSession(true)
-//			    .clearAuthentication(true)
-//				.logoutSuccessUrl("/logout").permitAll()
-//			    .deleteCookies("JSESSIONID")
-//				.permitAll().and()
-			.exceptionHandling().accessDeniedPage("/403");
 
-	
-	
+		http.csrf().disable() 					// disable csrf security name="${_csrf.parameterName}"
+				.authorizeRequests()
+					.antMatchers("/register", "/login", "/loginSuccess", "/", "/index", "/api/search").permitAll()
+					.antMatchers("/delete/{studentId}", "/edit/{infoId}", "/add").hasRole("ADMIN").and()
+				.formLogin()
+					.loginPage("/login").usernameParameter("userName").passwordParameter("password")	 // handling login
+				.defaultSuccessUrl("/loginSuccess").permitAll()											 // Run to GET
+				.failureUrl("/loginSuccess").and().exceptionHandling().accessDeniedPage("/403");
 
 	}
 

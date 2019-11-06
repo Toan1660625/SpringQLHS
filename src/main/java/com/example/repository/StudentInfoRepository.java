@@ -17,7 +17,7 @@ import com.example.entity.StudentInfo;
  */
 
 @Repository
-public interface StudentInfoRepository extends CrudRepository<StudentInfo, Serializable>{
+public interface StudentInfoRepository extends CrudRepository<StudentInfo, Serializable> {
 
 	List<StudentInfo> findAll();
 }

@@ -52,33 +52,7 @@ public class UserService {
 		}
 	}
 
-	public User getUserByEmailHQL(String email) {
-//			SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
-//			Session session = sessionFactory.openSession();
-//			session.beginTransaction();		
-//	    	User user = null;
-//	    	Query query = session.getNamedQuery("HQL_GET_USER_NAME");
-//	    	 List list = query.list();
-//	        session.getTransaction().commit();
-//	        session.close();
-
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("mnf");
-		EntityManager em = emf.createEntityManager();
-		em.getTransaction().begin();
-
-		List<User> list = em.createNamedQuery("User.findAll", User.class).getResultList();
-
-		if (list != null && list.size() > 0) {
-			User user = (User) list.get(0);
-			System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" + user.getUserName());
-			return user;
-		} else {
-			return null;
-		}
-
-	}
-
-	@Transactional(rollbackFor = {Exception.class})
+	@Transactional(rollbackFor = { Exception.class })
 	public void save(User entity) {
 		try {
 			userRepository.save(entity);

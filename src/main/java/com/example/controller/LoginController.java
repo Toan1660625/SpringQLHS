@@ -65,7 +65,7 @@ public class LoginController {
 
 	}
 
-// Security tự động xử lý logout	
+// Security auto hanling logout	
 	
 //	@RequestMapping(value = "/logout", method = RequestMethod.GET)
 //	public String Logout(Model model, HttpServletRequest request, HttpServletResponse response) {

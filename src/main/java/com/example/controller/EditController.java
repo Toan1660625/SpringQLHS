@@ -41,6 +41,7 @@ public class EditController {
 	@Autowired
 	private StudentService studentService;
 
+	//load form edit student set data input
 	@RequestMapping(value = "/edit/{infoId}", method = RequestMethod.GET)
 	public String inDexEditGet(Model model, HttpServletRequest request, @PathVariable("infoId") int infoId) {
 		StudentInfo studentInfo = studentInfoService.findById(infoId);
@@ -53,6 +54,7 @@ public class EditController {
 		String averageScore = String.valueOf(studentInfo.getAverageScore());
 		String birthDay = studentInfo.getDateOfBirthToString();
 		
+		//set data from edit student
 		editStudentForm.setStudentId(studentId);
 		editStudentForm.setStudentCode(studentCode);
 		editStudentForm.setStudentName(studentName);
@@ -64,6 +66,7 @@ public class EditController {
 		return "editstudent";
 	}
 
+	//Edit student in database
 	@RequestMapping(value = "/edit", method = RequestMethod.POST)
 	public String inDexEditPost(@Valid EditStudentForm editStudentForm, BindingResult result, Model model,
 			HttpServletRequest request) {
@@ -76,7 +79,7 @@ public class EditController {
 		} else {
 			int studentId = Integer.parseInt(editStudentForm.getStudentId());
 			Student student = studentService.findById(studentId);
-			StudentInfo studentInfo = studentInfoService.findById(student.getStudentInfo().getInfoId());
+			StudentInfo studentInfo = studentInfoService.findById(student.getStudentInfo().getInfoId());		//find by student Id
 
 			SimpleDateFormat formatter = new SimpleDateFormat("MM-dd-yyyy");
 

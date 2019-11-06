@@ -100,7 +100,6 @@ public class StudentService {
 
 	}
 
-	
 	public List<Student> findByStudentNameHQL(String studentName) {
 		List<Student> studentList = studentReponsitory.findByStudentNameHQL(studentName);
 		if (studentList.size() > 0) {
@@ -110,8 +109,7 @@ public class StudentService {
 		}
 
 	}
-	
-	
+
 	public List<Student> findAllHQL() {
 		List<Student> studentList = studentReponsitory.findAllHQL();
 
@@ -122,9 +120,8 @@ public class StudentService {
 		}
 
 	}
-	
-	
-	@Transactional(rollbackFor = {Exception.class})
+
+	@Transactional(rollbackFor = { Exception.class })
 	public void save(Student entity) {
 		try {
 			studentReponsitory.save(entity);
@@ -133,7 +130,7 @@ public class StudentService {
 		}
 	}
 
-	@Transactional(rollbackFor = {Exception.class})
+	@Transactional(rollbackFor = { Exception.class })
 	public void deleteById(Integer id) {
 		Optional<Student> student = studentReponsitory.findById(id);
 		if (student.isPresent()) {

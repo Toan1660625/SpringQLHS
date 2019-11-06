@@ -49,11 +49,11 @@ public class HomeController {
 			logger.debug( "===== "+session.getAttribute("userName")+" vào trang chủ =====");
 		}
 		
-		List<Student> listStudentHQL = studentService.findAllHQL();
-		int sizeList = studentService.pageNumber(listStudentHQL.size()); // Số page của tổng danh sách
+		List<Student> listStudentHQL = studentService.findAllHQL();      
+		int sizeList = studentService.pageNumber(listStudentHQL.size()); 		// Number page total list
 		model.addAttribute("sizeList", sizeList);
 		
-		Pageable pageable = PageRequest.of(0, 3);
+		Pageable pageable = PageRequest.of(0, 3);								//Get 3 student 
 		List<Student> listStudent = studentService.findAllStudent(pageable);
 		model.addAttribute("listStudentInfo", listStudent);
 
@@ -64,9 +64,9 @@ public class HomeController {
 	public String inDexDelete(Model model, HttpServletRequest request, @PathVariable("infoId") int infoId,HttpSession session) {
 		
 		try {
-			studentInfoService.deleteById(infoId);
+			studentInfoService.deleteById(infoId);											//delete student
 			if (logger.isDebugEnabled()) {
-				logger.debug( "===== "+session.getAttribute("userName")+" đã xóa 1 học sinh =====");
+				logger.debug( "===== "+session.getAttribute("userName")+" đã xóa 1 học sinh =====");         	//write log delete
 			}
 		} catch (Exception e) {
 			return "500";
@@ -77,7 +77,7 @@ public class HomeController {
 		model.addAttribute("sizeList", sizeList);
 
 		Pageable pageable = PageRequest.of(0, 3);
-		List<Student> listStudent = studentService.findAllStudent(pageable);
+		List<Student> listStudent = studentService.findAllStudent(pageable);						
 		model.addAttribute("listStudentInfo", listStudent);
 
 		return "index";
@@ -90,8 +90,8 @@ public class HomeController {
 			@PathParam("findCode") String findCode,HttpSession session) {
 		
 		if (pageNumber == 0) {
-			session.setAttribute("findCode", findCode);
-			pageNumber = pageNumber + 1;
+			session.setAttribute("findCode", findCode);												//save session student code
+			pageNumber = pageNumber + 1;			
 		}
 
 		findCode = (String) session.getAttribute("findCode");
@@ -99,7 +99,7 @@ public class HomeController {
 		int sizeList = studentService.pageNumber(listStudentFindAll.size());
 		model.addAttribute("sizeList", sizeList);
 
-		Pageable pageable = PageRequest.of(pageNumber - 1, 3);
+		Pageable pageable = PageRequest.of(pageNumber - 1, 3);										// get student number page
 		List<Student> listStudent = studentService.findByStudentCodeLike(findCode, pageable);
 		model.addAttribute("listStudentInfo", listStudent);
 
@@ -111,6 +111,7 @@ public class HomeController {
 
 	}
 
+	//
 	@RequestMapping(value = "/page/{pageNumber}", method = RequestMethod.GET)
 	public String inDexPage(Model model, HttpServletRequest request, @PathVariable("pageNumber") int pageNumber) {
 

@@ -42,7 +42,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 	public void completeSetup() {
 		userRepository = applicationContext.getBean(UserRepository.class);
 	}
-	
+
 	// Hàm lưu vai trò user
 	@Override
 	@Transactional(readOnly = true)

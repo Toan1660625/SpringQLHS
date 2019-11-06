@@ -3387,3 +3387,56 @@
 [DEBUG] 2019-11-05 17:13:34.031 [http-nio-80-exec-3] HomeController - ===== toan11@gmail.com vào trang chủ =====
 [DEBUG] 2019-11-05 17:13:35.563 [http-nio-80-exec-7] HomeController - ===== toan11@gmail.com vào trang chủ =====
 [DEBUG] 2019-11-05 17:13:37.104 [http-nio-80-exec-6] HomeController - ===== toan11@gmail.com vào trang chủ =====
+[INFO ] 2019-11-05 17:53:41.003 [restartedMain] Application - Starting Application on LMToan with PID 18528 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-05 17:53:41.009 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-05 17:53:41.010 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-05 17:53:44.834 [restartedMain] Application - Started Application in 4.162 seconds (JVM running for 5.472)
+[DEBUG] 2019-11-05 17:53:55.974 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:54:00.729 [http-nio-80-exec-10] SearchAjaxController - ===== Find student: 6 success. =====
+[DEBUG] 2019-11-05 17:54:07.097 [http-nio-80-exec-3] SearchAjaxController - ===== Find student: Le success. =====
+[DEBUG] 2019-11-05 17:54:15.196 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:54:19.489 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com đã xóa 1 học sinh =====
+[DEBUG] 2019-11-05 17:54:25.458 [http-nio-80-exec-1] SearchAjaxController - ===== Find student: Le Minh Toan success. =====
+[DEBUG] 2019-11-05 17:54:30.192 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com đã xóa 1 học sinh =====
+[DEBUG] 2019-11-05 17:54:35.626 [http-nio-80-exec-2] SearchAjaxController - ===== Find student: Le Minh Toan success. =====
+[DEBUG] 2019-11-05 17:54:42.228 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:55:25.995 [http-nio-80-exec-8] StudentController - ===== Lỗi thêm stdeunt null =====
+[DEBUG] 2019-11-05 17:55:34.029 [http-nio-80-exec-4] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:55:54.264 [http-nio-80-exec-4] SearchAjaxController - ===== Find student: 6 success. =====
+[DEBUG] 2019-11-05 17:56:02.422 [http-nio-80-exec-3] SearchAjaxController - ===== Have error when search with Ajax= ====
+[DEBUG] 2019-11-05 17:56:10.139 [http-nio-80-exec-1] SearchAjaxController - ===== Not found student: p =====
+[DEBUG] 2019-11-05 17:56:25.060 [http-nio-80-exec-3] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:56:29.048 [http-nio-80-exec-9] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:56:30.465 [http-nio-80-exec-6] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:56:31.724 [http-nio-80-exec-8] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:56:33.968 [http-nio-80-exec-9] SearchAjaxController - ===== Find student: 6 success. =====
+[DEBUG] 2019-11-05 17:56:37.843 [http-nio-80-exec-2] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:56:38.167 [http-nio-80-exec-10] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:56:38.883 [http-nio-80-exec-2] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:56:39.591 [http-nio-80-exec-10] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:56:40.219 [http-nio-80-exec-2] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:56:40.737 [http-nio-80-exec-10] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:56:41.444 [http-nio-80-exec-2] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:56:42.124 [http-nio-80-exec-10] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 17:56:44.328 [http-nio-80-exec-2] SearchAjaxController - ===== Have error when search with Ajax= ====
+[DEBUG] 2019-11-05 17:56:46.094 [http-nio-80-exec-1] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[INFO ] 2019-11-05 21:15:48.743 [restartedMain] Application - Starting Application on LMToan with PID 4240 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-05 21:15:48.751 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-05 21:15:48.753 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-05 21:15:55.826 [restartedMain] Application - Started Application in 7.635 seconds (JVM running for 9.614)
+[DEBUG] 2019-11-05 21:16:30.443 [http-nio-80-exec-3] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 21:16:35.493 [http-nio-80-exec-8] SearchAjaxController - ===== Find student: Le Minh Toan success. =====
+[DEBUG] 2019-11-05 21:16:43.162 [http-nio-80-exec-5] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 21:16:47.107 [http-nio-80-exec-4] SearchAjaxController - ===== Have error when search with Ajax= ====
+[DEBUG] 2019-11-05 21:17:35.326 [http-nio-80-exec-8] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 21:18:07.738 [http-nio-80-exec-3] HomeController - ===== toan5@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-05 21:18:10.446 [http-nio-80-exec-8] SearchAjaxController - ===== Find student: Le Minh Toan success. =====
+[DEBUG] 2019-11-05 21:18:11.747 [http-nio-80-exec-5] SearchAjaxController - ===== Find student: Le Minh Toan success. =====
+[DEBUG] 2019-11-05 21:18:13.283 [http-nio-80-exec-6] SearchAjaxController - ===== Find student: Le Minh Toan success. =====
+[DEBUG] 2019-11-05 21:18:14.014 [http-nio-80-exec-9] SearchAjaxController - ===== Find student: Le Minh Toan success. =====
+[DEBUG] 2019-11-05 21:18:19.930 [http-nio-80-exec-1] SearchAjaxController - ===== Find student: Le Minh Toan success. =====
+[DEBUG] 2019-11-05 21:18:20.503 [http-nio-80-exec-3] SearchAjaxController - ===== Find student: Le Minh Toan success. =====
+[DEBUG] 2019-11-05 21:19:53.348 [http-nio-80-exec-8] SearchAjaxController - ===== Find student: Le Minh Toan success. =====
+[DEBUG] 2019-11-05 21:19:56.525 [http-nio-80-exec-5] SearchAjaxController - ===== Find student: 6 success. =====
+[DEBUG] 2019-11-05 21:20:01.426 [http-nio-80-exec-6] SearchAjaxController - ===== Not found student: 7 =====
+[DEBUG] 2019-11-05 21:20:05.949 [http-nio-80-exec-9] SearchAjaxController - ===== Find student: 6 success. =====

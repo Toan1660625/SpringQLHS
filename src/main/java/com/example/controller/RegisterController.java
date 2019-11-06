@@ -19,7 +19,7 @@ import com.example.form.RegisterForm;
 import com.example.service.UserService;
 
 /*
- * Copyright (C) 2019 by GMO Runsystem Company
+ * Copyright by GMO Runsystem Company
  * Create RegisterController  class
  * @version 1.0
  * @author ToanLM

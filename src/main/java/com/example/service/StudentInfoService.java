@@ -45,8 +45,9 @@ public class StudentInfoService {
 		}
 	}
 
-	 //Không nên trong try/catch vì có lỗi sẽ chạy zo Exception e và hàm Transactional sẽ không bắt được lỗi để Rollback(không có lỗi)
-	@Transactional(rollbackFor = {Exception.class})
+	// Không nên trong try/catch vì có lỗi sẽ chạy zo Exception e và hàm
+	// Transactional sẽ không bắt được lỗi để Rollback(không có lỗi)
+	@Transactional(rollbackFor = { Exception.class })
 	public void save(StudentInfo entity) {
 //		try {
 //			studentInfoReponsitory.save(entity);
@@ -55,10 +56,10 @@ public class StudentInfoService {
 //			System.out.println("Lỗi save studentInfo");
 //		}
 		studentInfoReponsitory.save(entity);
-		
+
 	}
 
-	@Transactional(rollbackFor = {Exception.class})
+	@Transactional(rollbackFor = { Exception.class })
 	public void deleteById(Integer id) {
 		Optional<StudentInfo> studentInfo = studentInfoReponsitory.findById(id);
 		if (studentInfo.isPresent()) {

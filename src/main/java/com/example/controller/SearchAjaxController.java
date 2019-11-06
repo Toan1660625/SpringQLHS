@@ -1,10 +1,4 @@
 package com.example.controller;
-/*
- * Copyright (C) 2019 by GMO Runsystem Company
- * Create RegisterController  class
- * @version 1.0
- * @author ToanLM
- */
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -29,6 +23,13 @@ import com.example.entity.DataSearchAjax;
 import com.example.entity.Student;
 import com.example.form.SearchForm;
 import com.example.service.StudentService;
+
+/*
+ * Copyright (C) 2019 by GMO Runsystem Company
+ * Create SearchAjaxController  class
+ * @version 1.0
+ * @author ToanLM
+ */
 
 @RestController
 public class SearchAjaxController {

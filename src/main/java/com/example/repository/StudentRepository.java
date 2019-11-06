@@ -23,32 +23,32 @@ import com.example.entity.StudentInfo;
  */
 
 @Repository
-public interface StudentRepository extends CrudRepository<Student,Serializable>{    
-	 // Chỗ Serializable là chỗ các khóa chính trong các hàm được truyền vào kiểu param gì
-	
+public interface StudentRepository extends CrudRepository<Student, Serializable> {
+	// Chỗ Serializable là chỗ các khóa chính trong các hàm được truyền vào kiểu
+	// param gì
+
 	List<Student> findAll();
-	
-	@Query(value = "SELECT * FROM student WHERE student.student_code LIKE %?1%",nativeQuery = true)
-	List<Student> findByStudentCodeLike(String studentCode,Pageable pageable);
-	
-	@Query(value = "SELECT * FROM student WHERE student.student_name LIKE %?1%",nativeQuery = true)
-	List<Student> findByStudentName(String studentName,Pageable pageable);
-	
-	@Query(value = "SELECT * FROM student WHERE student.student_code LIKE %?1%",nativeQuery = true)
+
+	@Query(value = "SELECT * FROM student WHERE student.student_code LIKE %?1%", nativeQuery = true)
+	List<Student> findByStudentCodeLike(String studentCode, Pageable pageable);
+
+	@Query(value = "SELECT * FROM student WHERE student.student_name LIKE %?1%", nativeQuery = true)
+	List<Student> findByStudentName(String studentName, Pageable pageable);
+
+	@Query(value = "SELECT * FROM student WHERE student.student_code LIKE %?1%", nativeQuery = true)
 	List<Student> findByStudentCodeLike(String studentCode);
-	
-	@Query(value = "SELECT * FROM student WHERE student.student_name LIKE %?1%",nativeQuery = true)
+
+	@Query(value = "SELECT * FROM student WHERE student.student_name LIKE %?1%", nativeQuery = true)
 	List<Student> findByStudentName(String studentName);
-	
-	@Query(value = "SELECT * FROM student",nativeQuery = true)  
+
+	@Query(value = "SELECT * FROM student", nativeQuery = true)
 	List<Student> findAllStudent(Pageable pageable);
-	
-	Optional<Student> findByStudentCode(String studentCode); 				// findBy.. + Ten Cot la truy van ra cot do
-	
-	
-	@Query(name = "HQL_GET_ALL_STUDENT_BY_NAME", nativeQuery = true) 		 // findByStudentNameHQL("%6%"); Để % khi query
+
+	Optional<Student> findByStudentCode(String studentCode); // findBy.. + Ten Cot la truy van ra cot do
+
+	@Query(name = "HQL_GET_ALL_STUDENT_BY_NAME", nativeQuery = true) // findByStudentNameHQL("%6%"); Để % khi query
 	List<Student> findByStudentNameHQL(@Param("name") String studentName);
-	
+
 	@Query(name = "HQL_GET_ALL_STUDENT", nativeQuery = true)
 	List<Student> findAllHQL();
 }
