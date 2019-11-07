@@ -33,11 +33,20 @@ public class RegisterController {
 	@Autowired
 	private UserService userService;
 
+	/**
+	 * @return view register.html 
+	 */
 	@RequestMapping(value = "/register", method = RequestMethod.GET)
 	public String register(Model model) {
 		return "register";
 	}
 
+	/**
+	 *Handling register user 
+	 *
+	 *@param  @Valid RegisterForm  get data down 
+	 * @return view register.html
+	 */
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
 	public String registerPost(@Valid RegisterForm registerForm, BindingResult result, Model model,
 			HttpServletRequest request) {
@@ -46,24 +55,24 @@ public class RegisterController {
 		String password = registerForm.getPassword();
 		String passwordConfirm = registerForm.getPasswordConfirm();
 
-		User checkUser = userService.getUserByEmail(userName);
-		if (checkUser == null) {
-			if (password.equals(passwordConfirm)) {
+		User checkUser = userService.getUserByEmail(userName);							//find user in DB
+		if (checkUser == null) {														// if not found else register
+			if (password.equals(passwordConfirm)) {										// compare password
 
-				PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-				String hashedPassword = passwordEncoder.encode(password);
+				PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();		
+				String hashedPassword = passwordEncoder.encode(password);				// encode password
 
 				User addUser = new User(userName, hashedPassword, "ROLE_MEMBER");
 				
 				try {
-					userService.save(addUser);
+					userService.save(addUser);											//save user in DB
 				} catch (Exception e) {
 					return "500";
 				} 
 			
 
 				String messString = "Đăng ký thành công";
-				logger.debug("======Đăng ký thành công======");
+				logger.debug("======Đăng ký thành công======");							//write Loggger
 				String color = "blue";
 				model.addAttribute("color", color);
 				model.addAttribute("messString", messString);

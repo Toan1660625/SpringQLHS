@@ -43,22 +43,28 @@ public class SearchAjaxController {
 		this.studentService = studentService;
 	}
 
+	/**
+	 *Handling return API list student by Name
+	 *
+	 * @param  @Valid @RequestBody SearchForm get data down 
+	 * @return API list student by Name
+	 */
 	@PostMapping(path = "/api/search")
 	public ResponseEntity<?> getSearchResultViaAjax(@Valid @RequestBody SearchForm search, BindingResult errors,
 			HttpSession http) {
 
-		DataSearchAjax data = new DataSearchAjax();
+		DataSearchAjax data = new DataSearchAjax();						//Create data transfer up Ajax
 		if (errors.hasErrors()) {
 			if (logger.isDebugEnabled()) {
 				logger.debug("===== Have error when search with Ajax= ===="+ search.getStudentName());
 			}
 			data.setMessage(
 					errors.getAllErrors().stream().map(x -> x.getDefaultMessage()).collect(Collectors.joining(",")));
-			return  ResponseEntity.badRequest().body(data);
+			return  ResponseEntity.badRequest().body(data);				//if error else return error about ajax
 
 		}
 		Pageable pageable = PageRequest.of(0, 3);
-		List<Student> listStudent = studentService.findByStudentName(search.getStudentName(), pageable);
+		List<Student> listStudent = studentService.findByStudentName(search.getStudentName(), pageable);	//get top 3 student in all student
 		if (listStudent.isEmpty()) {
 			if (logger.isDebugEnabled()) {
 				logger.debug("===== Not found student: " + search.getStudentName() + " =====");
@@ -71,7 +77,7 @@ public class SearchAjaxController {
 			http.setAttribute("search", search.getStudentName());
 
 			List<Student> listStudentName = studentService.findByStudentName(search.getStudentName());
-			int totalPage = studentService.pageNumber(listStudentName.size());
+			int totalPage = studentService.pageNumber(listStudentName.size());				//total number page all student by name
 
 			http.setAttribute("total", totalPage);
 			data.setMessage("success");
@@ -79,21 +85,27 @@ public class SearchAjaxController {
 			data.setTotalStudent(listStudentName.size());
 		}
 		data.setResult(listStudent);
-		return ResponseEntity.ok(data);
+		return ResponseEntity.ok(data);												//return API
 
 	}
 
+	/**
+	 *Handling return API list student by Name
+	 *
+	 * @param  @PathVariable page get data down 
+	 * @return API list student by Name
+	 */
 	@GetMapping("/api/search/page/{page}")
 	public ResponseEntity<?> getSearchAjax(@PathVariable("page") int page, HttpSession http) {
 		DataSearchAjax result = new DataSearchAjax();
 		String search = (String) http.getAttribute("search");
 
-		List<Student> listStudentName = studentService.findByStudentName(search);
+		List<Student> listStudentName = studentService.findByStudentName(search);					//find student by Name
 		int totalPage = studentService.pageNumber(listStudentName.size());
 
 		Pageable pageable = PageRequest.of(page, 3);
 
-		List<Student> student = studentService.findByStudentName(search, pageable);
+		List<Student> student = studentService.findByStudentName(search, pageable);						//get 3 student follow pageNumber
 		if (student.isEmpty()) {
 			result.setMessage("Student not found!");
 		} else {

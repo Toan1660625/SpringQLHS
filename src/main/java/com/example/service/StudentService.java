@@ -26,6 +26,7 @@ public class StudentService {
 	@Autowired
 	StudentRepository studentReponsitory;
 
+	// Find all Student
 	public List<Student> findAll() {
 		List<Student> studentList = studentReponsitory.findAll();
 
@@ -36,6 +37,7 @@ public class StudentService {
 		}
 	}
 
+	// Find Student by ID
 	public Student findById(Integer id) {
 		Optional<Student> student = studentReponsitory.findById(id);
 		if (student.isPresent()) {
@@ -46,6 +48,7 @@ public class StudentService {
 
 	}
 
+	// Find Student by Code 
 	public Student findBystudentCode(String studentCode) {
 		Optional<Student> student = studentReponsitory.findByStudentCode(studentCode);
 		if (student.isPresent()) {
@@ -56,6 +59,7 @@ public class StudentService {
 
 	}
 
+	// Find Student by Name
 	public List<Student> findByStudentName(String studentName) {
 		List<Student> studentList = studentReponsitory.findByStudentName(studentName);
 
@@ -67,6 +71,7 @@ public class StudentService {
 
 	}
 
+	// Find Student by Code using Like
 	public List<Student> findByStudentCodeLike(String studentCode) {
 		List<Student> studentList = studentReponsitory.findByStudentCodeLike(studentCode);
 
@@ -78,6 +83,7 @@ public class StudentService {
 
 	}
 
+	// Find Student by Name using  Pageable to page
 	public List<Student> findByStudentName(String studentName, Pageable pageable) {
 		List<Student> studentList = studentReponsitory.findByStudentName(studentName, pageable);
 
@@ -89,6 +95,7 @@ public class StudentService {
 
 	}
 
+	// Find Student by Code using Like
 	public List<Student> findByStudentCodeLike(String studentCode, Pageable pageable) {
 		List<Student> studentList = studentReponsitory.findByStudentCodeLike(studentCode, pageable);
 
@@ -100,6 +107,7 @@ public class StudentService {
 
 	}
 
+	// Find Student by Name using query HQL
 	public List<Student> findByStudentNameHQL(String studentName) {
 		List<Student> studentList = studentReponsitory.findByStudentNameHQL(studentName);
 		if (studentList.size() > 0) {
@@ -110,6 +118,7 @@ public class StudentService {
 
 	}
 
+	// Find all Student using query HQL
 	public List<Student> findAllHQL() {
 		List<Student> studentList = studentReponsitory.findAllHQL();
 
@@ -121,6 +130,7 @@ public class StudentService {
 
 	}
 
+	// Save Student have using Rollback when error
 	@Transactional(rollbackFor = { Exception.class })
 	public void save(Student entity) {
 		try {
@@ -130,6 +140,7 @@ public class StudentService {
 		}
 	}
 
+	//Delete Student by ID have using Rollback when error
 	@Transactional(rollbackFor = { Exception.class })
 	public void deleteById(Integer id) {
 		Optional<Student> student = studentReponsitory.findById(id);
@@ -141,12 +152,13 @@ public class StudentService {
 
 	}
 
+	// Find all Student
 	public List<Student> findAllStudent(Pageable pageable) {
 		List<Student> studentList = studentReponsitory.findAllStudent(pageable);
 		return studentList;
 	}
 
-	// Hàm lấy ra số Page của 1 List
+	// Function get number column of page
 	public int pageNumber(int sizeList) {
 		if (sizeList % 3 == 0) {
 			return sizeList = sizeList / 3;

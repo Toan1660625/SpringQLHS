@@ -18,7 +18,10 @@ import com.example.entity.User;
 public class HibernateUtil {
 
 	private static SessionFactory sessionFactory;
-
+	
+	 /**
+	  * Scan and config hbm.xml
+	  */
 	private static SessionFactory buildSessionFactory() {
 		try {
 			// Create the SessionFactory from hibernate.cfg.xml

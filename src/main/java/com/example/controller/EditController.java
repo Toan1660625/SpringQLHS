@@ -33,15 +33,21 @@ import com.example.service.StudentService;
 
 @Controller
 public class EditController {
-
+	
 	private static final Logger logger = LogManager.getLogger(EditController.class);
+	
 	@Autowired
 	private StudentInfoService studentInfoService;
 
 	@Autowired
 	private StudentService studentService;
 
-	//load form edit student set data input
+	/**
+	 * Load form edit student set data input
+	 *
+	 * @param  infoId get from row student in page index 
+	 * @return view editstudent.html and set data form
+	 */
 	@RequestMapping(value = "/edit/{infoId}", method = RequestMethod.GET)
 	public String inDexEditGet(Model model, HttpServletRequest request, @PathVariable("infoId") int infoId) {
 		StudentInfo studentInfo = studentInfoService.findById(infoId);
@@ -54,7 +60,7 @@ public class EditController {
 		String averageScore = String.valueOf(studentInfo.getAverageScore());
 		String birthDay = studentInfo.getDateOfBirthToString();
 		
-		//set data from edit student
+		//set data to page editstudent
 		editStudentForm.setStudentId(studentId);
 		editStudentForm.setStudentCode(studentCode);
 		editStudentForm.setStudentName(studentName);
@@ -62,26 +68,31 @@ public class EditController {
 		editStudentForm.setAverageScore(averageScore);
 		editStudentForm.setBirthDay(birthDay);
 		
-		model.addAttribute("editStudentForm", editStudentForm);
+		model.addAttribute("editStudentForm", editStudentForm);					//transfer data to page
 		return "editstudent";
 	}
 
-	//Edit student in database
+	/**
+	 *Handling student edits in database
+	 *
+	 * @param  @Valid EditStudentForm get data down 
+	 * @return view editstudent.html and set data form
+	 */
 	@RequestMapping(value = "/edit", method = RequestMethod.POST)
 	public String inDexEditPost(@Valid EditStudentForm editStudentForm, BindingResult result, Model model,
 			HttpServletRequest request) {
 
 		if (result.hasErrors()) {
 			if (logger.isDebugEnabled()) {
-				logger.debug("===== Lỗi edit stdeunt null =====");
+				logger.debug("===== Lỗi edit stdeunt null =====");						
 			}
 			return "editstudent";
 		} else {
-			int studentId = Integer.parseInt(editStudentForm.getStudentId());
+			int studentId = Integer.parseInt(editStudentForm.getStudentId());				//squeeze variable String to Int 
 			Student student = studentService.findById(studentId);
 			StudentInfo studentInfo = studentInfoService.findById(student.getStudentInfo().getInfoId());		//find by student Id
 
-			SimpleDateFormat formatter = new SimpleDateFormat("MM-dd-yyyy");
+			SimpleDateFormat formatter = new SimpleDateFormat("MM-dd-yyyy");				//config date
 
 			student.setStudentName(editStudentForm.getStudentName());
 			student.setStudentCode(editStudentForm.getStudentCode());
@@ -97,15 +108,14 @@ public class EditController {
 			}
 			studentInfo.setAverageScore(Float.parseFloat(editStudentForm.getAverageScore()));	
 			try {
-				studentInfoService.save(studentInfo);
+				studentInfoService.save(studentInfo);					//save student into DB
 			} catch (Exception e) {
 				return "500";
-			} 
-			
+			} 		
 			logger.debug("======Sữa học sinh thành công======:"+ editStudentForm.getStudentCode());
-			model.addAttribute("studentInfo", studentInfo);
+			model.addAttribute("studentInfo", studentInfo);				//transfer data to page
 			String messString = "Sửa học sinh thành công";
-			model.addAttribute("messString", messString);
+			model.addAttribute("messString", messString);				//transfer data to page
 
 			return "editstudent";
 		}

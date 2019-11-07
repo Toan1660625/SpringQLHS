@@ -17,7 +17,7 @@ import com.example.service.UserDetailsServiceImpl;
 
 /*
  * Copyright (C) 2019 by GMO Runsystem Company
- * Create WebSecurityConfig  class
+ * Create WebSecurityConfig class 
  * @version 1.0
  * @author ToanLM
  */
@@ -29,12 +29,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	private UserDetailsServiceImpl userDetailsService;
 
-	//
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
-
 	
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
@@ -49,8 +47,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 					.antMatchers("/register", "/login", "/loginSuccess", "/", "/index", "/api/search").permitAll()
 					.antMatchers("/delete/{studentId}", "/edit/{infoId}", "/add").hasRole("ADMIN").and()
 				.formLogin()
-					.loginPage("/login").usernameParameter("userName").passwordParameter("password")	 // handling login
-				.defaultSuccessUrl("/loginSuccess").permitAll()											 // Run to GET
+					.loginPage("/login").usernameParameter("userName").passwordParameter("password")	 // handling login compare user, password
+				.defaultSuccessUrl("/loginSuccess").permitAll()											 // mapping to GET
 				.failureUrl("/loginSuccess").and().exceptionHandling().accessDeniedPage("/403");
 
 	}

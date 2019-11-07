@@ -42,7 +42,7 @@ public class Student implements java.io.Serializable {
 	@Column(name = "studentCode", length = 10)
 	private String studentCode;
 
-	@OneToOne(mappedBy = "student") // mappedBy sẽ trỏ đến student bên studentInfo
+	@OneToOne(mappedBy = "student") // mappedBy to student in studentInfo
 	private StudentInfo studentInfo;
 
 	@JsonManagedReference

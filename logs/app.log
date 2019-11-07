@@ -3440,3 +3440,10 @@
 [DEBUG] 2019-11-05 21:19:56.525 [http-nio-80-exec-5] SearchAjaxController - ===== Find student: 6 success. =====
 [DEBUG] 2019-11-05 21:20:01.426 [http-nio-80-exec-6] SearchAjaxController - ===== Not found student: 7 =====
 [DEBUG] 2019-11-05 21:20:05.949 [http-nio-80-exec-9] SearchAjaxController - ===== Find student: 6 success. =====
+[INFO ] 2019-11-07 02:02:25.285 [restartedMain] Application - Starting Application on LMToan with PID 15752 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-07 02:02:25.293 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-07 02:02:25.294 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-07 02:03:08.059 [restartedMain] Application - Starting Application on LMToan with PID 15672 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-07 02:03:08.064 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-07 02:03:08.065 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-07 02:03:12.432 [restartedMain] Application - Started Application in 4.641 seconds (JVM running for 5.982)

@@ -17,7 +17,7 @@ import com.example.entity.User;
 
 /*
  * Copyright (C) 2019 by GMO Runsystem Company
- * Create UserRepository class
+ * Create UserRepository class get Data from Table user
  * @version 1.0
  * @author ToanLM
  */

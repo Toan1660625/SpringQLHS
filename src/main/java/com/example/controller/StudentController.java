@@ -41,6 +41,9 @@ public class StudentController {
 	@Autowired
 	private StudentInfoService studentInfoService;
 
+	/**
+	 * @return view addstudent.html and set data form
+	 */
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
 	public String Student(Model model) {
 		
@@ -51,6 +54,12 @@ public class StudentController {
 		return "addstudent";
 	}
 
+	/**
+	 *Handling add student in database
+	 *
+	 * @param  @Valid EditStudentForm get data down 
+	 * @return view addstudent.html
+	 */
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public String addStudent(@Valid AddStudentForm addStudentForm, BindingResult result, Model model,
 			HttpServletRequest request) {
@@ -62,7 +71,7 @@ public class StudentController {
 			return "addstudent";
 		} else {
 			Integer studentId = Integer.parseInt(addStudentForm.getStudentId());
-			Student checkStudentID = studentService.findById(studentId);
+			Student checkStudentID = studentService.findById(studentId);					//find student by ID
 			if (checkStudentID == null) {
 
 				SimpleDateFormat formatter = new SimpleDateFormat("MM-dd-yyyy");
@@ -85,13 +94,11 @@ public class StudentController {
 				addStudentInfo.setAverageScore(Float.parseFloat(addStudentForm.getAverageScore()));
 				
 				try {
-					studentInfoService.save(addStudentInfo);
+					studentInfoService.save(addStudentInfo);								//save student in DB
 				} catch (Exception e) {
 					return "500";
 				} 
 				
-
-
 				logger.debug("======Thêm học sinh thành công======:" + addStudentForm.getStudentCode());
 				String messString = "Thêm học sinh thành công";
 				model.addAttribute("messString", messString);

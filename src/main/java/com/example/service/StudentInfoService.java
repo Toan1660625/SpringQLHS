@@ -26,6 +26,7 @@ public class StudentInfoService {
 	@Autowired
 	StudentInfoRepository studentInfoReponsitory;
 
+	// Find all StudentInfo 
 	public List<StudentInfo> findAll() {
 		List<StudentInfo> studentInfoList = studentInfoReponsitory.findAll();
 
@@ -36,6 +37,7 @@ public class StudentInfoService {
 		}
 	}
 
+	// Find StudentInfo by ID
 	public StudentInfo findById(Integer id) {
 		Optional<StudentInfo> studentInfo = studentInfoReponsitory.findById(id);
 		if (studentInfo.isPresent()) {
@@ -59,6 +61,7 @@ public class StudentInfoService {
 
 	}
 
+	//Delete StudentInfo by ID have using Rollback when error
 	@Transactional(rollbackFor = { Exception.class })
 	public void deleteById(Integer id) {
 		Optional<StudentInfo> studentInfo = studentInfoReponsitory.findById(id);

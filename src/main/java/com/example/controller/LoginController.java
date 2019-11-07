@@ -42,20 +42,28 @@ public class LoginController {
 	@Autowired
 	private UserService userService;
 
+	/**
+	 * @return view login.html and set data form
+	 */
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String logIn(Model model) {
 		return "login";
 	}
 
+	/**
+	 *Handling user login
+	 *
+	 * @return view index.html or login.html 
+	 */
 	@RequestMapping(value = "/loginSuccess", method = RequestMethod.GET)
 	public String logInPost2(Model model, HttpServletRequest request, HttpSession session) {
 
-		String currentUserName = SecurityContextHolder.getContext().getAuthentication().getName();
+		String currentUserName = SecurityContextHolder.getContext().getAuthentication().getName();   //get data from auth
 
 		User checkUser = userService.findByUserName(currentUserName);
 		
 		if (checkUser != null) {
-			session.setAttribute("userName", currentUserName);
+			session.setAttribute("userName", currentUserName);										//set Session userName
 			return "redirect:/index";
 		} else {
 			String messString = "Tài Khoản hoặc Mật Khẩu không đúng!!";

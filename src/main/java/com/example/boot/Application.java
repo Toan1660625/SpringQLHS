@@ -14,10 +14,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  * @author ToanLM
  */
 
-@SpringBootApplication
-@ComponentScan("com.example")
-@EntityScan("com.example.entity")
-@EnableJpaRepositories(basePackages = {"com.example.repository"})
+@SpringBootApplication														//Run program
+@ComponentScan("com.example")												//Scan all package
+@EntityScan("com.example.entity")											//Scan package com.example.repository
+@EnableJpaRepositories(basePackages = {"com.example.repository"})    		//Scan package com.example.repository
 public class Application {
 
 	public static void main(String[] args) {

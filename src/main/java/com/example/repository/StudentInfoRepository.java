@@ -11,7 +11,7 @@ import com.example.entity.StudentInfo;
 
 /*
  * Copyright (C) 2019 by GMO Runsystem Company
- * Create StudentInfoRepository class
+ * Create StudentInfoRepository class get Data from Table studentinfo
  * @version 1.0
  * @author ToanLM
  */

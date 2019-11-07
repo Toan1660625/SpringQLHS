@@ -42,6 +42,11 @@ public class HomeController {
 	@Autowired
 	private StudentService studentService;
 
+	/**
+	 * Load form index and load list student
+	 *
+	 * @return view index.html and set data form
+	 */
 	@RequestMapping(value = { "/index", "/" }, method = RequestMethod.GET)
 	public String inDexGet(Model model, HttpServletRequest request,HttpSession session) {
 		
@@ -53,13 +58,20 @@ public class HomeController {
 		int sizeList = studentService.pageNumber(listStudentHQL.size()); 		// Number page total list
 		model.addAttribute("sizeList", sizeList);
 		
-		Pageable pageable = PageRequest.of(0, 3);								//Get 3 student 
+		Pageable pageable = PageRequest.of(0, 3);								//get top 3 student in all student
 		List<Student> listStudent = studentService.findAllStudent(pageable);
 		model.addAttribute("listStudentInfo", listStudent);
 
 		return "index";
 	}
 
+	
+	/**
+	 *Handling delete student in database
+	 *
+	 * @param  @PathVariable infoId get data down 
+	 * @return view index.html and set data form
+	 */
 	@RequestMapping(value = "/delete/{infoId}", method = RequestMethod.GET)
 	public String inDexDelete(Model model, HttpServletRequest request, @PathVariable("infoId") int infoId,HttpSession session) {
 		
@@ -76,7 +88,7 @@ public class HomeController {
 		int sizeList = studentService.pageNumber(listStudentInfo.size());
 		model.addAttribute("sizeList", sizeList);
 
-		Pageable pageable = PageRequest.of(0, 3);
+		Pageable pageable = PageRequest.of(0, 3);										//get top 3 student in all student
 		List<Student> listStudent = studentService.findAllStudent(pageable);						
 		model.addAttribute("listStudentInfo", listStudent);
 
@@ -84,7 +96,12 @@ public class HomeController {
 	}
 
 	
-	//Page Search bằng java
+	/**
+	 *Find student by Code and pagination(phân trang) 
+	 *
+	 * @param  @PathVariable pageNumber get data down 
+	 * @return view find.html and set data form
+	 */
 	@RequestMapping(value = "/find/{pageNumber}", method = RequestMethod.POST)
 	public String inDexFind(Model model, HttpServletRequest request, @PathVariable("pageNumber") int pageNumber,
 			@PathParam("findCode") String findCode,HttpSession session) {
@@ -99,7 +116,7 @@ public class HomeController {
 		int sizeList = studentService.pageNumber(listStudentFindAll.size());
 		model.addAttribute("sizeList", sizeList);
 
-		Pageable pageable = PageRequest.of(pageNumber - 1, 3);										// get student number page
+		Pageable pageable = PageRequest.of(pageNumber - 1, 3);										//get 3 student follow pageNumber
 		List<Student> listStudent = studentService.findByStudentCodeLike(findCode, pageable);
 		model.addAttribute("listStudentInfo", listStudent);
 
@@ -111,7 +128,12 @@ public class HomeController {
 
 	}
 
-	//
+	/**
+	 *Next page all student index
+	 *
+	 * @param  @PathVariable pageNumber get data down 
+	 * @return view index.html and set data form
+	 */
 	@RequestMapping(value = "/page/{pageNumber}", method = RequestMethod.GET)
 	public String inDexPage(Model model, HttpServletRequest request, @PathVariable("pageNumber") int pageNumber) {
 
@@ -126,11 +148,17 @@ public class HomeController {
 		return "index";
 	}
 
+	/**
+	 * @return view 403.html and set data form
+	 */
 	@RequestMapping(value = "/403", method = RequestMethod.GET)
 	public String error403() {
 		return "403";
 	}
 	
+	/**
+	 * @return view 500.html and set data form
+	 */
 	@RequestMapping(value = "/500", method = RequestMethod.GET)
 	public String error500() {
 		return "500";

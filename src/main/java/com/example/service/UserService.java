@@ -27,12 +27,13 @@ public class UserService {
 	@Autowired
 	UserRepository userRepository;
 
+	// Find User by ID
 	public User getUserById(Integer id) {
 		Optional<User> user = userRepository.findById(id);
 		return user.get();
 
 	}
-
+	// Find User by Email
 	public User getUserByEmail(String email) {
 		Optional<User> user = userRepository.findByUserNameNew(email);
 		if (user.isPresent()) {
@@ -43,6 +44,7 @@ public class UserService {
 
 	}
 
+	// Find User by name
 	public User findByUserName(String email) {
 		User user = userRepository.findByUserName(email);
 		if (user != null) {
@@ -52,6 +54,7 @@ public class UserService {
 		}
 	}
 
+	// Save user have using Rollback when error
 	@Transactional(rollbackFor = { Exception.class })
 	public void save(User entity) {
 		try {
@@ -61,6 +64,7 @@ public class UserService {
 		}
 	}
 
+	//Update user
 	public User createOrUpdateUser(User entity) {
 		Optional<User> user = userRepository.findById(entity.getUserId());
 
@@ -79,6 +83,7 @@ public class UserService {
 		}
 	}
 
+	//Delete user by ID
 	public void deleteEmployeeById(Integer id) {
 		Optional<User> user = userRepository.findById(id);
 		userRepository.deleteById(id);
