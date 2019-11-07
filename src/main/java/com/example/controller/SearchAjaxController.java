@@ -85,7 +85,7 @@ public class SearchAjaxController {
 			data.setTotalStudent(listStudentName.size());
 		}
 		data.setResult(listStudent);
-		return ResponseEntity.ok(data);												//return API
+		return ResponseEntity.ok(data);					//return API
 
 	}
 
@@ -100,12 +100,12 @@ public class SearchAjaxController {
 		DataSearchAjax result = new DataSearchAjax();
 		String search = (String) http.getAttribute("search");
 
-		List<Student> listStudentName = studentService.findByStudentName(search);					//find student by Name
+		List<Student> listStudentName = studentService.findByStudentName(search);				//find student by Name
 		int totalPage = studentService.pageNumber(listStudentName.size());
 
 		Pageable pageable = PageRequest.of(page, 3);
 
-		List<Student> student = studentService.findByStudentName(search, pageable);						//get 3 student follow pageNumber
+		List<Student> student = studentService.findByStudentName(search, pageable);				//get 3 student follow pageNumber
 		if (student.isEmpty()) {
 			result.setMessage("Student not found!");
 		} else {

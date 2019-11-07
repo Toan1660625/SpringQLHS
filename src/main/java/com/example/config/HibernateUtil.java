@@ -26,8 +26,8 @@ public class HibernateUtil {
 		try {
 			// Create the SessionFactory from hibernate.cfg.xml
 			Configuration configuration = new Configuration();
-			configuration.configure("hibernate.cfg.xml");								//config to hibernate.cfg.xml
-			configuration.addResource("named-queries.hbm.xml");							//config to named-queries.hbm.xml
+			configuration.configure("hibernate.cfg.xml");					//config to hibernate.cfg.xml
+			configuration.addResource("named-queries.hbm.xml");				//config to named-queries.hbm.xml
 			configuration.addAnnotatedClass(User.class);
 			configuration.addAnnotatedClass(Student.class);
 			configuration.addAnnotatedClass(StudentInfo.class);

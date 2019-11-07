@@ -71,7 +71,7 @@ public class StudentController {
 			return "addstudent";
 		} else {
 			Integer studentId = Integer.parseInt(addStudentForm.getStudentId());
-			Student checkStudentID = studentService.findById(studentId);					//find student by ID
+			Student checkStudentID = studentService.findById(studentId);				//find student by ID
 			if (checkStudentID == null) {
 
 				SimpleDateFormat formatter = new SimpleDateFormat("MM-dd-yyyy");
@@ -94,7 +94,7 @@ public class StudentController {
 				addStudentInfo.setAverageScore(Float.parseFloat(addStudentForm.getAverageScore()));
 				
 				try {
-					studentInfoService.save(addStudentInfo);								//save student in DB
+					studentInfoService.save(addStudentInfo);					//save student in DB
 				} catch (Exception e) {
 					return "500";
 				} 

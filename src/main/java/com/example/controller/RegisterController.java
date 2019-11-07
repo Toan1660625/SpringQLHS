@@ -55,24 +55,24 @@ public class RegisterController {
 		String password = registerForm.getPassword();
 		String passwordConfirm = registerForm.getPasswordConfirm();
 
-		User checkUser = userService.getUserByEmail(userName);							//find user in DB
-		if (checkUser == null) {														// if not found else register
-			if (password.equals(passwordConfirm)) {										// compare password
+		User checkUser = userService.getUserByEmail(userName);					//find user in DB
+		if (checkUser == null) {					// if not found else register
+			if (password.equals(passwordConfirm)) {					// compare password
 
 				PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();		
-				String hashedPassword = passwordEncoder.encode(password);				// encode password
+				String hashedPassword = passwordEncoder.encode(password);		// encode password
 
 				User addUser = new User(userName, hashedPassword, "ROLE_MEMBER");
 				
 				try {
-					userService.save(addUser);											//save user in DB
+					userService.save(addUser);					//save user in DB
 				} catch (Exception e) {
 					return "500";
 				} 
 			
 
 				String messString = "Đăng ký thành công";
-				logger.debug("======Đăng ký thành công======");							//write Loggger
+				logger.debug("======Đăng ký thành công======");					//write Loggger
 				String color = "blue";
 				model.addAttribute("color", color);
 				model.addAttribute("messString", messString);

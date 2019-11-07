@@ -3447,3 +3447,29 @@
 [DEBUG] 2019-11-07 02:03:08.064 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
 [INFO ] 2019-11-07 02:03:08.065 [restartedMain] Application - No active profile set, falling back to default profiles: default
 [INFO ] 2019-11-07 02:03:12.432 [restartedMain] Application - Started Application in 4.641 seconds (JVM running for 5.982)
+[INFO ] 2019-11-07 09:00:59.491 [restartedMain] Application - Starting Application on LMToan with PID 14308 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-07 09:00:59.497 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-07 09:00:59.497 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-07 09:01:03.493 [restartedMain] Application - Started Application in 4.301 seconds (JVM running for 5.648)
+[DEBUG] 2019-11-07 09:01:23.750 [http-nio-80-exec-1] RegisterController - ======Đăng ký thành công======
+[DEBUG] 2019-11-07 09:01:30.840 [http-nio-80-exec-4] HomeController - ===== toan12@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-07 09:01:37.139 [http-nio-80-exec-4] SearchAjaxController - ===== Not found student: 9 =====
+[DEBUG] 2019-11-07 09:01:46.148 [http-nio-80-exec-7] HomeController - ===== toan12@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-07 09:01:55.741 [http-nio-80-exec-3] SearchAjaxController - ===== Find student: Toan success. =====
+[DEBUG] 2019-11-07 09:02:00.347 [http-nio-80-exec-1] HomeController - ===== toan12@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-07 09:02:14.072 [http-nio-80-exec-8] SearchAjaxController - ===== Find student: Le success. =====
+[DEBUG] 2019-11-07 09:02:42.949 [http-nio-80-exec-10] HomeController - ===== toan12@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-07 09:02:48.083 [http-nio-80-exec-10] SearchAjaxController - ===== Find student: Le Minh Toan success. =====
+[DEBUG] 2019-11-07 09:02:57.428 [http-nio-80-exec-1] HomeController - ===== toan12@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-07 09:03:03.642 [http-nio-80-exec-10] HomeController - ===== toan12@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-07 09:03:11.774 [http-nio-80-exec-10] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-07 09:03:24.607 [http-nio-80-exec-2] StudentController - ======Thêm học sinh thành công======:STU0120
+[DEBUG] 2019-11-07 09:03:26.158 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-07 09:03:35.193 [http-nio-80-exec-5] EditController - ======Sữa học sinh thành công======:STU0520
+[DEBUG] 2019-11-07 09:03:36.334 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-07 09:03:40.881 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com đã xóa 1 học sinh =====
+[DEBUG] 2019-11-07 09:03:45.819 [http-nio-80-exec-2] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-07 09:04:25.750 [restartedMain] Application - Starting Application on LMToan with PID 14308 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-07 09:04:25.750 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-07 09:04:25.750 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-07 09:04:26.797 [restartedMain] Application - Started Application in 1.089 seconds (JVM running for 208.952)

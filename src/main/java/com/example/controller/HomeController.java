@@ -76,7 +76,7 @@ public class HomeController {
 	public String inDexDelete(Model model, HttpServletRequest request, @PathVariable("infoId") int infoId,HttpSession session) {
 		
 		try {
-			studentInfoService.deleteById(infoId);											//delete student
+			studentInfoService.deleteById(infoId);					//delete student
 			if (logger.isDebugEnabled()) {
 				logger.debug( "===== "+session.getAttribute("userName")+" đã xóa 1 học sinh =====");         	//write log delete
 			}
@@ -88,7 +88,7 @@ public class HomeController {
 		int sizeList = studentService.pageNumber(listStudentInfo.size());
 		model.addAttribute("sizeList", sizeList);
 
-		Pageable pageable = PageRequest.of(0, 3);										//get top 3 student in all student
+		Pageable pageable = PageRequest.of(0, 3);					//get top 3 student in all student
 		List<Student> listStudent = studentService.findAllStudent(pageable);						
 		model.addAttribute("listStudentInfo", listStudent);
 

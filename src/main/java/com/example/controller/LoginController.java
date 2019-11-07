@@ -63,7 +63,7 @@ public class LoginController {
 		User checkUser = userService.findByUserName(currentUserName);
 		
 		if (checkUser != null) {
-			session.setAttribute("userName", currentUserName);										//set Session userName
+			session.setAttribute("userName", currentUserName);					//set Session userName
 			return "redirect:/index";
 		} else {
 			String messString = "Tài Khoản hoặc Mật Khẩu không đúng!!";
