@@ -3473,3 +3473,9 @@
 [DEBUG] 2019-11-07 09:04:25.750 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
 [INFO ] 2019-11-07 09:04:25.750 [restartedMain] Application - No active profile set, falling back to default profiles: default
 [INFO ] 2019-11-07 09:04:26.797 [restartedMain] Application - Started Application in 1.089 seconds (JVM running for 208.952)
+[INFO ] 2019-11-09 22:20:29.600 [restartedMain] Application - Starting Application on LMToan with PID 13872 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-09 22:20:29.611 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-09 22:20:29.612 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-09 22:20:35.993 [restartedMain] Application - Started Application in 6.934 seconds (JVM running for 8.885)
+[DEBUG] 2019-11-09 22:20:48.592 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[DEBUG] 2019-11-09 22:22:18.665 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
