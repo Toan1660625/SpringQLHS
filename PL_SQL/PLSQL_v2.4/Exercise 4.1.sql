@@ -140,26 +140,34 @@ DECLARE
   canh_A NUMBER := &canh_A;
   canh_B NUMBER := &canh_B;
   canh_C NUMBER := &canh_C;
-BEGIN
-   CASE
-      WHEN (canh_A + canh_B <= canh_C) OR (canh_B + canh_C) <= canh_A OR (canh_C + canh_A <= canh_B) THEN
-        dbms_output.put_line('Ba canh a, b, c khong phai la ba canh cua mot tam giac');
+  temp number;
+  
+BEGIN 
+ IF((canh_A + canh_B <= canh_C) OR (canh_B + canh_C) <= canh_A OR (canh_C + canh_A) <= canh_B)THEN
+    temp := 0;
+  ELSE
+    IF(canh_A = canh_B AND canh_B = canh_C) THEN
+      temp := 1;
+    ELSIF(canh_A = canh_B OR canh_B = canh_C OR canh_C = canh_A) THEN
+      IF (canh_A**2 + canh_B**2 = canh_C**2 OR canh_B**2 + canh_C**2 = canh_A**2 OR canh_C**2 + canh_A**2 = canh_B**2) THEN
+        temp := 2;
       ELSE
-        CASE
-        WHEN (canh_A = canh_B AND canh_B = canh_C) THEN
-         dbms_output.put_line('Day la tam giac deu');
-        WHEN(canh_A = canh_B OR canh_B = canh_C OR canh_C = canh_A) THEN
-          CASE
-          WHEN (canh_A**2 + canh_B**2 = canh_C**2 OR canh_B**2 + canh_C**2 = canh_A**2 OR canh_C**2 + canh_A**2 = canh_B**2) THEN
-            dbms_output.put_line('Day la tam giac vuông can');
-          ELSE
-            dbms_output.put_line('Day la tam giac can');
-          END CASE;
-        WHEN(canh_A**2 + canh_B**2 = canh_C**2 OR canh_B**2 + canh_C**2 = canh_A**2 OR canh_C**2 + canh_A**2 = canh_B**2)THEN
-          dbms_output.put_line('Day la tam giac vuong');
-        ELSE
-        dbms_output.put_line('Day la tam giac thuong');
-     END CASE;
+         temp := 3;
+      END IF;
+    ELSIF(canh_A**2 + canh_B**2 = canh_C**2 OR canh_B**2 + canh_C**2 = canh_A**2 OR canh_C**2 + canh_A**2 = canh_B**2)THEN
+       temp := 4;
+    ELSE
+       temp := 5;
+    END IF;
+  END IF;
+  CASE temp
+  WHEN 1 THEN dbms_output.put_line('Day la tam giac deu');
+  WHEN 2 THEN dbms_output.put_line('Day la tam giac vuông can');
+  WHEN 3 THEN dbms_output.put_line('Day la tam giac can');
+  WHEN 4 THEN dbms_output.put_line('Day la tam giac vuong');
+  WHEN 5 THEN dbms_output.put_line('Day la tam giac thuong');
+  WHEN 0 THEN dbms_output.put_line('Ba canh a, b, c khong phai la ba canh cua mot tam giac');
+  ELSE dbms_output.put_line('ERROR!!');
   END CASE;
 END;  
   

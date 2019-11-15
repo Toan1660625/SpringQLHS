@@ -40,12 +40,10 @@ BEGIN
   INTO first_name
   FROM STUDENT
   WHERE ID = in_student_id;
-  
   Dbms_Output.Put_Line('Câu 3: Ten : ' || first_name);
 EXCEPTION
 WHEN No_Data_Found THEN
   Dbms_Output.Put_Line('Khong tim thay student id = ' || in_student_id);
-  
 END;
 
 --Câu 4:
