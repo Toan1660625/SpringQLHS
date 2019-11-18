@@ -3479,3 +3479,16 @@
 [INFO ] 2019-11-09 22:20:35.993 [restartedMain] Application - Started Application in 6.934 seconds (JVM running for 8.885)
 [DEBUG] 2019-11-09 22:20:48.592 [http-nio-80-exec-9] HomeController - ===== toan7@gmail.com vào trang chủ =====
 [DEBUG] 2019-11-09 22:22:18.665 [http-nio-80-exec-5] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-18 09:53:23.126 [restartedMain] Application - Starting Application on LMToan with PID 5392 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-18 09:53:23.136 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-18 09:53:23.137 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-18 09:54:05.302 [restartedMain] Application - Starting Application on LMToan with PID 16844 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-18 09:54:05.318 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-18 09:54:05.322 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-18 09:54:09.822 [restartedMain] Application - Started Application in 4.831 seconds (JVM running for 6.13)
+[DEBUG] 2019-11-18 09:54:21.682 [http-nio-80-exec-7] HomeController - ===== toan7@gmail.com vào trang chủ =====
+[INFO ] 2019-11-18 09:56:44.964 [restartedMain] Application - Starting Application on LMToan with PID 16976 (started by MToan in D:\GMO SYSTEM\JavaSpringBoot\SpringBoot)
+[DEBUG] 2019-11-18 09:56:44.973 [restartedMain] Application - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[INFO ] 2019-11-18 09:56:44.974 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-18 09:56:51.268 [restartedMain] Application - Started Application in 6.862 seconds (JVM running for 8.171)
+[DEBUG] 2019-11-18 09:57:02.409 [http-nio-80-exec-3] HomeController - ===== toan7@gmail.com vào trang chủ =====
